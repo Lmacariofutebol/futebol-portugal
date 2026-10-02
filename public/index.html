@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Classificações do futebol sénior masculino português, da Liga aos campeonatos distritais." />
+  <title>Classificações do Futebol Português</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <p class="eyebrow">FUTEBOL SÉNIOR • PORTUGAL</p>
+        <h1>Classificações de Portugal</h1>
+        <p class="subtitle">Da Liga Portugal aos campeonatos distritais, num só lugar.</p>
+      </div>
+      <div class="update-box">
+        <span class="status-dot"></span>
+        <div><strong>Atualização diária</strong><br><span>19h00 • Europe/Lisbon</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="toolbar" aria-label="Filtros">
+      <div class="search-wrap">
+        <span>⌕</span>
+        <input id="search" type="search" placeholder="Pesquisar competição ou equipa…" autocomplete="off" />
+      </div>
+      <select id="scope"><option value="">Todos os níveis</option><option value="Nacional">Nacionais</option><option value="Distrital">Distritais</option></select>
+      <select id="association"><option value="">Todas as associações</option></select>
+    </section>
+
+    <section class="summary" id="summary">
+      <div><strong id="competitionCount">—</strong><span>classificações</span></div>
+      <div><strong id="associationCount">—</strong><span>associações</span></div>
+      <div><strong id="updatedAt">—</strong><span>última atualização</span></div>
+    </section>
+
+    <div id="notice" class="notice">A carregar classificações…</div>
+    <section id="content" class="content"></section>
+  </main>
+
+  <footer>
+    <p>Fonte principal: <a href="https://www.zerozero.pt" target="_blank" rel="noopener">zerozero.pt</a>. Site independente, sem afiliação ao zerozero.</p>
+  </footer>
+  <script src="./app.js" defer></script>
+</body>
+</html>
