@@ -1,0 +1,16 @@
+{
+  "name": "portugal-futebol-classificacoes-pages",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/update.mjs",
+    "build": "node build-site.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0"
+  }
+}
