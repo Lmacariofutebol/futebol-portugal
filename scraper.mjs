@@ -477,59 +477,89 @@ export async function updateAll({ onProgress = () => {} } = {}) {
   }
 
   competitions.sort((a, b) => {
-    if (a.group !== b.group) {
-      return a.group === 'Nacional' ? -1 : 1;
-    }
+const collator = new Intl.Collator('pt-PT', {
+  numeric: true,
+  sensitivity: 'base'
+});
 
+function associationRank(name) {
+  const n = norm(name);
+
+  if (n.includes('af lisboa')) return 1;
+  if (n.includes('af setubal')) return 2;
+  if (n.includes('af leiria')) return 3;
+  if (n.includes('af santarem')) return 4;
+
+  return 100;
+}
+
+function divisionRank(name) {
+  const n = norm(name);
+
+  // 1.ª Divisão / I Divisão
+  if (
+    /\b1\s*[ªa]?\s*divisao\b/.test(n) ||
+    /\bi\s+divisao\b/.test(n)
+  ) return 1;
+
+  // 2.ª Divisão / II Divisão
+  if (
+    /\b2\s*[ªa]?\s*divisao\b/.test(n) ||
+    /\bii\s+divisao\b/.test(n)
+  ) return 2;
+
+  // 3.ª Divisão / III Divisão
+  if (
+    /\b3\s*[ªa]?\s*divisao\b/.test(n) ||
+    /\biii\s+divisao\b/.test(n)
+  ) return 3;
+
+  return 100;
+}
+
+competitions.sort((a, b) => {
+  // Nacionais primeiro, mantendo Liga 1 → Liga 2 → Liga 3 → Campeonato de Portugal
+  if (a.group !== b.group) {
+    return a.group === 'Nacional' ? -1 : 1;
+  }
+
+  if (a.group === 'Nacional') {
     if ((a.level || 99) !== (b.level || 99)) {
       return (a.level || 99) - (b.level || 99);
     }
 
-    return `${a.association} ${a.name}`
-      .localeCompare(`${b.association} ${b.name}`, 'pt');
-  });
-
-  const valid = competitions.filter(
-    c => c.standings && c.standings.length >= 3
-  );
-
-  if (!valid.length) {
-    onProgress(
-      'Sem classificações válidas; mantida a última versão.'
-    );
-    return previousData();
+    return collator.compare(a.name, b.name);
   }
 
-  const payload = {
-    updatedAt: new Date().toISOString(),
-    timezone: 'Europe/Lisbon',
-    source: 'Centro de Resultados FPF',
-    competitionCount: valid.length,
-    associationCount: new Set(
-      valid
-        .filter(x => x.group === 'Distrital')
-        .map(x => x.association)
-    ).size,
-    competitions: valid
-  };
+  // Ordem especial das associações distritais
+  const ar = associationRank(a.association);
+  const br = associationRank(b.association);
 
-  await fs.mkdir(path.dirname(DATA_FILE), {
-    recursive: true
-  });
+  if (ar !== br) {
+    return ar - br;
+  }
 
-  await fs.writeFile(
-    DATA_FILE,
-    JSON.stringify(payload, null, 2),
-    'utf8'
-  );
+  // Depois das quatro prioritárias, ordem alfabética
+  if (ar === 100) {
+    const assocCompare = collator.compare(
+      a.association || '',
+      b.association || ''
+    );
 
-  onProgress(
-    `OK: ${payload.competitionCount} classificações de ${payload.associationCount} associações.`
-  );
+    if (assocCompare !== 0) {
+      return assocCompare;
+    }
+  }
 
-  return payload;
-}
+  // Dentro da mesma associação:
+  // 1.ª Divisão → 2.ª Divisão → 3.ª Divisão → restantes
+  const ad = divisionRank(a.name);
+  const bd = divisionRank(b.name);
 
-export async function readData() {
-  return previousData();
-}
+  if (ad !== bd) {
+    return ad - bd;
+  }
+
+  // Séries A, B, C, 1, 2, 3... em ordem natural
+  return collator.compare(a.name, b.name);
+});
