@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-10-05T11:30:14.504Z",
+  "updatedAt": "2026-10-05T12:16:35.720Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
-  "competitionCount": 31,
+  "competitionCount": 30,
   "associationCount": 13,
   "competitions": [
     {
@@ -275,51 +275,6 @@
           "gf": 4,
           "ga": 2,
           "gd": 2
-        }
-      ]
-    },
-    {
-      "group": "Distrital",
-      "association": "AF Braga",
-      "name": "CAMPEONATO DIVISÃO DE HONRA SENIORES — SERIE \"B\"",
-      "url": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=29928&seasonId=106",
-      "source": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=29928&seasonId=106",
-      "standings": [
-        {
-          "pos": 1,
-          "team": "Udc S. Adrião",
-          "points": 6,
-          "played": 2,
-          "wins": 2,
-          "draws": 0,
-          "losses": 0,
-          "gf": 8,
-          "ga": 3,
-          "gd": 5
-        },
-        {
-          "pos": 2,
-          "team": "Cc Taipas",
-          "points": 6,
-          "played": 2,
-          "wins": 2,
-          "draws": 0,
-          "losses": 0,
-          "gf": 5,
-          "ga": 2,
-          "gd": 3
-        },
-        {
-          "pos": 12,
-          "team": "Desp. S. Cosme",
-          "points": 0,
-          "played": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 2,
-          "ga": 4,
-          "gd": -2
         }
       ]
     },
