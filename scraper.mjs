@@ -187,12 +187,12 @@ function parseStandings(html, meta) {
   const $ = cheerio.load(html);
   const tokens = pageTokens($);
 
-  const starts = [];
+  const headers = [];
 
   for (let i = 0; i < tokens.length; i++) {
     if (norm(tokens[i]) !== 'pos') continue;
 
-    const nearby = tokens.slice(i, i + 20).map(norm);
+    const nearby = tokens.slice(i, i + 25).map(norm);
 
     if (
       nearby.includes('jgs') &&
@@ -207,7 +207,7 @@ function parseStandings(html, meta) {
 
       let label = '';
 
-      for (let x = i - 1; x >= Math.max(0, i - 120); x--) {
+      for (let x = i - 1; x >= Math.max(0, i - 150); x--) {
         const t = clean(tokens[x]);
 
         if (/^(Série|Serie|Grupo)\s+/i.test(t)) {
@@ -216,7 +216,7 @@ function parseStandings(html, meta) {
         }
       }
 
-      starts.push({
+      headers.push({
         header: i,
         dataStart: i + ptsOffset + 1,
         label
@@ -224,15 +224,21 @@ function parseStandings(html, meta) {
     }
   }
 
+  if (!headers.length) return [];
+
   const results = [];
 
-  for (let s = 0; s < starts.length; s++) {
-    const current = starts[s];
-    const end = s + 1 < starts.length
-      ? starts[s + 1].header
-      : tokens.length;
+  for (let h = 0; h < headers.length; h++) {
+    const current = headers[h];
+
+    const end =
+      h + 1 < headers.length
+        ? headers[h + 1].header
+        : tokens.length;
 
     const rows = [];
+    const seen = new Set();
+
     let i = current.dataStart;
 
     while (i < end) {
@@ -249,38 +255,50 @@ function parseStandings(html, meta) {
       }
 
       const posIndex = i;
-      i++;
 
       let team = '';
+      let teamIndex = -1;
 
-      while (i < end && i < posIndex + 12) {
+      for (
+        let x = posIndex + 1;
+        x < Math.min(end, posIndex + 25);
+        x++
+      ) {
+        const value = tokens[x];
+
         if (
-          /[A-Za-zÀ-ÿ]/.test(tokens[i]) &&
-          !/^(pos|jgs|v|e|d|gm|gs|pts|classificação|jogos|jornadas)$/i.test(tokens[i])
+          /[A-Za-zÀ-ÿ]/.test(value) &&
+          !/^(pos|jgs|v|e|d|gm|gs|pts|classificação|jogos|jornadas)$/i.test(value)
         ) {
-          team = tokens[i];
-          i++;
+          team = value;
+          teamIndex = x;
           break;
         }
-        i++;
       }
 
-      if (!team) continue;
+      if (!team) {
+        i++;
+        continue;
+      }
 
       const nums = [];
 
-      while (
-        i < end &&
-        nums.length < 7 &&
-        i < posIndex + 30
+      for (
+        let x = teamIndex + 1;
+        x < Math.min(end, teamIndex + 40);
+        x++
       ) {
-        if (/^-?\d+$/.test(tokens[i])) {
-          nums.push(Number(tokens[i]));
+        if (/^-?\d+$/.test(tokens[x])) {
+          nums.push(Number(tokens[x]));
         }
-        i++;
+
+        if (nums.length === 7) break;
       }
 
-      if (nums.length < 7) continue;
+      if (nums.length < 7) {
+        i++;
+        continue;
+      }
 
       const [
         played,
@@ -292,21 +310,92 @@ function parseStandings(html, meta) {
         points
       ] = nums;
 
-      rows.push({
-        pos,
-        team,
-        points,
-        played,
-        wins,
-        draws,
-        losses,
-        gf,
-        ga,
-        gd: gf - ga
-      });
+      // Evita interpretar números alheios à classificação.
+      if (
+        played < 0 || played > 60 ||
+        wins < 0 || wins > 60 ||
+        draws < 0 || draws > 60 ||
+        losses < 0 || losses > 60 ||
+        gf < 0 || gf > 300 ||
+        ga < 0 || ga > 300 ||
+        points < -20 || points > 200
+      ) {
+        i++;
+        continue;
+      }
+
+      const key = `${pos}|${team}`;
+
+      if (!seen.has(key)) {
+        seen.add(key);
+
+        rows.push({
+          pos,
+          team,
+          points,
+          played,
+          wins,
+          draws,
+          losses,
+          gf,
+          ga,
+          gd: gf - ga
+        });
+      }
+
+      i = teamIndex + 1;
     }
 
-    if (rows.length >= 3) {
+    if (rows.length < 3) continue;
+
+    /*
+      Algumas páginas FPF intercalam duas séries:
+      1A,1B,2A,2B,3A,3B...
+      Se isso acontecer, separamo-las.
+    */
+    const counts = new Map();
+
+    for (const row of rows) {
+      counts.set(row.pos, (counts.get(row.pos) || 0) + 1);
+    }
+
+    const numberOfSeries = Math.max(...counts.values());
+
+    if (numberOfSeries > 1) {
+      const series = Array.from(
+        { length: numberOfSeries },
+        () => []
+      );
+
+      const occurrence = new Map();
+
+      for (const row of rows) {
+        const n = occurrence.get(row.pos) || 0;
+
+        series[n].push(row);
+        occurrence.set(row.pos, n + 1);
+      }
+
+      series.forEach((serieRows, index) => {
+        if (serieRows.length < 3) return;
+
+        serieRows.sort((a, b) => a.pos - b.pos);
+
+        const suffix =
+          current.label ||
+          `Série ${index + 1}`;
+
+        results.push({
+          ...meta,
+          name: `${meta.name} — ${suffix}`,
+          source: meta.url,
+          standings: serieRows
+        });
+      });
+
+    } else {
+      rows.sort((a, b) => a.pos - b.pos);
+
       results.push({
         ...meta,
         name: current.label
