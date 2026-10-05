@@ -2,299 +2,421 @@ import * as cheerio from 'cheerio';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const BASE = 'https://www.zerozero.pt';
-const USER_AGENT = process.env.USER_AGENT || 'PortugalClassificacoes/1.0 (+personal football standings site; once-daily refresh)';
-const REQUEST_DELAY_MS = Number(process.env.REQUEST_DELAY_MS || 700);
+const BASE = 'https://centroderesultados-as-prd.azurewebsites.net';
+const INDEX_URL = `${BASE}/Competition`;
 const DATA_FILE = path.resolve('data/standings.json');
-
-const nationalCompetitions = [
-  { level: 1, group: 'Nacional', association: 'Portugal', name: 'Liga Portugal Betclic', url: `${BASE}/competicao/liga-portuguesa` },
-  { level: 2, group: 'Nacional', association: 'Portugal', name: 'Liga Portugal 2 Meu Super', url: `${BASE}/competicao/segunda-liga-portuguesa` },
-  { level: 3, group: 'Nacional', association: 'Portugal', name: 'Liga 3 Placard', url: `${BASE}/competicao/liga-3` },
-  { level: 4, group: 'Nacional', association: 'Portugal', name: 'Campeonato de Portugal', url: `${BASE}/competicao/campeonato-de-portugal` }
-];
-
-export const associations = [
-  ['AF Algarve', 'af-algarve'],
-  ['AF Angra Heroísmo', 'af-angra-heroismo'],
-  ['AF Aveiro', 'af-aveiro'],
-  ['AF Beja', 'af-beja'],
-  ['AF Braga', 'af-braga'],
-  ['AF Bragança', 'af-braganca'],
-  ['AF Castelo Branco', 'af-castelo-branco'],
-  ['AF Coimbra', 'af-coimbra'],
-  ['AF Évora', 'af-evora'],
-  ['AF Guarda', 'af-guarda'],
-  ['AF Horta', 'af-horta'],
-  ['AF Leiria', 'af-leiria'],
-  ['AF Lisboa', 'af-lisboa'],
-  ['AF Madeira', 'af-madeira'],
-  ['AF Ponta Delgada', 'af-ponta-delgada'],
-  ['AF Portalegre', 'af-portalegre'],
-  ['AF Porto', 'af-porto'],
-  ['AF Santarém', 'af-santarem'],
-  ['AF Setúbal', 'af-setubal'],
-  ['AF Viana do Castelo', 'af-viana-do-castelo'],
-  ['AF Vila Real', 'af-vila-real'],
-  ['AF Viseu', 'af-viseu']
-];
+const DELAY = 250;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const clean = s => String(s || '').replace(/\s+/g, ' ').trim();
-const absolute = href => new URL(href, BASE).toString().split('#')[0];
+const clean = v => String(v || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+const norm = v => clean(v).normalize('NFD')
+  .replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
-async function fetchHtml(url, attempts = 3) {
-  let lastError;
-  for (let i = 0; i < attempts; i++) {
-    try {
-      const res = await fetch(url, {
-        headers: {
-          'user-agent': USER_AGENT,
-          'accept-language': 'pt-PT,pt;q=0.9,en;q=0.7',
-          accept: 'text/html,application/xhtml+xml'
-        },
-        redirect: 'follow'
+async function getHtml(url) {
+  const r = await fetch(url, {
+    headers: {
+      'user-agent': 'Mozilla/5.0',
+      'accept-language': 'pt-PT,pt;q=0.9',
+      accept: 'text/html,application/xhtml+xml'
+    },
+    redirect: 'follow'
+  });
+
+  if (!r.ok) throw new Error(`HTTP ${r.status}: ${url}`);
+
+  const html = await r.text();
+  await sleep(DELAY);
+  return html;
+}
+
+function absolute(href) {
+  return new URL(href, BASE).toString().split('#')[0];
+}
+
+function isLeague(name) {
+  const t = norm(name);
+
+  if (
+    t.includes('taca') ||
+    t.includes('superta') ||
+    t.includes('cup') ||
+    t.includes('torneio') ||
+    t.includes('futsal') ||
+    t.includes('femin')
+  ) return false;
+
+  return (
+    t.includes('divisao') ||
+    t.includes('campeonato') ||
+    t.includes('liga') ||
+    t.includes('honra') ||
+    t.includes('elite') ||
+    t.includes('pro-nacional') ||
+    t.includes('pro nacional')
+  );
+}
+
+function discoverIndex(html) {
+  const $ = cheerio.load(html);
+  const competitions = [];
+  const associations = [];
+
+  const nationals = new Map([
+    ['liga portugal betclic', 1],
+    ['liga portugal meu super', 2],
+    ['liga 3 placard', 3],
+    ['campeonato de portugal', 4]
+  ]);
+
+  $('a[href]').each((_, a) => {
+    const name = clean($(a).text());
+    const href = $(a).attr('href');
+    if (!href) return;
+
+    const n = norm(name);
+
+    if (nationals.has(n)) {
+      competitions.push({
+        group: 'Nacional',
+        association: 'Portugal',
+        level: nationals.get(n),
+        name,
+        url: absolute(href)
       });
-      if (!res.ok) throw new Error(`HTTP ${res.status} em ${url}`);
-      const html = await res.text();
-      await sleep(REQUEST_DELAY_MS);
-      return html;
-    } catch (err) {
-      lastError = err;
-      await sleep(900 * (i + 1));
     }
-  }
-  throw lastError;
+
+    if (
+      /^a\.f\./i.test(name) &&
+      /GetCompetitionsByAssociation/i.test(href)
+    ) {
+      associations.push({
+        name: name.replace(/^A\.F\./i, 'AF').trim(),
+        url: absolute(href)
+      });
+    }
+  });
+
+  return { competitions, associations };
 }
 
-function likelySeniorMensLeague(name, context = '') {
-  const t = `${name} ${context}`.toLowerCase();
-  const reject = [
-    'futsal', 'futebol de praia', 'fut.7', 'fut7', 'futebol de 7', 'futebol de 9',
-    'femin', 'junior', 'jun.', 'sub-', 'sub ', 'u19', 'u17', 'u15', 'u13', 'juven', 'iniciad',
-    'masters', 'veteran', 'reservas', 'sub-23', 'sub 23', 'sub-22', 'sub 22', 'sub-20', 'sub 20',
-    'taça', 'taca', 'supertaça', 'supertaca', 'torneio', 'playoff', 'play-off'
-  ];
-  if (reject.some(x => t.includes(x))) return false;
-  const positive = ['divisão', 'divisao', 'liga', 'campeonato', 'pró-nacional', 'pro-nacional', 'elite', 'honra', 'af '];
-  return positive.some(x => t.includes(x));
-}
-
-function extractCompetitionLinks(html, association) {
+function discoverAssociation(html, association) {
   const $ = cheerio.load(html);
   const found = new Map();
-  $('a[href*="/competicao/"]').each((_, el) => {
-    const href = $(el).attr('href');
-    if (!href) return;
-    const name = clean($(el).text());
-    if (!name || name.length < 3) return;
-    let context = '';
-    const parent = $(el).closest('article,li,.item,.box,.list-item,.card,div');
-    if (parent.length) context = clean(parent.first().text()).slice(0, 450);
-    if (!likelySeniorMensLeague(name, context)) return;
-    const url = absolute(href).split('?')[0];
-    if (!url.includes('/competicao/')) return;
-    if (!found.has(url)) found.set(url, { group: 'Distrital', association, name, url });
-  });
+
+  let football = false;
+  let senior = false;
+
+  const elements = $('body *').toArray();
+
+  for (const el of elements) {
+    const $el = $(el);
+
+    const own = clean(
+      $el.clone().children().remove().end().text()
+    );
+
+    const n = norm(own);
+
+    if (n === 'competicoes de futebol') {
+      football = true;
+      senior = false;
+      continue;
+    }
+
+    if (
+      n === 'competicoes de futsal' ||
+      n === 'competicoes de futebol de praia'
+    ) {
+      football = false;
+      senior = false;
+    }
+
+    if (football && n === 'senior' && !senior) {
+      senior = true;
+      continue;
+    }
+
+    if (
+      senior &&
+      (
+        n.startsWith('junior-') ||
+        n.includes('juvenil') ||
+        n.includes('iniciado') ||
+        n.includes('infantil') ||
+        n.includes('benjamim')
+      )
+    ) {
+      break;
+    }
+
+    if (!football || !senior) continue;
+
+    if (String(el.tagName || '').toLowerCase() !== 'a') continue;
+
+    const href = $el.attr('href');
+    const name = clean($el.text());
+
+    if (
+      href &&
+      /Competition\/Details/i.test(href) &&
+      isLeague(name)
+    ) {
+      const url = absolute(href);
+
+      found.set(url, {
+        group: 'Distrital',
+        association,
+        name,
+        url
+      });
+    }
+  }
+
   return [...found.values()];
 }
 
-async function discoverAssociation(association, slug) {
-  const out = new Map();
-  let stalePages = 0;
-  for (let page = 1; page <= 8; page++) {
-    const url = `${BASE}/competicoes/${slug}?age_group_id=1&official_id=1&page=${page}`;
-    let html;
-    try { html = await fetchHtml(url); } catch { break; }
-    const links = extractCompetitionLinks(html, association);
-    const before = out.size;
-    for (const item of links) out.set(item.url, item);
-    if (out.size === before) stalePages += 1; else stalePages = 0;
-    if (stalePages >= 2) break;
-  }
-  return [...out.values()];
+function pageTokens($) {
+  return $('body *')
+    .filter((_, el) => $(el).children().length === 0)
+    .map((_, el) => clean($(el).text()))
+    .get()
+    .filter(Boolean);
 }
 
-function parseStandingsTable($, table) {
-  const rows = [];
-  const headers = $(table).find('thead th').map((_, el) => clean($(el).text()).toUpperCase()).get();
-  const fallbackHeaderCells = $(table).find('tr').first().find('th,td').map((_, el) => clean($(el).text()).toUpperCase()).get();
-  const h = headers.length ? headers : fallbackHeaderCells;
-  const statNames = ['P','J','V','E','D','GM','GS','DG'];
-  const pIndex = h.findIndex(x => x === 'P');
-  const idx = Object.fromEntries(statNames.map(k => [k, h.findIndex(x => x === k)]));
-
-  $(table).find('tbody tr, tr').each((_, tr) => {
-    const cells = $(tr).find('td').map((__, td) => clean($(td).text())).get();
-    if (cells.length < 7) return;
-    const numericCount = cells.filter(v => /^[-+]?\d+$/.test(v)).length;
-    if (numericCount < 5) return;
-
-    const pos = Number.parseInt(cells[0], 10);
-    let teamIndex = pIndex > 0 ? pIndex - 1 : 2;
-    if (!cells[teamIndex] || /^[-+]?\d+$/.test(cells[teamIndex])) {
-      teamIndex = cells.findIndex((v, i) => i > 0 && !/^[-+]?\d+$/.test(v) && v.length > 1);
-    }
-    const team = clean(cells[teamIndex]);
-    if (!team || team.length > 90) return;
-
-    const getByHeader = key => {
-      const hi = idx[key];
-      if (hi >= 0 && hi < cells.length) return cells[hi];
-      return null;
-    };
-    const afterTeam = cells.slice(teamIndex + 1).filter(v => /^[-+]?\d+$/.test(v));
-    const vals = {};
-    statNames.forEach((k, i) => vals[k] = getByHeader(k) ?? afterTeam[i] ?? '');
-
-    rows.push({
-      pos: Number.isFinite(pos) ? pos : rows.length + 1,
-      team,
-      points: Number(vals.P) || 0,
-      played: Number(vals.J) || 0,
-      wins: Number(vals.V) || 0,
-      draws: Number(vals.E) || 0,
-      losses: Number(vals.D) || 0,
-      gf: Number(vals.GM) || 0,
-      ga: Number(vals.GS) || 0,
-      gd: Number(vals.DG) || 0
-    });
-  });
-
-  const unique = [];
-  const seen = new Set();
-  for (const r of rows) {
-    const key = `${r.pos}|${r.team}`;
-    if (!seen.has(key)) { seen.add(key); unique.push(r); }
-  }
-  return unique.length >= 3 ? unique : [];
-}
-
-function parsePage(html, sourceUrl, meta = {}) {
+function parseStandings(html, meta) {
   const $ = cheerio.load(html);
-  const title = clean($('h1').first().text()) || meta.name || 'Competição';
-  const tables = [];
-  $('table').each((_, table) => {
-    const text = clean($(table).text()).toUpperCase();
-    if (text.includes(' P ') || text.includes('CLASSIFICA')) {
-      const rows = parseStandingsTable($, table);
-      if (rows.length) tables.push(rows);
+  const tokens = pageTokens($);
+
+  let start = -1;
+
+  for (let i = 0; i < tokens.length; i++) {
+    if (norm(tokens[i]) !== 'pos') continue;
+
+    const nearby = tokens
+      .slice(i, i + 20)
+      .map(norm);
+
+    if (
+      nearby.includes('jgs') &&
+      nearby.includes('v') &&
+      nearby.includes('e') &&
+      nearby.includes('d') &&
+      nearby.includes('gm') &&
+      nearby.includes('gs') &&
+      nearby.includes('pts')
+    ) {
+      const pts = nearby.indexOf('pts');
+      start = i + pts + 1;
+      break;
     }
-  });
+  }
 
-  const season = title.match(/20\d{2}\s*\/\s*\d{2,4}|20\d{2}\/\d{2}/)?.[0] || '';
-  const editionLinks = new Map();
-  $('a[href*="/edicao/"]').each((_, el) => {
-    const href = $(el).attr('href');
-    if (!href) return;
-    const parentText = clean($(el).closest('article,li,.item,.box,.card,div').first().text());
-    const linkText = clean($(el).text());
-    const context = `${linkText} ${parentText}`;
-    const relevantSeason = !season || context.includes(season) || /2026\/?27/.test(context) || context.includes('Ver Prova');
-    if (!relevantSeason) return;
-    if (/taça|taca|supertaça|playoff|play-off/i.test(context)) return;
-    const url = absolute(href).split('?')[0];
-    if (!editionLinks.has(url)) editionLinks.set(url, { url, label: context.slice(0, 140) });
-  });
+  if (start < 0) return [];
 
-  return { title, tables, editionLinks: [...editionLinks.values()], sourceUrl };
-}
+  const rows = [];
+  let i = start;
+  let expected = 1;
 
-async function scrapeOneCompetition(meta) {
-  try {
-    const html = await fetchHtml(meta.url);
-    const parsed = parsePage(html, meta.url, meta);
-    const results = [];
+  while (expected <= 40 && i < tokens.length) {
+    let posIndex = -1;
 
-    parsed.tables.forEach((rows, i) => results.push({
-      ...meta,
-      name: parsed.tables.length > 1 ? `${parsed.title} — ${i + 1}` : parsed.title,
-      source: meta.url,
-      standings: rows
-    }));
-
-    if (results.length === 0 || parsed.editionLinks.length > 1) {
-      const candidates = parsed.editionLinks.slice(0, 18);
-      for (const item of candidates) {
-        try {
-          const subHtml = await fetchHtml(item.url);
-          const sub = parsePage(subHtml, item.url, meta);
-          sub.tables.forEach((rows, i) => results.push({
-            ...meta,
-            name: sub.tables.length > 1 ? `${sub.title} — ${i + 1}` : sub.title,
-            source: item.url,
-            standings: rows
-          }));
-        } catch (e) {
-          // Mantém as restantes séries/fases mesmo se uma falhar.
-        }
+    for (let x = i; x < Math.min(tokens.length, i + 30); x++) {
+      if (tokens[x] === String(expected)) {
+        posIndex = x;
+        break;
       }
     }
 
-    const deduped = new Map();
-    for (const r of results) {
-      const key = `${r.name}|${r.standings.map(x => x.team).join(',')}`;
-      if (!deduped.has(key)) deduped.set(key, r);
+    if (posIndex < 0) break;
+
+    i = posIndex + 1;
+
+    let team = '';
+
+    while (i < tokens.length) {
+      if (
+        /[A-Za-zÀ-ÿ]/.test(tokens[i]) &&
+        !/^(classificação|jogos)$/i.test(tokens[i])
+      ) {
+        team = tokens[i++];
+        break;
+      }
+      i++;
     }
-    return [...deduped.values()];
-  } catch (error) {
-    return [{ ...meta, error: String(error?.message || error), standings: [] }];
+
+    if (!team) break;
+
+    const nums = [];
+
+    while (
+      i < tokens.length &&
+      nums.length < 7 &&
+      i < posIndex + 30
+    ) {
+      if (/^-?\d+$/.test(tokens[i])) {
+        nums.push(Number(tokens[i]));
+      }
+      i++;
+    }
+
+    if (nums.length < 7) break;
+
+    const [
+      played,
+      wins,
+      draws,
+      losses,
+      gf,
+      ga,
+      points
+    ] = nums;
+
+    rows.push({
+      pos: expected,
+      team,
+      points,
+      played,
+      wins,
+      draws,
+      losses,
+      gf,
+      ga,
+      gd: gf - ga
+    });
+
+    expected++;
+  }
+
+  if (rows.length < 3) return [];
+
+  return [{
+    ...meta,
+    source: meta.url,
+    standings: rows
+  }];
+}
+
+async function scrapeCompetition(meta) {
+  try {
+    const html = await getHtml(meta.url);
+    return parseStandings(html, meta);
+  } catch (e) {
+    return [];
+  }
+}
+
+async function previousData() {
+  try {
+    return JSON.parse(await fs.readFile(DATA_FILE, 'utf8'));
+  } catch {
+    return {
+      updatedAt: null,
+      source: 'Centro de Resultados FPF',
+      competitionCount: 0,
+      associationCount: 0,
+      competitions: []
+    };
   }
 }
 
 export async function updateAll({ onProgress = () => {} } = {}) {
-  onProgress('A descobrir campeonatos distritais no zerozero…');
-  const discovered = [];
-  for (const [association, slug] of associations) {
-    onProgress(`A descobrir ${association}…`);
-    const items = await discoverAssociation(association, slug);
-    discovered.push(...items);
+  onProgress('A abrir a FPF…');
+
+  const indexHtml = await getHtml(INDEX_URL);
+  const discovered = discoverIndex(indexHtml);
+
+  const roots = [...discovered.competitions];
+
+  for (const association of discovered.associations) {
+    onProgress(`A descobrir ${association.name}…`);
+
+    try {
+      const html = await getHtml(association.url);
+
+      roots.push(
+        ...discoverAssociation(html, association.name)
+      );
+    } catch (e) {
+      onProgress(`Aviso em ${association.name}: ${e.message}`);
+    }
   }
 
-  const competitionMap = new Map();
-  for (const c of [...nationalCompetitions, ...discovered]) competitionMap.set(c.url, c);
-  const competitions = [...competitionMap.values()];
+  const uniqueRoots = [
+    ...new Map(roots.map(x => [x.url, x])).values()
+  ];
 
-  const all = [];
-  let done = 0;
-  for (const meta of competitions) {
-    onProgress(`A atualizar ${meta.name} (${done + 1}/${competitions.length})…`);
-    const parts = await scrapeOneCompetition(meta);
-    all.push(...parts);
-    done += 1;
+  onProgress(
+    `Encontradas ${uniqueRoots.length} competições candidatas.`
+  );
+
+  const competitions = [];
+
+  for (let i = 0; i < uniqueRoots.length; i++) {
+    const meta = uniqueRoots[i];
+
+    onProgress(
+      `A atualizar ${meta.name} (${i + 1}/${uniqueRoots.length})…`
+    );
+
+    competitions.push(
+      ...await scrapeCompetition(meta)
+    );
   }
 
-  const valid = all.filter(x => x.standings?.length);
-  valid.sort((a, b) => {
-    if (a.group !== b.group) return a.group === 'Nacional' ? -1 : 1;
-    if ((a.level || 99) !== (b.level || 99)) return (a.level || 99) - (b.level || 99);
-    return `${a.association} ${a.name}`.localeCompare(`${b.association} ${b.name}`, 'pt');
+  competitions.sort((a, b) => {
+    if (a.group !== b.group) {
+      return a.group === 'Nacional' ? -1 : 1;
+    }
+
+    if ((a.level || 99) !== (b.level || 99)) {
+      return (a.level || 99) - (b.level || 99);
+    }
+
+    return `${a.association} ${a.name}`
+      .localeCompare(`${b.association} ${b.name}`, 'pt');
   });
+
+  const valid = competitions.filter(
+    c => c.standings && c.standings.length >= 3
+  );
+
+  if (!valid.length) {
+    onProgress(
+      'Sem classificações válidas; mantida a última versão.'
+    );
+    return previousData();
+  }
 
   const payload = {
     updatedAt: new Date().toISOString(),
     timezone: 'Europe/Lisbon',
-    source: 'zerozero.pt',
+    source: 'Centro de Resultados FPF',
     competitionCount: valid.length,
-    associationCount: new Set(valid.filter(x => x.group === 'Distrital').map(x => x.association)).size,
-    competitions: valid,
-    diagnostics: {
-      discoveredRoots: competitions.length,
-      failedRoots: all.filter(x => x.error).map(x => ({ name: x.name, url: x.url, error: x.error }))
-    }
+    associationCount: new Set(
+      valid
+        .filter(x => x.group === 'Distrital')
+        .map(x => x.association)
+    ).size,
+    competitions: valid
   };
 
-  await fs.mkdir(path.dirname(DATA_FILE), { recursive: true });
-  if (payload.competitionCount > 0) {
-    await fs.writeFile(DATA_FILE, JSON.stringify(payload, null, 2), 'utf8');
-  }
+  await fs.mkdir(path.dirname(DATA_FILE), {
+    recursive: true
+  });
+
+  await fs.writeFile(
+    DATA_FILE,
+    JSON.stringify(payload, null, 2),
+    'utf8'
+  );
+
+  onProgress(
+    `OK: ${payload.competitionCount} classificações de ${payload.associationCount} associações.`
+  );
+
   return payload;
 }
 
 export async function readData() {
-  try {
-    return JSON.parse(await fs.readFile(DATA_FILE, 'utf8'));
-  } catch {
-    return { updatedAt: null, source: 'zerozero.pt', competitionCount: 0, associationCount: 0, competitions: [] };
-  }
+  return previousData();
 }
