@@ -187,7 +187,7 @@ function parseStandings(html, meta) {
   const $ = cheerio.load(html);
   const tokens = pageTokens($);
 
-  const headerStarts = [];
+  const headers = [];
 
   for (let i = 0; i < tokens.length; i++) {
     if (norm(tokens[i]) !== 'pos') continue;
@@ -204,67 +204,119 @@ function parseStandings(html, meta) {
       nearby.includes('pts')
     ) {
       const ptsIndex = nearby.indexOf('pts');
-      headerStarts.push(i + ptsIndex + 1);
+
+      let serie = '';
+      let fase = '';
+
+      for (
+        let x = i - 1;
+        x >= 0 && x >= i - 350;
+        x--
+      ) {
+        const text = clean(tokens[x]);
+        const n = norm(text);
+
+        if (
+          !serie &&
+          /^(s[eé]rie|serie|grupo)\b/i.test(text)
+        ) {
+          serie = text;
+        }
+
+        if (
+          !fase &&
+          (
+            n.includes('fase') ||
+            n.includes('apuramento') ||
+            n.includes('subida') ||
+            n.includes('manutencao')
+          ) &&
+          text.length < 100
+        ) {
+          fase = text;
+        }
+
+        if (serie && fase) break;
+      }
+
+      headers.push({
+        headerIndex: i,
+        dataStart: i + ptsIndex + 1,
+        serie,
+        fase
+      });
     }
   }
 
-  if (!headerStarts.length) return [];
+  if (!headers.length) return [];
 
-  const rows = [];
-  const seen = new Set();
+  const results = [];
 
-  for (let h = 0; h < headerStarts.length; h++) {
-    let i = headerStarts[h];
-    const end = h + 1 < headerStarts.length
-      ? headerStarts[h + 1]
-      : tokens.length;
+  for (let h = 0; h < headers.length; h++) {
+    const current = headers[h];
 
-    while (i < end) {
-      if (!/^\d+$/.test(tokens[i])) {
-        i++;
-        continue;
+    const end =
+      h + 1 < headers.length
+        ? headers[h + 1].headerIndex
+        : tokens.length;
+
+    let i = current.dataStart;
+    let expected = 1;
+
+    const rows = [];
+
+    while (expected <= 100 && i < end) {
+      let posIndex = -1;
+
+      for (
+        let x = i;
+        x < Math.min(end, i + 40);
+        x++
+      ) {
+        if (tokens[x] === String(expected)) {
+          posIndex = x;
+          break;
+        }
       }
 
-      const pos = Number(tokens[i]);
+      if (posIndex < 0) break;
 
-      if (pos < 1 || pos > 100) {
-        i++;
-        continue;
-      }
-
-      const posIndex = i;
-      i++;
+      i = posIndex + 1;
 
       let team = '';
 
-      while (i < end && i < posIndex + 12) {
+      while (i < end && i < posIndex + 15) {
         if (
           /[A-Za-zÀ-ÿ]/.test(tokens[i]) &&
-          !/^(pos|jgs|v|e|d|gm|gs|pts|classificação)$/i.test(tokens[i])
+          !/^(pos|jgs|v|e|d|gm|gs|pts|classificação|jogos|jornadas)$/i.test(
+            tokens[i]
+          )
         ) {
           team = tokens[i];
           i++;
           break;
         }
+
         i++;
       }
 
-      if (!team) continue;
+      if (!team) break;
 
       const nums = [];
 
       while (
         i < end &&
         nums.length < 7 &&
-        i < posIndex + 30
+        i < posIndex + 35
       ) {
         if (/^-?\d+$/.test(tokens[i])) {
           nums.push(Number(tokens[i]));
         }
+
         i++;
       }
 
-      if (nums.length < 7) continue;
+      if (nums.length < 7) break;
 
       const [
         played,
@@ -276,38 +328,43 @@ function parseStandings(html, meta) {
         points
       ] = nums;
 
-      const key = `${pos}|${team}`;
+      rows.push({
+        pos: expected,
+        team,
+        points,
+        played,
+        wins,
+        draws,
+        losses,
+        gf,
+        ga,
+        gd: gf - ga
+      });
 
-      if (!seen.has(key)) {
-        seen.add(key);
-
-        rows.push({
-          pos,
-          team,
-          points,
-          played,
-          wins,
-          draws,
-          losses,
-          gf,
-          ga,
-          gd: gf - ga
-        });
-      }
+      expected++;
     }
+
+    if (rows.length < 3) continue;
+
+    const labels = [];
+
+    if (current.fase) labels.push(current.fase);
+    if (current.serie) labels.push(current.serie);
+
+    const name = labels.length
+      ? `${meta.name} — ${labels.join(' — ')}`
+      : meta.name;
+
+    results.push({
+      ...meta,
+      name,
+      source: meta.url,
+      standings: rows
+    });
   }
 
-  rows.sort((a, b) => a.pos - b.pos);
-
-  if (rows.length < 3) return [];
-
-  return [{
-    ...meta,
-    source: meta.url,
-    standings: rows
-  }];
+  return results;
 }
-
 async function scrapeCompetition(meta) {
   try {
     const html = await getHtml(meta.url);
