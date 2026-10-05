@@ -187,14 +187,12 @@ function parseStandings(html, meta) {
   const $ = cheerio.load(html);
   const tokens = pageTokens($);
 
-  let start = -1;
+  const headerStarts = [];
 
   for (let i = 0; i < tokens.length; i++) {
     if (norm(tokens[i]) !== 'pos') continue;
 
-    const nearby = tokens
-      .slice(i, i + 20)
-      .map(norm);
+    const nearby = tokens.slice(i, i + 20).map(norm);
 
     if (
       nearby.includes('jgs') &&
@@ -205,87 +203,101 @@ function parseStandings(html, meta) {
       nearby.includes('gs') &&
       nearby.includes('pts')
     ) {
-      const pts = nearby.indexOf('pts');
-      start = i + pts + 1;
-      break;
+      const ptsIndex = nearby.indexOf('pts');
+      headerStarts.push(i + ptsIndex + 1);
     }
   }
 
-  if (start < 0) return [];
+  if (!headerStarts.length) return [];
 
   const rows = [];
-  let i = start;
-  let expected = 1;
+  const seen = new Set();
 
-  while (expected <= 40 && i < tokens.length) {
-    let posIndex = -1;
+  for (let h = 0; h < headerStarts.length; h++) {
+    let i = headerStarts[h];
+    const end = h + 1 < headerStarts.length
+      ? headerStarts[h + 1]
+      : tokens.length;
 
-    for (let x = i; x < Math.min(tokens.length, i + 30); x++) {
-      if (tokens[x] === String(expected)) {
-        posIndex = x;
-        break;
+    while (i < end) {
+      if (!/^\d+$/.test(tokens[i])) {
+        i++;
+        continue;
       }
-    }
 
-    if (posIndex < 0) break;
+      const pos = Number(tokens[i]);
 
-    i = posIndex + 1;
+      if (pos < 1 || pos > 100) {
+        i++;
+        continue;
+      }
 
-    let team = '';
+      const posIndex = i;
+      i++;
 
-    while (i < tokens.length) {
-      if (
-        /[A-Za-zÀ-ÿ]/.test(tokens[i]) &&
-        !/^(classificação|jogos)$/i.test(tokens[i])
+      let team = '';
+
+      while (i < end && i < posIndex + 12) {
+        if (
+          /[A-Za-zÀ-ÿ]/.test(tokens[i]) &&
+          !/^(pos|jgs|v|e|d|gm|gs|pts|classificação)$/i.test(tokens[i])
+        ) {
+          team = tokens[i];
+          i++;
+          break;
+        }
+        i++;
+      }
+
+      if (!team) continue;
+
+      const nums = [];
+
+      while (
+        i < end &&
+        nums.length < 7 &&
+        i < posIndex + 30
       ) {
-        team = tokens[i++];
-        break;
+        if (/^-?\d+$/.test(tokens[i])) {
+          nums.push(Number(tokens[i]));
+        }
+        i++;
       }
-      i++;
-    }
 
-    if (!team) break;
+      if (nums.length < 7) continue;
 
-    const nums = [];
+      const [
+        played,
+        wins,
+        draws,
+        losses,
+        gf,
+        ga,
+        points
+      ] = nums;
 
-    while (
-      i < tokens.length &&
-      nums.length < 7 &&
-      i < posIndex + 30
-    ) {
-      if (/^-?\d+$/.test(tokens[i])) {
-        nums.push(Number(tokens[i]));
+      const key = `${pos}|${team}`;
+
+      if (!seen.has(key)) {
+        seen.add(key);
+
+        rows.push({
+          pos,
+          team,
+          points,
+          played,
+          wins,
+          draws,
+          losses,
+          gf,
+          ga,
+          gd: gf - ga
+        });
       }
-      i++;
     }
-
-    if (nums.length < 7) break;
-
-    const [
-      played,
-      wins,
-      draws,
-      losses,
-      gf,
-      ga,
-      points
-    ] = nums;
-
-    rows.push({
-      pos: expected,
-      team,
-      points,
-      played,
-      wins,
-      draws,
-      losses,
-      gf,
-      ga,
-      gd: gf - ga
-    });
-
-    expected++;
   }
+
+  rows.sort((a, b) => a.pos - b.pos);
 
   if (rows.length < 3) return [];
 
