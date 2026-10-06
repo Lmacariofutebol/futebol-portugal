@@ -426,18 +426,22 @@ function parseStandings(html, meta) {
       }
 
       const nums = [];
+let statsEnd = teamIndex + 1;
 
-      for (
-        let x = teamIndex + 1;
-        x < Math.min(end, teamIndex + 40);
-        x++
-      ) {
-        if (/^-?\d+$/.test(tokens[x])) {
-          nums.push(Number(tokens[x]));
-        }
+for (
+  let x = teamIndex + 1;
+  x < Math.min(end, teamIndex + 40);
+  x++
+) {
+  if (/^-?\d+$/.test(tokens[x])) {
+    nums.push(Number(tokens[x]));
 
-        if (nums.length === 7) break;
-      }
+    if (nums.length === 7) {
+      statsEnd = x + 1;
+      break;
+    }
+  }
+}
 
       if (nums.length < 7) {
         i++;
