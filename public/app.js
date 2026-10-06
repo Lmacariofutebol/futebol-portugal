@@ -65,37 +65,12 @@ const ordered=[...groups].sort(([a],[b])=>{
 for(const [name,list] of ordered){
   if(name!=='Competições Nacionais'){
     list.sort((a,b)=>{
-
-      // Exceção AF Leiria:
-      // Divisão de Honra deve aparecer antes da 1A Divisão
-      if(norm(name)==='af leiria'){
-const leiriaRank=c=>{
-  const n=norm(c.name)
-    .replace(/[.ªº]/g,' ')
-    .replace(/\s+/g,' ');
-
-  if(n.includes('honra')) return 0;
-
-  if(
-    n.includes('1 divisao') ||
-    n.includes('1a divisao') ||
-    n.includes('i divisao')
-  ) return 1;
-
-  if(
-    n.includes('2 divisao') ||
-    n.includes('2a divisao') ||
-    n.includes('ii divisao')
-  ) return 2;
-
-  if(
-    n.includes('3 divisao') ||
-    n.includes('3a divisao') ||
-    n.includes('iii divisao')
-  ) return 3;
-
-  return 99;
-};
+      const d=divRank(a)-divRank(b);
+      if(d!==0) return d;
+      return a.name.localeCompare(b.name,'pt-PT');
+    });
+  }
+}
 
 $('content').innerHTML=ordered.map(([name,list])=>
   `<div class="group"><div class="group-title"><h2>${esc(name)}</h2><span>${list.length} ${list.length===1?'classificação':'classificações'}</span></div>${list.map(card).join('')}</div>`
