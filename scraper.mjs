@@ -187,7 +187,151 @@ function parseStandings(html, meta) {
   const $ = cheerio.load(html);
   const tokens = pageTokens($);
 
-  const headers = [];
+    // As competições nacionais usam a lógica estável anterior.
+  // Isto evita partir Liga 1/Liga 2 e mantém Liga 3/Campeonato
+  // de Portugal separados por séries.
+  if (meta.group === 'Nacional') {
+    const starts = [];
+
+    for (let i = 0; i < tokens.length; i++) {
+      if (norm(tokens[i]) !== 'pos') continue;
+
+      const nearby = tokens.slice(i, i + 20).map(norm);
+
+      if (
+        nearby.includes('jgs') &&
+        nearby.includes('v') &&
+        nearby.includes('e') &&
+        nearby.includes('d') &&
+        nearby.includes('gm') &&
+        nearby.includes('gs') &&
+        nearby.includes('pts')
+      ) {
+        const ptsOffset = nearby.indexOf('pts');
+
+        let label = '';
+
+        for (
+          let x = i - 1;
+          x >= Math.max(0, i - 120);
+          x--
+        ) {
+          const t = clean(tokens[x]);
+
+          if (/^(Série|Serie|Grupo)\s+/i.test(t)) {
+            label = t;
+            break;
+          }
+        }
+
+        starts.push({
+          header: i,
+          dataStart: i + ptsOffset + 1,
+          label
+        });
+      }
+    }
+
+    const results = [];
+
+    for (let s = 0; s < starts.length; s++) {
+      const current = starts[s];
+
+      const end =
+        s + 1 < starts.length
+          ? starts[s + 1].header
+          : tokens.length;
+
+      const rows = [];
+      let i = current.dataStart;
+
+      while (i < end) {
+        if (!/^\d+$/.test(tokens[i])) {
+          i++;
+          continue;
+        }
+
+        const pos = Number(tokens[i]);
+
+        if (pos < 1 || pos > 100) {
+          i++;
+          continue;
+        }
+
+        const posIndex = i;
+        i++;
+
+        let team = '';
+
+        while (i < end && i < posIndex + 12) {
+          if (
+            /[A-Za-zÀ-ÿ]/.test(tokens[i]) &&
+            !/^(pos|jgs|v|e|d|gm|gs|pts|classificação|jogos|jornadas)$/i.test(tokens[i])
+          ) {
+            team = tokens[i];
+            i++;
+            break;
+          }
+
+          i++;
+        }
+
+        if (!team) continue;
+
+        const nums = [];
+
+        while (
+          i < end &&
+          nums.length < 7 &&
+          i < posIndex + 30
+        ) {
+          if (/^-?\d+$/.test(tokens[i])) {
+            nums.push(Number(tokens[i]));
+          }
+
+          i++;
+        }
+
+        if (nums.length < 7) continue;
+
+        const [
+          played,
+          wins,
+          draws,
+          losses,
+          gf,
+          ga,
+          points
+        ] = nums;
+
+        rows.push({
+          pos,
+          team,
+          points,
+          played,
+          wins,
+          draws,
+          losses,
+          gf,
+          ga,
+          gd: gf - ga
+        });
+      }
+
+      if (rows.length >= 3) {
+        results.push({
+          ...meta,
+          name: current.label
+            ? `${meta.name} — ${current.label}`
+            : meta.name,
+          source: meta.url,
+          standings: rows
+        });
+      }
+    }
+
+    return results;
+  }const headers = [];
 
   for (let i = 0; i < tokens.length; i++) {
     if (norm(tokens[i]) !== 'pos') continue;
