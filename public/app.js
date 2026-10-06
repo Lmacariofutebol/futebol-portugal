@@ -65,8 +65,28 @@ const ordered=[...groups].sort(([a],[b])=>{
 for(const [name,list] of ordered){
   if(name!=='Competições Nacionais'){
     list.sort((a,b)=>{
-      const d=divRank(a)-divRank(b);
-      if(d!==0) return d;
+
+      // Exceção AF Leiria:
+      // Divisão de Honra deve aparecer antes da 1A Divisão
+      if(norm(name)==='af leiria'){
+        const leiriaRank=c=>{
+          const n=norm(c.name);
+
+          if(n.includes('divisao de honra')) return 0;
+          if(n.includes('1a divisao') || n.includes('1 divisao')) return 1;
+          if(n.includes('2a divisao') || n.includes('2 divisao')) return 2;
+          if(n.includes('3a divisao') || n.includes('3 divisao')) return 3;
+
+          return 99;
+        };
+
+        const d=leiriaRank(a)-leiriaRank(b);
+        if(d!==0) return d;
+      }else{
+        const d=divRank(a)-divRank(b);
+        if(d!==0) return d;
+      }
+
       return a.name.localeCompare(b.name,'pt-PT');
     });
   }
