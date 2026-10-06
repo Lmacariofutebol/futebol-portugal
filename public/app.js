@@ -9,10 +9,14 @@ function fmtDate(iso){
   return new Intl.DateTimeFormat('pt-PT',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'Europe/Lisbon'}).format(d);
 }
 
+function populateAssociations(){
+  const items=[...new Set(data.competitions.filter(x=>x.group==='Distrital').map(x=>x.association))].sort((a,b)=>a.localeCompare(b,'pt'));
+  $('association').innerHTML='<option value="">Todas as associações</option>'+items.map(x=>`<option>${esc(x)}</option>`).join('');
+}
 
 function render(){
   const q=norm($('search').value),scope=$('scope').value,assoc=$('association').value;
-  
+  const comps=data.competitions.filter(c=>{
     if(scope&&c.group!==scope)return false;
     if(assoc&&c.association!==assoc)return false;
     if(!q)return true;
