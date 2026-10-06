@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-10-06T00:18:15.528Z",
+  "updatedAt": "2026-10-06T03:12:36.557Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
-  "competitionCount": 24,
+  "competitionCount": 22,
   "associationCount": 11,
   "competitions": [
     {
@@ -185,51 +185,6 @@
           "gf": 0,
           "ga": 0,
           "gd": 0
-        }
-      ]
-    },
-    {
-      "group": "Distrital",
-      "association": "AF Aveiro",
-      "name": "Campeonato Sabseg — Série 1",
-      "url": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=29827&seasonId=106",
-      "source": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=29827&seasonId=106",
-      "standings": [
-        {
-          "pos": 1,
-          "team": "Ad Argoncilhe",
-          "points": 12,
-          "played": 5,
-          "wins": 4,
-          "draws": 0,
-          "losses": 1,
-          "gf": 11,
-          "ga": 3,
-          "gd": 8
-        },
-        {
-          "pos": 4,
-          "team": "Fc Cesarense",
-          "points": 8,
-          "played": 5,
-          "wins": 2,
-          "draws": 2,
-          "losses": 1,
-          "gf": 5,
-          "ga": 6,
-          "gd": -1
-        },
-        {
-          "pos": 5,
-          "team": "Adc Lobão",
-          "points": 9,
-          "played": 5,
-          "wins": 2,
-          "draws": 3,
-          "losses": 0,
-          "gf": 6,
-          "ga": 4,
-          "gd": 2
         }
       ]
     },
@@ -545,51 +500,6 @@
           "gf": 7,
           "ga": 3,
           "gd": 4
-        }
-      ]
-    },
-    {
-      "group": "Distrital",
-      "association": "AF Lisboa",
-      "name": "MKA | CD II DIVISÃO — SÉRIE 1",
-      "url": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=29955&seasonId=106",
-      "source": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=29955&seasonId=106",
-      "standings": [
-        {
-          "pos": 1,
-          "team": "Venda Pinheiro",
-          "points": 12,
-          "played": 4,
-          "wins": 4,
-          "draws": 0,
-          "losses": 0,
-          "gf": 7,
-          "ga": 0,
-          "gd": 7
-        },
-        {
-          "pos": 3,
-          "team": "Mtba",
-          "points": 4,
-          "played": 4,
-          "wins": 1,
-          "draws": 1,
-          "losses": 2,
-          "gf": 4,
-          "ga": 8,
-          "gd": -4
-        },
-        {
-          "pos": 4,
-          "team": "Bobadelense",
-          "points": 10,
-          "played": 4,
-          "wins": 3,
-          "draws": 1,
-          "losses": 0,
-          "gf": 16,
-          "ga": 5,
-          "gd": 11
         }
       ]
     },
