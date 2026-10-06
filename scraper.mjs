@@ -182,11 +182,94 @@ function pageTokens($) {
     .get()
     .filter(Boolean);
 }
+function parseDistrictStandings($, meta) {
+  const results = [];
 
+  const blocks = $('.game-results').filter((_, el) => {
+    return $(el).find('#classification .game.classification').length > 0;
+  });
+
+  blocks.each((blockIndex, el) => {
+    const block = $(el);
+
+    // Nome real dado pela FPF: Zona Centro, Zona Norte, Zona Sul,
+    // Série A, Grupo 1, etc.
+    const label = clean(block.find('.tag').first().text());
+
+    const rows = [];
+
+    block.find('#classification .game.classification').each((_, rowEl) => {
+      const cells = $(rowEl)
+        .children('div')
+        .map((_, cell) => clean($(cell).text()))
+        .get();
+
+      // Estrutura FPF:
+      // POS | EQUIPA | JGS | V | E | D | GM | GS | PTS
+      if (cells.length < 9) return;
+
+      const pos = Number(cells[0]);
+      const team = cells[1];
+
+      const played = Number(cells[2]);
+      const wins = Number(cells[3]);
+      const draws = Number(cells[4]);
+      const losses = Number(cells[5]);
+      const gf = Number(cells[6]);
+      const ga = Number(cells[7]);
+      const points = Number(cells[8]);
+
+      if (
+        !team ||
+        !Number.isFinite(pos) ||
+        !Number.isFinite(played) ||
+        !Number.isFinite(wins) ||
+        !Number.isFinite(draws) ||
+        !Number.isFinite(losses) ||
+        !Number.isFinite(gf) ||
+        !Number.isFinite(ga) ||
+        !Number.isFinite(points)
+      ) {
+        return;
+      }
+
+      rows.push({
+        pos,
+        team,
+        points,
+        played,
+        wins,
+        draws,
+        losses,
+        gf,
+        ga,
+        gd: gf - ga
+      });
+    });
+
+    if (rows.length < 3) return;
+
+    const multipleBlocks = blocks.length > 1;
+
+    results.push({
+      ...meta,
+      name:
+        multipleBlocks && label
+          ? `${meta.name} — ${label}`
+          : meta.name,
+      source: meta.url,
+      standings: rows
+    });
+  });
+
+  return results;
+}
 function parseStandings(html, meta) {
   const $ = cheerio.load(html);
   const tokens = pageTokens($);
-
+  if (meta.group !== 'Nacional') {
+    return parseDistrictStandings($, meta);
+  }
     // As competições nacionais usam a lógica estável anterior.
   // Isto evita partir Liga 1/Liga 2 e mantém Liga 3/Campeonato
   // de Portugal separados por séries.
