@@ -34,7 +34,47 @@ function render(){
     if(!groups.has(key))groups.set(key,[]);
     groups.get(key).push(c);
   }
-  $('content').innerHTML=[...groups].map(([name,list])=>`<div class="group"><div class="group-title"><h2>${esc(name)}</h2><span>${list.length} ${list.length===1?'classificação':'classificações'}</span></div>${list.map(card).join('')}</div>`).join('');
+  const priority=['af lisboa','af setubal','af leiria','af santarem'];
+
+const divRank=c=>{
+  const n=norm(c.name).replace(/[.ªº]/g,'').replace(/\s+/g,' ');
+
+  if(n.includes('3 divisao') || n.includes('iii divisao')) return 3;
+  if(n.includes('2 divisao') || n.includes('ii divisao')) return 2;
+  if(n.includes('1 divisao') || n.includes('i divisao')) return 1;
+
+  return 99;
+};
+
+const ordered=[...groups].sort(([a],[b])=>{
+  if(a==='Competições Nacionais') return -1;
+  if(b==='Competições Nacionais') return 1;
+
+  const ai=priority.indexOf(norm(a));
+  const bi=priority.indexOf(norm(b));
+
+  if(ai!==-1 || bi!==-1){
+    if(ai===-1) return 1;
+    if(bi===-1) return -1;
+    return ai-bi;
+  }
+
+  return a.localeCompare(b,'pt-PT');
+});
+
+for(const [name,list] of ordered){
+  if(name!=='Competições Nacionais'){
+    list.sort((a,b)=>{
+      const d=divRank(a)-divRank(b);
+      if(d!==0) return d;
+      return a.name.localeCompare(b.name,'pt-PT');
+    });
+  }
+}
+
+$('content').innerHTML=ordered.map(([name,list])=>
+  `<div class="group"><div class="group-title"><h2>${esc(name)}</h2><span>${list.length} ${list.length===1?'classificação':'classificações'}</span></div>${list.map(card).join('')}</div>`
+).join('');
 }
 
 function card(c){
