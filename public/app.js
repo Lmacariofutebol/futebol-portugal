@@ -13,10 +13,81 @@ function populateAssociations(){
   const items=[...new Set(data.competitions.filter(x=>x.group==='Distrital').map(x=>x.association))].sort((a,b)=>a.localeCompare(b,'pt'));
   $('association').innerHTML='<option value="">Todas as associações</option>'+items.map(x=>`<option>${esc(x)}</option>`).join('');
 }
+const ptCollator = new Intl.Collator('pt-PT', {
+  numeric: true,
+  sensitivity: 'base'
+});
 
+function associationRank(name) {
+  const n = norm(name);
+
+  if (n === 'af lisboa') return 1;
+  if (n === 'af setubal') return 2;
+  if (n === 'af leiria') return 3;
+  if (n === 'af santarem') return 4;
+
+  return 100;
+}
+
+function divisionRank(name) {
+  const n = norm(name);
+
+  // 1.ª Divisão / 1ª Divisão / I Divisão
+  if (
+    /\b1\s*[ªa]?\s*divisao\b/.test(n) ||
+    /\bi\s+divisao\b/.test(n)
+  ) return 1;
+
+  // 2.ª Divisão / 2ª Divisão / II Divisão
+  if (
+    /\b2\s*[ªa]?\s*divisao\b/.test(n) ||
+    /\bii\s+divisao\b/.test(n)
+  ) return 2;
+
+  // 3.ª Divisão / 3ª Divisão / III Divisão
+  if (
+    /\b3\s*[ªa]?\s*divisao\b/.test(n) ||
+    /\biii\s+divisao\b/.test(n)
+  ) return 3;
+
+  return 100;
+}
+
+function compareCompetitions(a, b) {
+  // Nacionais ficam primeiro e conservam a ordem atual
+  if (a.group === 'Nacional' && b.group !== 'Nacional') return -1;
+  if (a.group !== 'Nacional' && b.group === 'Nacional') return 1;
+  if (a.group === 'Nacional' && b.group === 'Nacional') return 0;
+
+  // Ordem especial das associações
+  const ar = associationRank(a.association);
+  const br = associationRank(b.association);
+
+  if (ar !== br) return ar - br;
+
+  // Depois das quatro primeiras: ordem alfabética
+  if (ar === 100) {
+    const assoc = ptCollator.compare(
+      a.association || '',
+      b.association || ''
+    );
+
+    if (assoc !== 0) return assoc;
+  }
+
+  // Dentro de cada associação:
+  // 1.ª → 2.ª → 3.ª → restantes
+  const ad = divisionRank(a.name);
+  const bd = divisionRank(b.name);
+
+  if (ad !== bd) return ad - bd;
+
+  // Séries / zonas / restantes competições em ordem natural
+  return ptCollator.compare(a.name || '', b.name || '');
+}
 function render(){
   const q=norm($('search').value),scope=$('scope').value,assoc=$('association').value;
-  const comps=data.competitions.filter(c=>{
+  const comps=data.competitions.filter(c=>{comps.sort(compareCompetitions);
     if(scope&&c.group!==scope)return false;
     if(assoc&&c.association!==assoc)return false;
     if(!q)return true;
