@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T15:14:35.453Z",
+  "updatedAt": "2026-10-06T18:13:26.716Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 82,
@@ -8250,7 +8250,19 @@
           "gd": 5
         },
         {
-          "pos": 2,
+          "pos": 1,
+          "team": "Sobreirense",
+          "points": 9,
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "gf": 7,
+          "ga": 2,
+          "gd": 5
+        },
+        {
+          "pos": 3,
           "team": "Igreja Nova",
           "points": 6,
           "played": 2,
@@ -8262,7 +8274,7 @@
           "gd": 6
         },
         {
-          "pos": 2,
+          "pos": 3,
           "team": "Monte Agraço",
           "points": 6,
           "played": 3,
@@ -8274,7 +8286,7 @@
           "gd": 6
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "A Dos Cunhados",
           "points": 6,
           "played": 3,
@@ -8284,18 +8296,6 @@
           "gf": 9,
           "ga": 4,
           "gd": 5
-        },
-        {
-          "pos": 5,
-          "team": "Sobreirense",
-          "points": 6,
-          "played": 2,
-          "wins": 2,
-          "draws": 0,
-          "losses": 0,
-          "gf": 5,
-          "ga": 1,
-          "gd": 4
         },
         {
           "pos": 6,
@@ -8335,19 +8335,19 @@
         },
         {
           "pos": 9,
-          "team": "Livramento",
+          "team": "Freiria",
           "points": 2,
-          "played": 2,
+          "played": 3,
           "wins": 0,
           "draws": 2,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0
+          "losses": 1,
+          "gf": 2,
+          "ga": 3,
+          "gd": -1
         },
         {
-          "pos": 10,
-          "team": "Freiria",
+          "pos": 9,
+          "team": "Livramento",
           "points": 2,
           "played": 3,
           "wins": 0,
