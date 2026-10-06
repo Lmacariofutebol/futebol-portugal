@@ -69,28 +69,33 @@ for(const [name,list] of ordered){
       // Exceção AF Leiria:
       // Divisão de Honra deve aparecer antes da 1A Divisão
       if(norm(name)==='af leiria'){
-        const leiriaRank=c=>{
-          const n=norm(c.name);
+const leiriaRank=c=>{
+  const n=norm(c.name)
+    .replace(/[.ªº]/g,' ')
+    .replace(/\s+/g,' ');
 
-          if(n.includes('divisao de honra')) return 0;
-          if(n.includes('1a divisao') || n.includes('1 divisao')) return 1;
-          if(n.includes('2a divisao') || n.includes('2 divisao')) return 2;
-          if(n.includes('3a divisao') || n.includes('3 divisao')) return 3;
+  if(n.includes('honra')) return 0;
 
-          return 99;
-        };
+  if(
+    n.includes('1 divisao') ||
+    n.includes('1a divisao') ||
+    n.includes('i divisao')
+  ) return 1;
 
-        const d=leiriaRank(a)-leiriaRank(b);
-        if(d!==0) return d;
-      }else{
-        const d=divRank(a)-divRank(b);
-        if(d!==0) return d;
-      }
+  if(
+    n.includes('2 divisao') ||
+    n.includes('2a divisao') ||
+    n.includes('ii divisao')
+  ) return 2;
 
-      return a.name.localeCompare(b.name,'pt-PT');
-    });
-  }
-}
+  if(
+    n.includes('3 divisao') ||
+    n.includes('3a divisao') ||
+    n.includes('iii divisao')
+  ) return 3;
+
+  return 99;
+};
 
 $('content').innerHTML=ordered.map(([name,list])=>
   `<div class="group"><div class="group-title"><h2>${esc(name)}</h2><span>${list.length} ${list.length===1?'classificação':'classificações'}</span></div>${list.map(card).join('')}</div>`
