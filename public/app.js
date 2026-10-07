@@ -239,6 +239,36 @@ for(const [name,list] of ordered){
   const vr=vianaRank(a)-vianaRank(b);
   if(vr!==0) return vr;
 }
+      if(norm(name)==='af viseu'){
+  const viseuRank=c=>{
+    const n=norm(c.name)
+      .replace(/[.ªº"']/g,' ')
+      .replace(/[-–—|_/]/g,' ')
+      .replace(/\s+/g,' ')
+      .trim();
+
+    if(n.includes('honra')) return 0;
+
+    if(
+      n.includes('1 divisao') ||
+      n.includes('primeira divisao')
+    ) return 10;
+
+    if(
+      n.includes('2 divisao') ||
+      n.includes('segunda divisao')
+    ){
+      if(n.includes('serie a')) return 20;
+      if(n.includes('serie b')) return 21;
+      return 22;
+    }
+
+    return 99;
+  };
+
+  const vr=viseuRank(a)-viseuRank(b);
+  if(vr!==0) return vr;
+}
       const d=divRank(a)-divRank(b);
       if(d!==0) return d;
       return a.name.localeCompare(b.name,'pt-PT');
