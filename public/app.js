@@ -160,6 +160,19 @@ for(const [name,list] of ordered){
   const cr=coimbraRank(a)-coimbraRank(b);
   if(cr!==0) return cr;
 }
+      if(norm(name)==='af evora'){
+  const evoraRank=c=>{
+    const n=norm(c.name);
+
+    if(n.includes('liga elite')) return 0;
+    if(n.includes('liga afe')) return 1;
+
+    return 99;
+  };
+
+  const er=evoraRank(a)-evoraRank(b);
+  if(er!==0) return er;
+}
       const d=divRank(a)-divRank(b);
       if(d!==0) return d;
       return a.name.localeCompare(b.name,'pt-PT');
