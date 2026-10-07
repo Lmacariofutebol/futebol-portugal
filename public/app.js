@@ -317,6 +317,12 @@ if(
     name.includes('masters +45')
   )
 ) return false;
+      // AF Viseu: retirar Campeonato Distrital Sub 23 - ESTANEL
+if(
+  assoc==='af viseu' &&
+  name.includes('sub 23') &&
+  name.includes('estanel')
+) return false;
   return true;
 });
 
