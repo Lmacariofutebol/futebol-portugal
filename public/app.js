@@ -194,6 +194,38 @@ for(const [name,list] of ordered){
   const mr=madeiraRank(a)-madeiraRank(b);
   if(mr!==0) return mr;
 }
+      if(norm(name)==='af porto'){
+  const portoRank=c=>{
+    const n=norm(c.name)
+      .replace(/[.ªº"']/g,' ')
+      .replace(/[-–—|_/]/g,' ')
+      .replace(/\s+/g,' ')
+      .trim();
+
+    const serieRank=()=>{
+      const m=n.match(/serie\W*(\d+)/);
+      if(m) return Number(m[1]);
+      return 99;
+    };
+
+    if(n.includes('decathlon') && n.includes('liga pro')) return 0;
+
+    if(n.includes('elite')) return 100 + serieRank();
+
+    if(n.includes('honra')) return 200 + serieRank();
+
+    if(
+      n.includes('1 divisao') ||
+      n.includes('1a divisao') ||
+      n.includes('primeira divisao')
+    ) return 300 + serieRank();
+
+    return 999;
+  };
+
+  const pr=portoRank(a)-portoRank(b);
+  if(pr!==0) return pr;
+}
       const d=divRank(a)-divRank(b);
       if(d!==0) return d;
       return a.name.localeCompare(b.name,'pt-PT');
