@@ -226,7 +226,7 @@ for(const [name,list] of ordered){
   const pr=portoRank(a)-portoRank(b);
   if(pr!==0) return pr;
 }
-      if(norm(name)==='af viana do castelo'){
+      if(norm(name).includes('viana') && norm(name).includes('castelo')){
   const vianaRank=c=>{
     const n=norm(c.name);
 
