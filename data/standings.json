@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T00:17:57.674Z",
+  "updatedAt": "2026-10-07T03:13:20.927Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 82,
@@ -8605,6 +8605,18 @@
         },
         {
           "pos": 2,
+          "team": "Algueirão",
+          "points": 6,
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "gf": 8,
+          "ga": 5,
+          "gd": 3
+        },
+        {
+          "pos": 2,
           "team": "União Santos",
           "points": 6,
           "played": 3,
@@ -8616,28 +8628,16 @@
           "gd": -2
         },
         {
-          "pos": 3,
-          "team": "Negrais",
-          "points": 6,
-          "played": 2,
-          "wins": 2,
-          "draws": 0,
-          "losses": 0,
-          "gf": 7,
-          "ga": 2,
-          "gd": 5
-        },
-        {
           "pos": 4,
-          "team": "Algueirão",
+          "team": "Negrais",
           "points": 6,
           "played": 3,
           "wins": 2,
           "draws": 0,
           "losses": 1,
-          "gf": 8,
+          "gf": 7,
           "ga": 5,
-          "gd": 3
+          "gd": 2
         },
         {
           "pos": 5,
@@ -8653,6 +8653,18 @@
         },
         {
           "pos": 6,
+          "team": "Mem Martins",
+          "points": 4,
+          "played": 2,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "gf": 4,
+          "ga": 1,
+          "gd": 3
+        },
+        {
+          "pos": 7,
           "team": "Despertar",
           "points": 3,
           "played": 2,
@@ -8664,7 +8676,7 @@
           "gd": 0
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Rio Mouro",
           "points": 3,
           "played": 3,
@@ -8676,7 +8688,7 @@
           "gd": 0
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "1º Dezembro \"C\"",
           "points": 2,
           "played": 3,
@@ -8688,7 +8700,7 @@
           "gd": -3
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "Cd Agualva",
           "points": 2,
           "played": 3,
@@ -8700,7 +8712,7 @@
           "gd": -4
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Arsenal 72, Sad",
           "points": 2,
           "played": 2,
@@ -8709,18 +8721,6 @@
           "losses": 0,
           "gf": 5,
           "ga": 5,
-          "gd": 0
-        },
-        {
-          "pos": 11,
-          "team": "Mem Martins",
-          "points": 1,
-          "played": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
           "gd": 0
         },
         {
