@@ -97,7 +97,7 @@ for(const [name,list] of ordered){
       .replace(/[.ªº]/g,' ')
       .replace(/\s+/g,' ');
 
-    if(n.includes('1 divisao')) return 0;
+    if(n.includes('primeira divisao') || n.includes('1 divisao')) return 0;
     if(n.includes('honra')) return 1;
 
     if(n.includes('2 divisao') && n.includes(' a')) return 2;
