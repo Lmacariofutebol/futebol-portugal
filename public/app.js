@@ -340,7 +340,6 @@ for(const [name,list] of ordered){
 
   return 99;
 };
-  };
 
   const br=bragaRank(a)-bragaRank(b);
   if(br!==0) return br;
