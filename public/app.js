@@ -226,6 +226,19 @@ for(const [name,list] of ordered){
   const pr=portoRank(a)-portoRank(b);
   if(pr!==0) return pr;
 }
+      if(norm(name)==='af viana do castelo'){
+  const vianaRank=c=>{
+    const n=norm(c.name);
+
+    if(n.includes('sabseg')) return 0;
+    if(n.includes('mka')) return 1;
+
+    return 99;
+  };
+
+  const vr=vianaRank(a)-vianaRank(b);
+  if(vr!==0) return vr;
+}
       const d=divRank(a)-divRank(b);
       if(d!==0) return d;
       return a.name.localeCompare(b.name,'pt-PT');
