@@ -118,18 +118,10 @@ for(const [name,list] of ordered){
       .trim();
 
     const serieRank=()=>{
-      if(n.includes('serie a')) return 1;
-      if(
-  n.includes('serie b') ||
-  n.includes('serie"b"') ||
-  n.includes("serie'b'")
-) return 2;
-      if(n.includes('serie c')) return 3;
-      if(n.includes('serie d')) return 4;
-      if(n.includes('serie e')) return 5;
-      if(n.includes('serie f')) return 6;
-      return 0;
-    };
+  const m=n.match(/serie\W*([a-f])\b/);
+  if(!m) return 0;
+  return 'abcdef'.indexOf(m[1]) + 1;
+};
 
     if(n.includes('pro nacional')) return 0;
 
