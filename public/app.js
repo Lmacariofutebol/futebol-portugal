@@ -277,7 +277,7 @@ for(const [name,list] of ordered){
 }
 
 $('content').innerHTML=ordered.map(([name,list])=>
-  `<div class="group"><div class="group-title"><h2>${esc(name)}</h2><span>${list.length} ${list.length===1?'classificação':'classificações'}</span></div>${list.map(card).join('')}</div>`
+  `<div class="group"><div class="group-title"><h2>${esc(norm(name)==='af horta' ? 'Campeonato Futebol Açores' : name)}</h2><span>${list.length} ${list.length===1?'classificação':'classificações'}</span></div>${list.map(card).join('')}</div>`
 ).join('');
 }
 
