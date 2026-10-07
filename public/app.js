@@ -65,6 +65,11 @@ const ordered=[...groups].sort(([a],[b])=>{
 for(const [name,list] of ordered){
   if(name!=='Competições Nacionais'){
     list.sort((a,b)=>{
+      if(norm(name)==='af leiria'){
+  const ah=norm(a.name).includes('honra');
+  const bh=norm(b.name).includes('honra');
+  if(ah!==bh) return ah ? -1 : 1;
+}
       const d=divRank(a)-divRank(b);
       if(d!==0) return d;
       return a.name.localeCompare(b.name,'pt-PT');
