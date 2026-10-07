@@ -173,6 +173,27 @@ for(const [name,list] of ordered){
   const er=evoraRank(a)-evoraRank(b);
   if(er!==0) return er;
 }
+      if(norm(name)==='af madeira'){
+  const madeiraRank=c=>{
+    const n=norm(c.name);
+
+    if(n.includes('torrestir')) return 0;
+
+    if(
+      n.includes('campeonato regional') &&
+      (
+        n.includes('1 divisao') ||
+        n.includes('1ª divisao') ||
+        n.includes('primeira divisao')
+      )
+    ) return 1;
+
+    return 99;
+  };
+
+  const mr=madeiraRank(a)-madeiraRank(b);
+  if(mr!==0) return mr;
+}
       const d=divRank(a)-divRank(b);
       if(d!==0) return d;
       return a.name.localeCompare(b.name,'pt-PT');
@@ -212,6 +233,14 @@ async function init(){
 if(
   assoc==='af coimbra' &&
   name.includes('sub-22')
+) return false;
+      // AF Madeira: retirar Masters +35 e +45
+if(
+  assoc==='af madeira' &&
+  (
+    name.includes('masters +35') ||
+    name.includes('masters +45')
+  )
 ) return false;
   return true;
 });
