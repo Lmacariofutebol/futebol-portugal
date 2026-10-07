@@ -91,6 +91,24 @@ for(const [name,list] of ordered){
     if(z!==0) return z;
   }
 }
+      if(norm(name)==='af beja'){
+  const bejaRank=c=>{
+    const n=norm(c.name)
+      .replace(/[.ªº]/g,' ')
+      .replace(/\s+/g,' ');
+
+    if(n.includes('1 divisao')) return 0;
+    if(n.includes('honra')) return 1;
+
+    if(n.includes('2 divisao') && n.includes(' a')) return 2;
+    if(n.includes('2 divisao') && n.includes(' b')) return 3;
+
+    return 99;
+  };
+
+  const br=bejaRank(a)-bejaRank(b);
+  if(br!==0) return br;
+}
       const d=divRank(a)-divRank(b);
       if(d!==0) return d;
       return a.name.localeCompare(b.name,'pt-PT');
