@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-07T21:12:58.514Z",
+  "updatedAt": "2026-10-07T21:16:31.570Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
-  "competitionCount": 84,
-  "associationCount": 21,
+  "competitionCount": 83,
+  "associationCount": 20,
   "competitions": [
     {
       "group": "Nacional",
@@ -5281,123 +5281,6 @@
           "gf": 2,
           "ga": 9,
           "gd": -7
-        }
-      ]
-    },
-    {
-      "group": "Distrital",
-      "association": "AF Bragança",
-      "name": "Campeonato Distrital de Futebol AF Bragança",
-      "url": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=29949&seasonId=106",
-      "source": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=29949&seasonId=106",
-      "standings": [
-        {
-          "pos": 1,
-          "team": "Sc Mirandela",
-          "points": 9,
-          "played": 3,
-          "wins": 3,
-          "draws": 0,
-          "losses": 0,
-          "gf": 10,
-          "ga": 2,
-          "gd": 8
-        },
-        {
-          "pos": 2,
-          "team": "Adc Rebordelo",
-          "points": 6,
-          "played": 3,
-          "wins": 2,
-          "draws": 0,
-          "losses": 1,
-          "gf": 5,
-          "ga": 4,
-          "gd": 1
-        },
-        {
-          "pos": 2,
-          "team": "Ccd Minas Argozelo",
-          "points": 6,
-          "played": 3,
-          "wins": 2,
-          "draws": 0,
-          "losses": 1,
-          "gf": 5,
-          "ga": 4,
-          "gd": 1
-        },
-        {
-          "pos": 4,
-          "team": "Ca Macedo Cavaleiros",
-          "points": 3,
-          "played": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 2,
-          "ga": 1,
-          "gd": 1
-        },
-        {
-          "pos": 4,
-          "team": "Cdc Carção",
-          "points": 3,
-          "played": 3,
-          "wins": 1,
-          "draws": 0,
-          "losses": 2,
-          "gf": 4,
-          "ga": 8,
-          "gd": -4
-        },
-        {
-          "pos": 4,
-          "team": "Gd Torre Moncorvo",
-          "points": 3,
-          "played": 2,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "gf": 4,
-          "ga": 3,
-          "gd": 1
-        },
-        {
-          "pos": 7,
-          "team": "Fc Carrazeda Ansiães",
-          "points": 0,
-          "played": 3,
-          "wins": 0,
-          "draws": 0,
-          "losses": 3,
-          "gf": 3,
-          "ga": 7,
-          "gd": -4
-        },
-        {
-          "pos": 7,
-          "team": "Gd Bragança \"B\"",
-          "points": 0,
-          "played": 2,
-          "wins": 0,
-          "draws": 0,
-          "losses": 2,
-          "gf": 1,
-          "ga": 5,
-          "gd": -4
-        },
-        {
-          "pos": 7,
-          "team": "Upb",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
         }
       ]
     },
