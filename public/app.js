@@ -119,7 +119,11 @@ for(const [name,list] of ordered){
 
     const serieRank=()=>{
       if(n.includes('serie a')) return 1;
-      if(n.includes('serie b')) return 2;
+      if(
+  n.includes('serie b') ||
+  n.includes('serie"b"') ||
+  n.includes("serie'b'")
+) return 2;
       if(n.includes('serie c')) return 3;
       if(n.includes('serie d')) return 4;
       if(n.includes('serie e')) return 5;
