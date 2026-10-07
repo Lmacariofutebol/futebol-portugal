@@ -138,6 +138,28 @@ for(const [name,list] of ordered){
   const br=bragaRank(a)-bragaRank(b);
   if(br!==0) return br;
 }
+      if(norm(name)==='af coimbra'){
+  const coimbraRank=c=>{
+    const n=norm(c.name)
+      .replace(/[.ªº]/g,' ')
+      .replace(/[-–—|_/]/g,' ')
+      .replace(/\s+/g,' ')
+      .trim();
+
+    if(n.includes('elite')) return 0;
+    if(n.includes('honra')) return 1;
+
+    if(
+      n.includes('1 divisao') ||
+      n.includes('primeira divisao')
+    ) return 2;
+
+    return 99;
+  };
+
+  const cr=coimbraRank(a)-coimbraRank(b);
+  if(cr!==0) return cr;
+}
       const d=divRank(a)-divRank(b);
       if(d!==0) return d;
       return a.name.localeCompare(b.name,'pt-PT');
@@ -173,7 +195,11 @@ async function init(){
     name.includes('campeonato afh') &&
     name.includes('seniores futebol')
   ) return false;
-
+// AF Coimbra: retirar Seniores Sub-22
+if(
+  assoc==='af coimbra' &&
+  name.includes('sub-22')
+) return false;
   return true;
 });
 
