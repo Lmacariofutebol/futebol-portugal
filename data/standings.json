@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-07T18:18:30.133Z",
+  "updatedAt": "2026-10-07T20:13:46.321Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
-  "competitionCount": 83,
-  "associationCount": 20,
+  "competitionCount": 84,
+  "associationCount": 21,
   "competitions": [
     {
       "group": "Nacional",
@@ -9752,6 +9752,111 @@
         {
           "pos": 1,
           "team": "União Da Bola Fc",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        }
+      ]
+    },
+    {
+      "group": "Distrital",
+      "association": "AF Portalegre",
+      "name": "Campeonato Distrital Seniores",
+      "url": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=30197&seasonId=106",
+      "source": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=30197&seasonId=106",
+      "standings": [
+        {
+          "pos": 1,
+          "team": "A C Arronches",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "C F Os Gavionenses",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "Cd Portalegrense Sad",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "Eléctrico F C",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "F C Mosteirense",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "G D R Gafetense",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "S Nisa E Benfica",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "S. Arronches E Benfica",
           "points": 0,
           "played": 0,
           "wins": 0,
