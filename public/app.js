@@ -92,6 +92,29 @@ async function init(){
     const r=await fetch('./data/standings.json',{cache:'no-store'});
     if(!r.ok)throw new Error(`HTTP ${r.status}`);
     data=await r.json();
+    data.competitions=(data.competitions||[]).filter(c=>{
+  const assoc=norm(c.association);
+  const name=norm(c.name);
+
+  // Retirar toda a AF Angra do Heroísmo
+  if(assoc.includes('angra') && assoc.includes('heroismo')) return false;
+
+  // AF Horta: retirar apenas Campeonato AFH - Seniores Futebol
+  if(
+    assoc==='af horta' &&
+    name.includes('campeonato afh') &&
+    name.includes('seniores futebol')
+  ) return false;
+
+  return true;
+});
+
+data.competitionCount=data.competitions.length;
+data.associationCount=new Set(
+  data.competitions
+    .filter(c=>c.group==='Distrital')
+    .map(c=>c.association)
+).size;
     data.competitions=data.competitions||[];
     $('competitionCount').textContent=data.competitionCount||0;
     $('associationCount').textContent=data.associationCount||0;
