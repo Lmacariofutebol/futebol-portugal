@@ -283,7 +283,7 @@ $('content').innerHTML=ordered.map(([name,list])=>
 
 function card(c){
   const rows=(c.standings||[]).map(r=>`<tr><td class="pos">${r.pos}</td><td class="team">${esc(r.team)}</td><td class="points">${r.points}</td><td>${r.played}</td><td>${r.wins}</td><td>${r.draws}</td><td>${r.losses}</td><td>${r.gf}</td><td>${r.ga}</td><td>${r.gd>0?'+':''}${r.gd}</td></tr>`).join('');
-  return `<article class="competition-card"><div class="card-head"><div><h3>${esc(c.name)}</h3><div class="meta"><span class="badge">${esc(c.group)}</span>${c.group==='Distrital'?`<span class="badge">${esc(c.association)}</span>`:''}</div></div><a class="source-link" href="${esc(c.source)}" target="_blank" rel="noopener">zerozero ↗</a></div><div class="table-wrap"><table class="standings"><thead><tr><th>#</th><th class="team">Equipa</th><th>P</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GM</th><th>GS</th><th>DG</th></tr></thead><tbody>${rows}</tbody></table></div></article>`;
+  return `<article class="competition-card"><div class="card-head"><div><h3>${esc(c.name)}</h3><div class="meta"><span class="badge">${esc(c.group)}</span>${c.group==='Distrital'?`<span class="badge">${esc(c.association)}</span>`:''}</div></div><a class="source-link" href="${esc(c.source)}" target="_blank" rel="noopener">FPF ↗</a></div><div class="table-wrap"><table class="standings"><thead><tr><th>#</th><th class="team">Equipa</th><th>P</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GM</th><th>GS</th><th>DG</th></tr></thead><tbody>${rows}</tbody></table></div></article>`;
 }
 
 async function init(){
