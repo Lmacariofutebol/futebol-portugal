@@ -109,6 +109,39 @@ for(const [name,list] of ordered){
   const br=bejaRank(a)-bejaRank(b);
   if(br!==0) return br;
 }
+      if(norm(name)==='af braga'){
+  const bragaRank=c=>{
+    const n=norm(c.name)
+      .replace(/[.ªº]/g,' ')
+      .replace(/[-–—|_/]/g,' ')
+      .replace(/\s+/g,' ')
+      .trim();
+
+    const serieRank=()=>{
+      if(n.includes('serie a')) return 1;
+      if(n.includes('serie b')) return 2;
+      if(n.includes('serie c')) return 3;
+      if(n.includes('serie d')) return 4;
+      if(n.includes('serie e')) return 5;
+      if(n.includes('serie f')) return 6;
+      return 0;
+    };
+
+    if(n.includes('pro nacional')) return 0;
+
+    if(n.includes('honra')) return 10 + serieRank();
+
+    if(
+      n.includes('1 divisao') ||
+      n.includes('primeira divisao')
+    ) return 20 + serieRank();
+
+    return 99;
+  };
+
+  const br=bragaRank(a)-bragaRank(b);
+  if(br!==0) return br;
+}
       const d=divRank(a)-divRank(b);
       if(d!==0) return d;
       return a.name.localeCompare(b.name,'pt-PT');
