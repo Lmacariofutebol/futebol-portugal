@@ -70,6 +70,27 @@ for(const [name,list] of ordered){
   const bh=norm(b.name).includes('honra');
   if(ah!==bh) return ah ? -1 : 1;
 }
+     if(norm(name)==='af aveiro'){
+  const an=norm(a.name);
+  const bn=norm(b.name);
+
+  // Campeonato Sabseg sempre primeiro
+  const as=an.includes('sabseg');
+  const bs=bn.includes('sabseg');
+  if(as!==bs) return as ? -1 : 1;
+
+  // Na 2.ª Divisão: Zona Norte antes da Zona Centro
+  if(divRank(a)===2 && divRank(b)===2){
+    const zonaRank=n=>{
+      if(n.includes('zona norte')) return 0;
+      if(n.includes('zona centro')) return 1;
+      return 2;
+    };
+
+    const z=zonaRank(an)-zonaRank(bn);
+    if(z!==0) return z;
+  }
+}
       const d=divRank(a)-divRank(b);
       if(d!==0) return d;
       return a.name.localeCompare(b.name,'pt-PT');
