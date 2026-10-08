@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T00:17:30.562Z",
+  "updatedAt": "2026-10-08T03:12:53.204Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 83,
@@ -11236,6 +11236,18 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Estrelas F.C. Fânzeres",
+          "points": 6,
+          "played": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "gf": 10,
+          "ga": 2,
+          "gd": 8
+        },
+        {
+          "pos": 2,
           "team": "Leões Valboenses F.C.",
           "points": 6,
           "played": 2,
@@ -11247,7 +11259,7 @@
           "gd": 6
         },
         {
-          "pos": 2,
+          "pos": 3,
           "team": "C.D. Flamengo",
           "points": 6,
           "played": 2,
@@ -11259,7 +11271,7 @@
           "gd": 3
         },
         {
-          "pos": 3,
+          "pos": 4,
           "team": "Juventus Triana F.C.",
           "points": 4,
           "played": 2,
@@ -11271,7 +11283,7 @@
           "gd": 3
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Moc. Sangemil Atl. C.",
           "points": 3,
           "played": 1,
@@ -11283,20 +11295,8 @@
           "gd": 8
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "A.D.R. S. Pedro Fins",
-          "points": 3,
-          "played": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 5,
-          "ga": 1,
-          "gd": 4
-        },
-        {
-          "pos": 5,
-          "team": "Estrelas F.C. Fânzeres",
           "points": 3,
           "played": 1,
           "wins": 1,
@@ -11344,18 +11344,6 @@
         },
         {
           "pos": 10,
-          "team": "Melres D.C.",
-          "points": 0,
-          "played": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 2,
-          "ga": 4,
-          "gd": -2
-        },
-        {
-          "pos": 11,
           "team": "F.C. Maia Lidador \"B\"",
           "points": 0,
           "played": 1,
@@ -11365,6 +11353,18 @@
           "gf": 1,
           "ga": 5,
           "gd": -4
+        },
+        {
+          "pos": 11,
+          "team": "Melres D.C.",
+          "points": 0,
+          "played": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "gf": 3,
+          "ga": 9,
+          "gd": -6
         },
         {
           "pos": 12,
