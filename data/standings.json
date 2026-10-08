@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-10-07T22:19:47.909Z",
+  "updatedAt": "2026-10-08T00:17:30.562Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
-  "competitionCount": 84,
+  "competitionCount": 83,
   "associationCount": 21,
   "competitions": [
     {
@@ -6297,19 +6297,7 @@
           "gd": -1
         },
         {
-          "pos": 12,
-          "team": "Cd Pedrulhense",
-          "points": 0,
-          "played": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 0,
-          "ga": 3,
-          "gd": -3
-        },
-        {
-          "pos": 13,
+          "pos": 11,
           "team": "Febres Sc",
           "points": 0,
           "played": 1,
@@ -6321,19 +6309,19 @@
           "gd": -1
         },
         {
-          "pos": 14,
-          "team": "Co Jardim Alva",
+          "pos": 13,
+          "team": "Cd Pedrulhense",
           "points": 0,
-          "played": 2,
+          "played": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
-          "gf": 2,
-          "ga": 7,
-          "gd": -5
+          "losses": 1,
+          "gf": 0,
+          "ga": 3,
+          "gd": -3
         },
         {
-          "pos": 15,
+          "pos": 14,
           "team": "Ca Gândaras",
           "points": 0,
           "played": 2,
@@ -6343,6 +6331,18 @@
           "gf": 0,
           "ga": 19,
           "gd": -19
+        },
+        {
+          "pos": 15,
+          "team": "Co Jardim Alva",
+          "points": 0,
+          "played": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "gf": 2,
+          "ga": 7,
+          "gd": -5
         },
         {
           "pos": 16,
@@ -9281,183 +9281,6 @@
         {
           "pos": 1,
           "team": "União Da Bola Fc",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        }
-      ]
-    },
-    {
-      "group": "Distrital",
-      "association": "AF Madeira",
-      "name": "Campeonato Regional 1.ª Divisão - Seniores - Futebol 11",
-      "url": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=30580&seasonId=106",
-      "source": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=30580&seasonId=106",
-      "standings": [
-        {
-          "pos": 1,
-          "team": "Acd São Vicente \"B\"",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Ad \"Os Profetas\"",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Ad Machico \"B\"",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Adrc \"Os Xavelhas\" \"B\"",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Cd Carvalheiro",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Cd Nacional \"B\"",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Choupana Fc",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Cs Marítimo Da Madeira",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Csd Câmara De Lobos",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Estrela Da Calheta Fc \"B\"",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Gd Estreito",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Grc Canicense",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Sc Santacruzense \"B\"",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
-          "team": "Sporting Cm",
           "points": 0,
           "played": 0,
           "wins": 0,
