@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T03:12:53.204Z",
+  "updatedAt": "2026-10-08T09:14:24.112Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 83,
@@ -1591,6 +1591,18 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Imortal Dc",
+          "points": 3,
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 2,
+          "ga": 1,
+          "gd": 1
+        },
+        {
+          "pos": 2,
           "team": "Sr Almancilense",
           "points": 3,
           "played": 1,
@@ -1602,7 +1614,7 @@
           "gd": 3
         },
         {
-          "pos": 2,
+          "pos": 3,
           "team": "Ud Messinense",
           "points": 3,
           "played": 1,
@@ -1614,7 +1626,7 @@
           "gd": 2
         },
         {
-          "pos": 2,
+          "pos": 3,
           "team": "Udr Sambrasense",
           "points": 3,
           "played": 1,
@@ -1626,7 +1638,7 @@
           "gd": 2
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Sf Benfica",
           "points": 3,
           "played": 1,
@@ -1635,18 +1647,6 @@
           "losses": 0,
           "gf": 3,
           "ga": 2,
-          "gd": 1
-        },
-        {
-          "pos": 5,
-          "team": "Imortal Dc",
-          "points": 3,
-          "played": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 2,
-          "ga": 1,
           "gd": 1
         },
         {
