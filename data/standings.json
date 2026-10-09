@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T21:13:16.428Z",
+  "updatedAt": "2026-10-09T00:19:43.708Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -7075,18 +7075,6 @@
         },
         {
           "pos": 8,
-          "team": "Ccr Vila Verde",
-          "points": 0,
-          "played": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 1,
-          "ga": 2,
-          "gd": -1
-        },
-        {
-          "pos": 9,
           "team": "Scsir Paços Serra",
           "points": 0,
           "played": 2,
@@ -7096,6 +7084,18 @@
           "gf": 3,
           "ga": 5,
           "gd": -2
+        },
+        {
+          "pos": 9,
+          "team": "Ccr Vila Verde",
+          "points": 0,
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 1,
+          "ga": 2,
+          "gd": -1
         },
         {
           "pos": 10,
