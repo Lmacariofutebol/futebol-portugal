@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T15:10:43.451Z",
+  "updatedAt": "2026-10-10T18:12:19.997Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -265,6 +265,18 @@
         },
         {
           "pos": 3,
+          "team": "Cd Tondela, Sad",
+          "points": 12,
+          "played": 7,
+          "wins": 4,
+          "draws": 0,
+          "losses": 3,
+          "gf": 8,
+          "ga": 6,
+          "gd": 2
+        },
+        {
+          "pos": 3,
           "team": "Sporting Cp, Sad",
           "points": 12,
           "played": 6,
@@ -276,7 +288,7 @@
           "gd": 2
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Fc Vizela, Sad",
           "points": 11,
           "played": 6,
@@ -288,7 +300,7 @@
           "gd": 3
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Sc Farense Sad",
           "points": 11,
           "played": 6,
@@ -300,7 +312,7 @@
           "gd": 6
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Leixões S.C. - Sad",
           "points": 10,
           "played": 6,
@@ -312,7 +324,19 @@
           "gd": 2
         },
         {
-          "pos": 6,
+          "pos": 7,
+          "team": "Portimonense Futebol Sad",
+          "points": 10,
+          "played": 7,
+          "wins": 3,
+          "draws": 1,
+          "losses": 3,
+          "gf": 6,
+          "ga": 7,
+          "gd": -1
+        },
+        {
+          "pos": 7,
           "team": "Sl Benfica, Sad",
           "points": 10,
           "played": 6,
@@ -324,7 +348,7 @@
           "gd": 2
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Ud Leiria, Sad",
           "points": 10,
           "played": 6,
@@ -336,7 +360,7 @@
           "gd": 3
         },
         {
-          "pos": 9,
+          "pos": 11,
           "team": "Académica Coimbra/Oaf Sduq",
           "points": 9,
           "played": 6,
@@ -348,7 +372,7 @@
           "gd": -2
         },
         {
-          "pos": 9,
+          "pos": 11,
           "team": "Avs - Futebol Sad",
           "points": 9,
           "played": 7,
@@ -358,30 +382,6 @@
           "gf": 8,
           "ga": 7,
           "gd": 1
-        },
-        {
-          "pos": 9,
-          "team": "Cd Tondela, Sad",
-          "points": 9,
-          "played": 6,
-          "wins": 3,
-          "draws": 0,
-          "losses": 3,
-          "gf": 7,
-          "ga": 6,
-          "gd": 1
-        },
-        {
-          "pos": 12,
-          "team": "Portimonense Futebol Sad",
-          "points": 7,
-          "played": 6,
-          "wins": 2,
-          "draws": 1,
-          "losses": 3,
-          "gf": 4,
-          "ga": 6,
-          "gd": -2
         },
         {
           "pos": 13,
@@ -399,25 +399,25 @@
           "pos": 13,
           "team": "Scu Torreense, Sad",
           "points": 6,
-          "played": 6,
+          "played": 7,
           "wins": 1,
           "draws": 3,
-          "losses": 2,
+          "losses": 3,
           "gf": 7,
-          "ga": 9,
-          "gd": -2
+          "ga": 10,
+          "gd": -3
         },
         {
           "pos": 15,
           "team": "Amarante F.C.",
           "points": 5,
-          "played": 6,
+          "played": 7,
           "wins": 1,
           "draws": 2,
-          "losses": 3,
-          "gf": 5,
-          "ga": 8,
-          "gd": -3
+          "losses": 4,
+          "gf": 6,
+          "ga": 10,
+          "gd": -4
         },
         {
           "pos": 16,
@@ -468,29 +468,53 @@
         {
           "pos": 1,
           "team": "Usc Paredes",
-          "points": 12,
-          "played": 5,
+          "points": 13,
+          "played": 6,
           "wins": 4,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
-          "gf": 8,
-          "ga": 4,
+          "gf": 11,
+          "ga": 7,
           "gd": 4
         },
         {
           "pos": 2,
-          "team": "Ad Marco 09 Sad",
+          "team": "Leça Fc Sad",
           "points": 10,
-          "played": 5,
+          "played": 6,
           "wins": 3,
           "draws": 1,
-          "losses": 1,
-          "gf": 6,
-          "ga": 3,
-          "gd": 3
+          "losses": 2,
+          "gf": 9,
+          "ga": 8,
+          "gd": 1
         },
         {
           "pos": 3,
+          "team": "Ad Marco 09 Sad",
+          "points": 10,
+          "played": 6,
+          "wins": 3,
+          "draws": 1,
+          "losses": 2,
+          "gf": 6,
+          "ga": 5,
+          "gd": 1
+        },
+        {
+          "pos": 4,
+          "team": "Sc Vianense Sad",
+          "points": 9,
+          "played": 6,
+          "wins": 2,
+          "draws": 3,
+          "losses": 1,
+          "gf": 9,
+          "ga": 8,
+          "gd": 1
+        },
+        {
+          "pos": 5,
           "team": "Varzim Sc Sduq",
           "points": 9,
           "played": 5,
@@ -502,7 +526,7 @@
           "gd": 3
         },
         {
-          "pos": 4,
+          "pos": 6,
           "team": "Ad Fafe Sad",
           "points": 8,
           "played": 5,
@@ -512,30 +536,6 @@
           "gf": 8,
           "ga": 4,
           "gd": 4
-        },
-        {
-          "pos": 5,
-          "team": "Sc Vianense Sad",
-          "points": 8,
-          "played": 5,
-          "wins": 2,
-          "draws": 2,
-          "losses": 1,
-          "gf": 6,
-          "ga": 5,
-          "gd": 1
-        },
-        {
-          "pos": 6,
-          "team": "Leça Fc Sad",
-          "points": 7,
-          "played": 5,
-          "wins": 2,
-          "draws": 1,
-          "losses": 2,
-          "gf": 7,
-          "ga": 8,
-          "gd": -1
         },
         {
           "pos": 7,
@@ -635,13 +635,13 @@
           "pos": 4,
           "team": "Louletano Dc",
           "points": 7,
-          "played": 5,
+          "played": 6,
           "wins": 2,
           "draws": 1,
-          "losses": 2,
+          "losses": 3,
           "gf": 7,
-          "ga": 7,
-          "gd": 0
+          "ga": 8,
+          "gd": -1
         },
         {
           "pos": 5,
@@ -706,14 +706,14 @@
         {
           "pos": 10,
           "team": "Gd Vitória Sernache",
-          "points": 1,
-          "played": 5,
-          "wins": 0,
+          "points": 4,
+          "played": 6,
+          "wins": 1,
           "draws": 1,
           "losses": 4,
-          "gf": 3,
+          "gf": 4,
           "ga": 13,
-          "gd": -10
+          "gd": -9
         }
       ]
     },
@@ -6166,6 +6166,18 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Gd Sourense",
+          "points": 7,
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "gf": 7,
+          "ga": 3,
+          "gd": 4
+        },
+        {
+          "pos": 2,
           "team": "Cd Lousanense",
           "points": 6,
           "played": 2,
@@ -6177,7 +6189,7 @@
           "gd": 4
         },
         {
-          "pos": 2,
+          "pos": 3,
           "team": "Gd Moinhos",
           "points": 4,
           "played": 2,
@@ -6187,18 +6199,6 @@
           "gf": 5,
           "ga": 0,
           "gd": 5
-        },
-        {
-          "pos": 3,
-          "team": "Gd Sourense",
-          "points": 4,
-          "played": 2,
-          "wins": 1,
-          "draws": 1,
-          "losses": 0,
-          "gf": 6,
-          "ga": 3,
-          "gd": 3
         },
         {
           "pos": 4,
@@ -6238,7 +6238,7 @@
         },
         {
           "pos": 7,
-          "team": "Cd Carapinheirense",
+          "team": "União 1919",
           "points": 1,
           "played": 1,
           "wins": 0,
@@ -6249,20 +6249,20 @@
           "gd": 0
         },
         {
-          "pos": 7,
+          "pos": 8,
           "team": "Mocidade Fc",
           "points": 1,
-          "played": 1,
+          "played": 2,
           "wins": 0,
           "draws": 1,
-          "losses": 0,
+          "losses": 1,
           "gf": 2,
-          "ga": 2,
-          "gd": 0
+          "ga": 3,
+          "gd": -1
         },
         {
-          "pos": 7,
-          "team": "União 1919",
+          "pos": 9,
+          "team": "Cd Carapinheirense",
           "points": 1,
           "played": 1,
           "wins": 0,
