@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T12:15:44.382Z",
+  "updatedAt": "2026-10-11T15:10:55.472Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -7015,15 +7015,15 @@
         },
         {
           "pos": 3,
-          "team": "Palmares F.C",
-          "points": 3,
-          "played": 1,
+          "team": "Gds Povoa Do Mileu",
+          "points": 4,
+          "played": 3,
           "wins": 1,
-          "draws": 0,
-          "losses": 0,
+          "draws": 1,
+          "losses": 1,
           "gf": 3,
-          "ga": 1,
-          "gd": 2
+          "ga": 4,
+          "gd": -1
         },
         {
           "pos": 4,
@@ -7051,23 +7051,23 @@
         },
         {
           "pos": 6,
-          "team": "Gds Povoa Do Mileu",
+          "team": "Palmares F.C",
           "points": 3,
-          "played": 2,
+          "played": 1,
           "wins": 1,
           "draws": 0,
-          "losses": 1,
+          "losses": 0,
           "gf": 3,
-          "ga": 4,
-          "gd": -1
+          "ga": 1,
+          "gd": 2
         },
         {
           "pos": 7,
           "team": "Seia Fc",
-          "points": 0,
-          "played": 0,
+          "points": 1,
+          "played": 1,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 0,
           "gf": 0,
           "ga": 0,
@@ -11791,6 +11791,18 @@
         },
         {
           "pos": 5,
+          "team": "A.R. S. Martinho",
+          "points": 9,
+          "played": 5,
+          "wins": 3,
+          "draws": 0,
+          "losses": 2,
+          "gf": 8,
+          "ga": 6,
+          "gd": 2
+        },
+        {
+          "pos": 6,
           "team": "A.D. Baião - Sad",
           "points": 8,
           "played": 4,
@@ -11802,19 +11814,19 @@
           "gd": 3
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Aparecida F.C.",
           "points": 7,
-          "played": 4,
+          "played": 5,
           "wins": 2,
           "draws": 1,
-          "losses": 1,
+          "losses": 2,
           "gf": 10,
-          "ga": 10,
-          "gd": 0
+          "ga": 12,
+          "gd": -2
         },
         {
-          "pos": 7,
+          "pos": 8,
           "team": "Aliança F.C. Gandra",
           "points": 6,
           "played": 4,
@@ -11826,7 +11838,7 @@
           "gd": 0
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "S.C. Freamunde",
           "points": 6,
           "played": 4,
@@ -11838,7 +11850,7 @@
           "gd": 1
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "S.C. Rio Tinto",
           "points": 6,
           "played": 4,
@@ -11848,18 +11860,6 @@
           "gf": 8,
           "ga": 7,
           "gd": 1
-        },
-        {
-          "pos": 10,
-          "team": "A.R. S. Martinho",
-          "points": 6,
-          "played": 4,
-          "wins": 2,
-          "draws": 0,
-          "losses": 2,
-          "gf": 6,
-          "ga": 6,
-          "gd": 0
         },
         {
           "pos": 11,
