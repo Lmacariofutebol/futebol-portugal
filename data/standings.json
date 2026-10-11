@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T09:12:22.149Z",
+  "updatedAt": "2026-10-11T12:15:44.382Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -3451,6 +3451,30 @@
         },
         {
           "pos": 4,
+          "team": "Jc Boavista",
+          "points": 6,
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "gf": 7,
+          "ga": 5,
+          "gd": 2
+        },
+        {
+          "pos": 5,
+          "team": "Barrancos Fc",
+          "points": 4,
+          "played": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "gf": 5,
+          "ga": 5,
+          "gd": 0
+        },
+        {
+          "pos": 5,
           "team": "Sc Figueirense",
           "points": 4,
           "played": 2,
@@ -3462,7 +3486,7 @@
           "gd": 4
         },
         {
-          "pos": 5,
+          "pos": 7,
           "team": "Ca Aldenovense B",
           "points": 3,
           "played": 2,
@@ -3474,7 +3498,7 @@
           "gd": -3
         },
         {
-          "pos": 5,
+          "pos": 8,
           "team": "Ccd Trindade",
           "points": 3,
           "played": 3,
@@ -3486,52 +3510,28 @@
           "gd": 0
         },
         {
-          "pos": 5,
+          "pos": 8,
           "team": "Fc Serpa B",
           "points": 3,
-          "played": 2,
+          "played": 3,
           "wins": 1,
           "draws": 0,
-          "losses": 1,
-          "gf": 3,
-          "ga": 5,
-          "gd": -2
-        },
-        {
-          "pos": 5,
-          "team": "Jc Boavista",
-          "points": 3,
-          "played": 2,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "gf": 3,
-          "ga": 3,
-          "gd": 0
-        },
-        {
-          "pos": 9,
-          "team": "Barrancos Fc",
-          "points": 1,
-          "played": 2,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "gf": 2,
-          "ga": 4,
-          "gd": -2
+          "losses": 2,
+          "gf": 5,
+          "ga": 9,
+          "gd": -4
         },
         {
           "pos": 10,
           "team": "Cdc Panóias",
           "points": 0,
-          "played": 2,
+          "played": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
-          "gf": 0,
-          "ga": 5,
-          "gd": -5
+          "losses": 3,
+          "gf": 1,
+          "ga": 8,
+          "gd": -7
         },
         {
           "pos": 10,
@@ -6227,13 +6227,13 @@
         {
           "pos": 6,
           "team": "Gd Moinhos",
-          "points": 4,
-          "played": 2,
+          "points": 5,
+          "played": 3,
           "wins": 1,
-          "draws": 1,
+          "draws": 2,
           "losses": 0,
-          "gf": 5,
-          "ga": 0,
+          "gf": 7,
+          "ga": 2,
           "gd": 5
         },
         {
@@ -6262,7 +6262,7 @@
         },
         {
           "pos": 9,
-          "team": "Cd Carapinheirense",
+          "team": "Cl. Condeixa",
           "points": 1,
           "played": 2,
           "wins": 0,
@@ -6274,6 +6274,18 @@
         },
         {
           "pos": 10,
+          "team": "Cd Carapinheirense",
+          "points": 1,
+          "played": 2,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "gf": 4,
+          "ga": 5,
+          "gd": -1
+        },
+        {
+          "pos": 11,
           "team": "Ud Tocha",
           "points": 1,
           "played": 2,
@@ -6285,19 +6297,7 @@
           "gd": -7
         },
         {
-          "pos": 11,
-          "team": "Cl. Condeixa",
-          "points": 0,
-          "played": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 2,
-          "ga": 3,
-          "gd": -1
-        },
-        {
-          "pos": 11,
+          "pos": 12,
           "team": "Febres Sc",
           "points": 0,
           "played": 1,
