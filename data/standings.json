@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T21:23:51.909Z",
+  "updatedAt": "2026-10-15T00:24:59.214Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -9901,6 +9901,18 @@
         },
         {
           "pos": 2,
+          "team": "F.C. Boelhe",
+          "points": 7,
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "gf": 7,
+          "ga": 4,
+          "gd": 3
+        },
+        {
+          "pos": 2,
           "team": "U.D. Torrados",
           "points": 7,
           "played": 3,
@@ -9912,7 +9924,7 @@
           "gd": 3
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "G.D.R. Soalhães",
           "points": 6,
           "played": 3,
@@ -9924,7 +9936,7 @@
           "gd": 5
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "U.C.R. Boim",
           "points": 5,
           "played": 3,
@@ -9936,7 +9948,7 @@
           "gd": 1
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "U.F.C. Sousa",
           "points": 4,
           "played": 3,
@@ -9946,18 +9958,6 @@
           "gf": 6,
           "ga": 4,
           "gd": 2
-        },
-        {
-          "pos": 7,
-          "team": "F.C. Boelhe",
-          "points": 4,
-          "played": 2,
-          "wins": 1,
-          "draws": 1,
-          "losses": 0,
-          "gf": 3,
-          "ga": 2,
-          "gd": 1
         },
         {
           "pos": 8,
@@ -10035,13 +10035,13 @@
           "pos": 14,
           "team": "F.C. Vila Boa Bispo",
           "points": 1,
-          "played": 2,
+          "played": 3,
           "wins": 0,
           "draws": 1,
-          "losses": 1,
-          "gf": 4,
-          "ga": 5,
-          "gd": -1
+          "losses": 2,
+          "gf": 6,
+          "ga": 9,
+          "gd": -3
         },
         {
           "pos": 15,
