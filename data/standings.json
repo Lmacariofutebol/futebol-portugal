@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T00:24:59.214Z",
+  "updatedAt": "2026-10-15T03:23:06.194Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -6238,18 +6238,6 @@
         },
         {
           "pos": 7,
-          "team": "Mocidade Fc",
-          "points": 1,
-          "played": 2,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "gf": 2,
-          "ga": 3,
-          "gd": -1
-        },
-        {
-          "pos": 8,
           "team": "União 1919",
           "points": 1,
           "played": 2,
@@ -6261,7 +6249,7 @@
           "gd": -4
         },
         {
-          "pos": 9,
+          "pos": 8,
           "team": "Cl. Condeixa",
           "points": 1,
           "played": 2,
@@ -6270,6 +6258,18 @@
           "losses": 1,
           "gf": 4,
           "ga": 5,
+          "gd": -1
+        },
+        {
+          "pos": 8,
+          "team": "Mocidade Fc",
+          "points": 1,
+          "played": 2,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "gf": 2,
+          "ga": 3,
           "gd": -1
         },
         {
