@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T00:23:12.236Z",
+  "updatedAt": "2026-10-16T03:23:06.341Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -2602,30 +2602,6 @@
         },
         {
           "pos": 4,
-          "team": "Ac Famalicão",
-          "points": 1,
-          "played": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 2,
-          "ga": 2,
-          "gd": 0
-        },
-        {
-          "pos": 4,
-          "team": "Gd Águas Boas",
-          "points": 1,
-          "played": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 2,
-          "ga": 2,
-          "gd": 0
-        },
-        {
-          "pos": 6,
           "team": "Crc Rocas Vouga \"Sub/23\"",
           "points": 1,
           "played": 1,
@@ -2637,7 +2613,31 @@
           "gd": 0
         },
         {
-          "pos": 6,
+          "pos": 5,
+          "team": "Ac Famalicão",
+          "points": 1,
+          "played": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0
+        },
+        {
+          "pos": 5,
+          "team": "Gd Águas Boas",
+          "points": 1,
+          "played": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0
+        },
+        {
+          "pos": 7,
           "team": "Recreio Desp. Águeda \"B\"",
           "points": 1,
           "played": 1,
@@ -3534,7 +3534,7 @@
           "gd": -7
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Gd Santa Luzia",
           "points": 0,
           "played": 3,
@@ -3546,7 +3546,7 @@
           "gd": -9
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Sc Cuba (DS)",
           "points": 0,
           "played": 0,
@@ -11650,6 +11650,18 @@
         },
         {
           "pos": 7,
+          "team": "C.U.D. Leverense \"B\"",
+          "points": 3,
+          "played": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "gf": 2,
+          "ga": 3,
+          "gd": -1
+        },
+        {
+          "pos": 8,
           "team": "Atl. C. Gervide",
           "points": 3,
           "played": 3,
@@ -11661,7 +11673,7 @@
           "gd": 1
         },
         {
-          "pos": 7,
+          "pos": 9,
           "team": "C.M. Gomes Costa",
           "points": 3,
           "played": 2,
@@ -11673,19 +11685,19 @@
           "gd": -1
         },
         {
-          "pos": 7,
+          "pos": 10,
           "team": "Spg. C. Villa",
           "points": 3,
-          "played": 2,
+          "played": 3,
           "wins": 1,
           "draws": 0,
-          "losses": 1,
-          "gf": 2,
-          "ga": 3,
-          "gd": -1
+          "losses": 2,
+          "gf": 3,
+          "ga": 5,
+          "gd": -2
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Ramaldense F.C.",
           "points": 2,
           "played": 2,
@@ -11697,7 +11709,7 @@
           "gd": 0
         },
         {
-          "pos": 11,
+          "pos": 12,
           "team": "C.D. Torrão",
           "points": 1,
           "played": 2,
@@ -11707,18 +11719,6 @@
           "gf": 1,
           "ga": 2,
           "gd": -1
-        },
-        {
-          "pos": 12,
-          "team": "C.U.D. Leverense \"B\"",
-          "points": 0,
-          "played": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 0,
-          "ga": 2,
-          "gd": -2
         },
         {
           "pos": 13,
