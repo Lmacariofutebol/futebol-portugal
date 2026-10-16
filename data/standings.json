@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T21:25:57.692Z",
+  "updatedAt": "2026-10-16T00:23:12.236Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -7087,6 +7087,18 @@
         },
         {
           "pos": 9,
+          "team": "Gcr Casal Cinza",
+          "points": 0,
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "gf": 1,
+          "ga": 18,
+          "gd": -17
+        },
+        {
+          "pos": 10,
           "team": "União Fc Arcozelo",
           "points": 0,
           "played": 2,
@@ -7098,7 +7110,7 @@
           "gd": -3
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Ccr Vila Verde",
           "points": 0,
           "played": 2,
@@ -7108,18 +7120,6 @@
           "gf": 1,
           "ga": 7,
           "gd": -6
-        },
-        {
-          "pos": 11,
-          "team": "Gcr Casal Cinza",
-          "points": 0,
-          "played": 3,
-          "wins": 0,
-          "draws": 0,
-          "losses": 3,
-          "gf": 1,
-          "ga": 18,
-          "gd": -17
         },
         {
           "pos": 12,
