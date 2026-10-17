@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T00:24:35.249Z",
+  "updatedAt": "2026-10-17T03:21:51.372Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -3568,6 +3568,18 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Ad Águias Graça Fc",
+          "points": 3,
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 1,
+          "ga": 0,
+          "gd": 1
+        },
+        {
+          "pos": 2,
           "team": "Acd Parada Tibães",
           "points": 0,
           "played": 0,
@@ -3579,19 +3591,7 @@
           "gd": 0
         },
         {
-          "pos": 1,
-          "team": "Ad Águias Graça Fc",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
+          "pos": 2,
           "team": "Ad Carreira",
           "points": 0,
           "played": 0,
@@ -3603,7 +3603,7 @@
           "gd": 0
         },
         {
-          "pos": 1,
+          "pos": 2,
           "team": "Antas Fc",
           "points": 0,
           "played": 0,
@@ -3615,7 +3615,7 @@
           "gd": 0
         },
         {
-          "pos": 1,
+          "pos": 2,
           "team": "Ass. Merelim S. Paio",
           "points": 0,
           "played": 0,
@@ -3627,7 +3627,7 @@
           "gd": 0
         },
         {
-          "pos": 1,
+          "pos": 2,
           "team": "Cf Fão",
           "points": 0,
           "played": 0,
@@ -3639,7 +3639,7 @@
           "gd": 0
         },
         {
-          "pos": 1,
+          "pos": 2,
           "team": "Cf Os Ceramistas",
           "points": 0,
           "played": 0,
@@ -3651,7 +3651,7 @@
           "gd": 0
         },
         {
-          "pos": 1,
+          "pos": 2,
           "team": "Dr Estrelas Faro",
           "points": 0,
           "played": 0,
@@ -3663,19 +3663,7 @@
           "gd": 0
         },
         {
-          "pos": 1,
-          "team": "Dumiense Cjp Futebol Sad \"B\"",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 1,
+          "pos": 2,
           "team": "Fc Tadim",
           "points": 0,
           "played": 0,
@@ -3687,7 +3675,7 @@
           "gd": 0
         },
         {
-          "pos": 1,
+          "pos": 2,
           "team": "Gfc Pousa",
           "points": 0,
           "played": 0,
@@ -3699,7 +3687,7 @@
           "gd": 0
         },
         {
-          "pos": 1,
+          "pos": 2,
           "team": "Granja Fc",
           "points": 0,
           "played": 0,
@@ -3711,7 +3699,7 @@
           "gd": 0
         },
         {
-          "pos": 1,
+          "pos": 2,
           "team": "Panoiense Fc",
           "points": 0,
           "played": 0,
@@ -3723,7 +3711,7 @@
           "gd": 0
         },
         {
-          "pos": 1,
+          "pos": 2,
           "team": "Realense Fc",
           "points": 0,
           "played": 0,
@@ -3735,7 +3723,7 @@
           "gd": 0
         },
         {
-          "pos": 1,
+          "pos": 2,
           "team": "Sequeirense Fc",
           "points": 0,
           "played": 0,
@@ -3745,6 +3733,18 @@
           "gf": 0,
           "ga": 0,
           "gd": 0
+        },
+        {
+          "pos": 15,
+          "team": "Dumiense Cjp Futebol Sad \"B\"",
+          "points": 0,
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 0,
+          "ga": 1,
+          "gd": -1
         }
       ]
     },
