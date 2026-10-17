@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T21:22:17.764Z",
+  "updatedAt": "2026-10-17T00:24:35.249Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -2791,18 +2791,6 @@
         },
         {
           "pos": 6,
-          "team": "Sc Fermentelos",
-          "points": 10,
-          "played": 6,
-          "wins": 3,
-          "draws": 1,
-          "losses": 2,
-          "gf": 11,
-          "ga": 5,
-          "gd": 6
-        },
-        {
-          "pos": 7,
           "team": "Gd São Roque",
           "points": 10,
           "played": 6,
@@ -2812,6 +2800,18 @@
           "gf": 14,
           "ga": 9,
           "gd": 5
+        },
+        {
+          "pos": 7,
+          "team": "Sc Fermentelos",
+          "points": 10,
+          "played": 6,
+          "wins": 3,
+          "draws": 1,
+          "losses": 2,
+          "gf": 9,
+          "ga": 5,
+          "gd": 4
         },
         {
           "pos": 8,
@@ -2846,8 +2846,8 @@
           "draws": 3,
           "losses": 1,
           "gf": 9,
-          "ga": 8,
-          "gd": 1
+          "ga": 6,
+          "gd": 3
         },
         {
           "pos": 11,
