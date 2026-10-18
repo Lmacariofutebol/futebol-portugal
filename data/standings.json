@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T15:18:26.727Z",
+  "updatedAt": "2026-10-18T18:18:18.616Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -2956,6 +2956,18 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Cf Vasco Da Gama",
+          "points": 9,
+          "played": 4,
+          "wins": 3,
+          "draws": 0,
+          "losses": 1,
+          "gf": 11,
+          "ga": 8,
+          "gd": 3
+        },
+        {
+          "pos": 1,
           "team": "Fc Castrense",
           "points": 9,
           "played": 3,
@@ -2979,7 +2991,19 @@
           "gd": 5
         },
         {
-          "pos": 3,
+          "pos": 4,
+          "team": "Moura Ac",
+          "points": 7,
+          "played": 4,
+          "wins": 2,
+          "draws": 1,
+          "losses": 1,
+          "gf": 9,
+          "ga": 8,
+          "gd": 1
+        },
+        {
+          "pos": 5,
           "team": "Cd Almodôvar",
           "points": 6,
           "played": 3,
@@ -2991,31 +3015,19 @@
           "gd": 8
         },
         {
-          "pos": 4,
-          "team": "Cf Vasco Da Gama",
-          "points": 6,
-          "played": 3,
-          "wins": 2,
-          "draws": 0,
-          "losses": 1,
-          "gf": 8,
-          "ga": 7,
-          "gd": 1
-        },
-        {
-          "pos": 5,
-          "team": "Moura Ac",
-          "points": 6,
-          "played": 3,
-          "wins": 2,
-          "draws": 0,
-          "losses": 1,
-          "gf": 7,
-          "ga": 6,
-          "gd": 1
-        },
-        {
           "pos": 6,
+          "team": "Sc Ferreirense",
+          "points": 5,
+          "played": 4,
+          "wins": 1,
+          "draws": 2,
+          "losses": 1,
+          "gf": 5,
+          "ga": 5,
+          "gd": 0
+        },
+        {
+          "pos": 7,
           "team": "Ca Aldenovense",
           "points": 4,
           "played": 3,
@@ -3027,7 +3039,7 @@
           "gd": -1
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Fc Albernoense",
           "points": 4,
           "played": 3,
@@ -3037,18 +3049,6 @@
           "gf": 3,
           "ga": 7,
           "gd": -4
-        },
-        {
-          "pos": 6,
-          "team": "Sc Ferreirense",
-          "points": 4,
-          "played": 3,
-          "wins": 1,
-          "draws": 1,
-          "losses": 1,
-          "gf": 3,
-          "ga": 3,
-          "gd": 0
         },
         {
           "pos": 9,
@@ -3063,40 +3063,40 @@
           "gd": -3
         },
         {
-          "pos": 10,
+          "pos": 9,
           "team": "Cd Praia Milfontes",
-          "points": 1,
-          "played": 3,
+          "points": 2,
+          "played": 4,
           "wins": 0,
-          "draws": 1,
+          "draws": 2,
           "losses": 2,
-          "gf": 3,
-          "ga": 5,
+          "gf": 6,
+          "ga": 8,
           "gd": -2
         },
         {
           "pos": 11,
-          "team": "Negrilhos Fc",
-          "points": 0,
-          "played": 3,
+          "team": "Sc Odemirense",
+          "points": 1,
+          "played": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
-          "gf": 1,
-          "ga": 7,
-          "gd": -6
+          "gf": 4,
+          "ga": 13,
+          "gd": -9
         },
         {
-          "pos": 11,
-          "team": "Sc Odemirense",
+          "pos": 12,
+          "team": "Negrilhos Fc",
           "points": 0,
-          "played": 3,
+          "played": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
-          "gf": 1,
+          "losses": 4,
+          "gf": 2,
           "ga": 10,
-          "gd": -9
+          "gd": -8
         }
       ]
     },
@@ -3145,6 +3145,18 @@
         },
         {
           "pos": 4,
+          "team": "Ccrd Santa Vitória",
+          "points": 8,
+          "played": 5,
+          "wins": 2,
+          "draws": 2,
+          "losses": 1,
+          "gf": 8,
+          "ga": 4,
+          "gd": 4
+        },
+        {
+          "pos": 5,
           "team": "Gdr Faro Alentejo",
           "points": 7,
           "played": 5,
@@ -3156,7 +3168,7 @@
           "gd": -1
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "Acd Penedo Gordo",
           "points": 7,
           "played": 5,
@@ -3168,19 +3180,7 @@
           "gd": 4
         },
         {
-          "pos": 6,
-          "team": "Ccrd Santa Vitória",
-          "points": 5,
-          "played": 4,
-          "wins": 1,
-          "draws": 2,
-          "losses": 1,
-          "gf": 4,
-          "ga": 4,
-          "gd": 0
-        },
-        {
-          "pos": 6,
+          "pos": 7,
           "team": "Cf Guadiana",
           "points": 5,
           "played": 5,
@@ -3231,13 +3231,13 @@
           "pos": 9,
           "team": "São Domingos Fc",
           "points": 2,
-          "played": 4,
+          "played": 5,
           "wins": 0,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "gf": 4,
-          "ga": 27,
-          "gd": -23
+          "ga": 31,
+          "gd": -27
         },
         {
           "pos": 12,
@@ -5434,6 +5434,18 @@
         },
         {
           "pos": 3,
+          "team": "Cu Idanhense",
+          "points": 6,
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "gf": 7,
+          "ga": 3,
+          "gd": 4
+        },
+        {
+          "pos": 4,
           "team": "Gd Águias Moradal",
           "points": 4,
           "played": 2,
@@ -5443,18 +5455,6 @@
           "gf": 4,
           "ga": 3,
           "gd": 1
-        },
-        {
-          "pos": 4,
-          "team": "Cd Alcains",
-          "points": 3,
-          "played": 2,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "gf": 2,
-          "ga": 2,
-          "gd": 0
         },
         {
           "pos": 5,
@@ -5482,14 +5482,14 @@
         },
         {
           "pos": 7,
-          "team": "Cu Idanhense",
+          "team": "Cd Alcains",
           "points": 3,
           "played": 2,
           "wins": 1,
           "draws": 0,
           "losses": 1,
-          "gf": 3,
-          "ga": 3,
+          "gf": 2,
+          "ga": 2,
           "gd": 0
         },
         {
@@ -5532,13 +5532,13 @@
           "pos": 11,
           "team": "Acr Atalaia Campo",
           "points": 0,
-          "played": 2,
+          "played": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "gf": 1,
-          "ga": 13,
-          "gd": -12
+          "ga": 17,
+          "gd": -16
         }
       ]
     },
@@ -5575,6 +5575,18 @@
         },
         {
           "pos": 3,
+          "team": "Acds Vinha Rainha",
+          "points": 7,
+          "played": 4,
+          "wins": 2,
+          "draws": 1,
+          "losses": 1,
+          "gf": 8,
+          "ga": 3,
+          "gd": 5
+        },
+        {
+          "pos": 4,
           "team": "Ac Montemorense",
           "points": 7,
           "played": 3,
@@ -5586,7 +5598,7 @@
           "gd": 5
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Gd Os Águias",
           "points": 6,
           "played": 3,
@@ -5598,19 +5610,19 @@
           "gd": 1
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "Cdr Vasco Gama",
           "points": 6,
-          "played": 3,
+          "played": 4,
           "wins": 2,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "gf": 11,
-          "ga": 2,
-          "gd": 9
+          "ga": 3,
+          "gd": 8
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Adc S. Pedro Alva",
           "points": 6,
           "played": 3,
@@ -5622,7 +5634,7 @@
           "gd": 5
         },
         {
-          "pos": 7,
+          "pos": 8,
           "team": "Fc São Silvestre",
           "points": 6,
           "played": 3,
@@ -5634,7 +5646,7 @@
           "gd": 3
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "Udr Cernache",
           "points": 4,
           "played": 3,
@@ -5646,31 +5658,7 @@
           "gd": 1
         },
         {
-          "pos": 9,
-          "team": "Gd Tabuense",
-          "points": 4,
-          "played": 3,
-          "wins": 1,
-          "draws": 1,
-          "losses": 1,
-          "gf": 5,
-          "ga": 5,
-          "gd": 0
-        },
-        {
           "pos": 10,
-          "team": "Acds Vinha Rainha",
-          "points": 4,
-          "played": 3,
-          "wins": 1,
-          "draws": 1,
-          "losses": 1,
-          "gf": 7,
-          "ga": 3,
-          "gd": 4
-        },
-        {
-          "pos": 11,
           "team": "Cr Praia Leirosa",
           "points": 4,
           "played": 3,
@@ -5680,6 +5668,18 @@
           "gf": 9,
           "ga": 11,
           "gd": -2
+        },
+        {
+          "pos": 10,
+          "team": "Gd Tabuense",
+          "points": 4,
+          "played": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "gf": 5,
+          "ga": 5,
+          "gd": 0
         },
         {
           "pos": 12,
@@ -5752,107 +5752,107 @@
       "standings": [
         {
           "pos": 1,
-          "team": "Ad Poiares",
-          "points": 6,
-          "played": 3,
+          "team": "Ançã Fc",
+          "points": 8,
+          "played": 4,
           "wins": 2,
-          "draws": 0,
-          "losses": 1,
-          "gf": 4,
-          "ga": 5,
-          "gd": -1
+          "draws": 2,
+          "losses": 0,
+          "gf": 9,
+          "ga": 3,
+          "gd": 6
         },
         {
           "pos": 2,
-          "team": "Gd Cova-Gala",
-          "points": 6,
-          "played": 3,
+          "team": "Ud Tocha",
+          "points": 7,
+          "played": 4,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
-          "gf": 5,
+          "gf": 13,
           "ga": 4,
-          "gd": 1
+          "gd": 9
         },
         {
           "pos": 3,
-          "team": "Gr Vigor Mocidade",
-          "points": 5,
-          "played": 3,
-          "wins": 1,
-          "draws": 2,
-          "losses": 0,
-          "gf": 6,
+          "team": "Mocidade Fc",
+          "points": 7,
+          "played": 4,
+          "wins": 2,
+          "draws": 1,
+          "losses": 1,
+          "gf": 5,
           "ga": 5,
-          "gd": 1
+          "gd": 0
         },
         {
           "pos": 4,
+          "team": "Ad Poiares",
+          "points": 7,
+          "played": 4,
+          "wins": 2,
+          "draws": 1,
+          "losses": 1,
+          "gf": 5,
+          "ga": 6,
+          "gd": -1
+        },
+        {
+          "pos": 5,
           "team": "União 1919",
-          "points": 5,
-          "played": 3,
+          "points": 6,
+          "played": 4,
           "wins": 1,
-          "draws": 2,
+          "draws": 3,
           "losses": 0,
           "gf": 5,
           "ga": 4,
           "gd": 1
         },
         {
-          "pos": 5,
-          "team": "Ançã Fc",
-          "points": 5,
-          "played": 3,
-          "wins": 1,
-          "draws": 2,
-          "losses": 0,
-          "gf": 8,
-          "ga": 3,
-          "gd": 5
-        },
-        {
           "pos": 6,
-          "team": "Udvna - Vila Nova De Anços",
-          "points": 4,
-          "played": 3,
-          "wins": 1,
-          "draws": 1,
-          "losses": 1,
-          "gf": 2,
-          "ga": 2,
+          "team": "Gd Cova-Gala",
+          "points": 6,
+          "played": 4,
+          "wins": 2,
+          "draws": 0,
+          "losses": 2,
+          "gf": 7,
+          "ga": 7,
           "gd": 0
         },
         {
           "pos": 7,
           "team": "Cd Carapinheirense",
-          "points": 4,
-          "played": 3,
+          "points": 5,
+          "played": 4,
           "wins": 1,
-          "draws": 1,
+          "draws": 2,
           "losses": 1,
-          "gf": 7,
-          "ga": 6,
+          "gf": 8,
+          "ga": 7,
           "gd": 1
         },
         {
           "pos": 8,
-          "team": "Acr Seixo Mira",
-          "points": 4,
-          "played": 3,
+          "team": "Gd Sourense",
+          "points": 5,
+          "played": 4,
           "wins": 1,
-          "draws": 1,
+          "draws": 2,
           "losses": 1,
           "gf": 5,
-          "ga": 4,
-          "gd": 1
+          "ga": 6,
+          "gd": -1
         },
         {
           "pos": 9,
-          "team": "Académica Coimbra/Sf",
-          "points": 4,
-          "played": 3,
+          "team": "União Fc",
+          "points": 5,
+          "played": 4,
           "wins": 1,
-          "draws": 1,
+          "draws": 2,
           "losses": 1,
           "gf": 5,
           "ga": 4,
@@ -5860,30 +5860,42 @@
         },
         {
           "pos": 10,
-          "team": "Mocidade Fc",
-          "points": 4,
-          "played": 3,
+          "team": "Cd Lousanense",
+          "points": 5,
+          "played": 4,
           "wins": 1,
-          "draws": 1,
+          "draws": 2,
           "losses": 1,
           "gf": 2,
           "ga": 3,
           "gd": -1
         },
         {
-          "pos": 11,
-          "team": "Gd Sourense",
-          "points": 4,
-          "played": 3,
+          "pos": 10,
+          "team": "Gr Vigor Mocidade",
+          "points": 5,
+          "played": 4,
           "wins": 1,
-          "draws": 1,
+          "draws": 2,
           "losses": 1,
-          "gf": 5,
+          "gf": 6,
           "ga": 6,
-          "gd": -1
+          "gd": 0
         },
         {
           "pos": 12,
+          "team": "Udvna - Vila Nova De Anços",
+          "points": 4,
+          "played": 4,
+          "wins": 1,
+          "draws": 1,
+          "losses": 2,
+          "gf": 2,
+          "ga": 3,
+          "gd": -1
+        },
+        {
+          "pos": 13,
           "team": "Gd Tourizense",
           "points": 4,
           "played": 3,
@@ -5895,52 +5907,40 @@
           "gd": 5
         },
         {
-          "pos": 13,
-          "team": "Ud Tocha",
+          "pos": 14,
+          "team": "Académica Coimbra/Sf",
           "points": 4,
           "played": 3,
           "wins": 1,
           "draws": 1,
           "losses": 1,
-          "gf": 6,
+          "gf": 5,
           "ga": 4,
-          "gd": 2
-        },
-        {
-          "pos": 14,
-          "team": "União Fc",
-          "points": 2,
-          "played": 3,
-          "wins": 0,
-          "draws": 2,
-          "losses": 1,
-          "gf": 2,
-          "ga": 3,
-          "gd": -1
+          "gd": 1
         },
         {
           "pos": 15,
-          "team": "Cd Lousanense",
-          "points": 2,
-          "played": 3,
-          "wins": 0,
-          "draws": 2,
-          "losses": 1,
-          "gf": 1,
-          "ga": 3,
-          "gd": -2
+          "team": "Acr Seixo Mira",
+          "points": 4,
+          "played": 4,
+          "wins": 1,
+          "draws": 1,
+          "losses": 2,
+          "gf": 6,
+          "ga": 7,
+          "gd": -1
         },
         {
           "pos": 16,
           "team": "Cd Pedrulhense",
           "points": 0,
-          "played": 3,
+          "played": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "gf": 2,
-          "ga": 14,
-          "gd": -12
+          "ga": 21,
+          "gd": -19
         }
       ]
     },
@@ -5954,17 +5954,41 @@
         {
           "pos": 1,
           "team": "Gd Moinhos",
-          "points": 9,
-          "played": 3,
+          "points": 10,
+          "played": 4,
           "wins": 3,
-          "draws": 0,
+          "draws": 1,
           "losses": 0,
-          "gf": 13,
-          "ga": 4,
+          "gf": 17,
+          "ga": 8,
           "gd": 9
         },
         {
           "pos": 2,
+          "team": "Académica/Oaf Sduq B",
+          "points": 10,
+          "played": 4,
+          "wins": 3,
+          "draws": 1,
+          "losses": 0,
+          "gf": 9,
+          "ga": 5,
+          "gd": 4
+        },
+        {
+          "pos": 3,
+          "team": "\"Os Marialvas\" Sad",
+          "points": 9,
+          "played": 4,
+          "wins": 3,
+          "draws": 0,
+          "losses": 1,
+          "gf": 12,
+          "ga": 6,
+          "gd": 6
+        },
+        {
+          "pos": 4,
           "team": "Ad Ala-Arriba",
           "points": 7,
           "played": 3,
@@ -5974,30 +5998,6 @@
           "gf": 7,
           "ga": 3,
           "gd": 4
-        },
-        {
-          "pos": 3,
-          "team": "Académica/Oaf Sduq B",
-          "points": 7,
-          "played": 3,
-          "wins": 2,
-          "draws": 1,
-          "losses": 0,
-          "gf": 7,
-          "ga": 5,
-          "gd": 2
-        },
-        {
-          "pos": 4,
-          "team": "\"Os Marialvas\" Sad",
-          "points": 6,
-          "played": 3,
-          "wins": 2,
-          "draws": 0,
-          "losses": 1,
-          "gf": 7,
-          "ga": 5,
-          "gd": 2
         },
         {
           "pos": 5,
@@ -6013,18 +6013,6 @@
         },
         {
           "pos": 6,
-          "team": "Febres Sc",
-          "points": 5,
-          "played": 3,
-          "wins": 1,
-          "draws": 2,
-          "losses": 0,
-          "gf": 4,
-          "ga": 2,
-          "gd": 2
-        },
-        {
-          "pos": 7,
           "team": "Ad Lagares Beira",
           "points": 5,
           "played": 3,
@@ -6036,43 +6024,67 @@
           "gd": 1
         },
         {
-          "pos": 8,
-          "team": "Real Cl. Brasfemes",
-          "points": 4,
+          "pos": 6,
+          "team": "Febres Sc",
+          "points": 5,
           "played": 3,
           "wins": 1,
-          "draws": 1,
-          "losses": 1,
-          "gf": 5,
-          "ga": 6,
-          "gd": -1
-        },
-        {
-          "pos": 9,
-          "team": "Adc Almalagues",
-          "points": 4,
-          "played": 3,
-          "wins": 1,
-          "draws": 1,
-          "losses": 1,
+          "draws": 2,
+          "losses": 0,
           "gf": 4,
-          "ga": 4,
-          "gd": 0
-        },
-        {
-          "pos": 10,
-          "team": "Cdr Penelense",
-          "points": 3,
-          "played": 3,
-          "wins": 1,
-          "draws": 0,
-          "losses": 2,
-          "gf": 7,
-          "ga": 5,
+          "ga": 2,
           "gd": 2
         },
         {
+          "pos": 8,
+          "team": "Adc Almalagues",
+          "points": 5,
+          "played": 4,
+          "wins": 1,
+          "draws": 2,
+          "losses": 1,
+          "gf": 5,
+          "ga": 5,
+          "gd": 0
+        },
+        {
+          "pos": 9,
+          "team": "Gd Sepins",
+          "points": 4,
+          "played": 4,
+          "wins": 1,
+          "draws": 1,
+          "losses": 2,
+          "gf": 10,
+          "ga": 12,
+          "gd": -2
+        },
+        {
+          "pos": 10,
+          "team": "Real Cl. Brasfemes",
+          "points": 4,
+          "played": 4,
+          "wins": 1,
+          "draws": 1,
+          "losses": 2,
+          "gf": 6,
+          "ga": 11,
+          "gd": -5
+        },
+        {
           "pos": 11,
+          "team": "Cdr Penelense",
+          "points": 3,
+          "played": 4,
+          "wins": 1,
+          "draws": 0,
+          "losses": 3,
+          "gf": 7,
+          "ga": 7,
+          "gd": 0
+        },
+        {
+          "pos": 12,
           "team": "Cl. Condeixa",
           "points": 3,
           "played": 3,
@@ -6084,19 +6096,19 @@
           "gd": 0
         },
         {
-          "pos": 12,
-          "team": "Gd Sepins",
+          "pos": 13,
+          "team": "Uc Eirense",
           "points": 3,
-          "played": 3,
-          "wins": 1,
-          "draws": 0,
-          "losses": 2,
-          "gf": 6,
-          "ga": 8,
+          "played": 4,
+          "wins": 0,
+          "draws": 3,
+          "losses": 1,
+          "gf": 3,
+          "ga": 5,
           "gd": -2
         },
         {
-          "pos": 13,
+          "pos": 14,
           "team": "Co Jardim Alva",
           "points": 3,
           "played": 3,
@@ -6106,18 +6118,6 @@
           "gf": 5,
           "ga": 9,
           "gd": -4
-        },
-        {
-          "pos": 14,
-          "team": "Uc Eirense",
-          "points": 2,
-          "played": 3,
-          "wins": 0,
-          "draws": 2,
-          "losses": 1,
-          "gf": 2,
-          "ga": 4,
-          "gd": -2
         },
         {
           "pos": 15,
@@ -6814,18 +6814,6 @@
       "standings": [
         {
           "pos": 1,
-          "team": "C.D Gouveia - Futebol Sad",
-          "points": 9,
-          "played": 4,
-          "wins": 3,
-          "draws": 0,
-          "losses": 1,
-          "gf": 43,
-          "ga": 2,
-          "gd": 41
-        },
-        {
-          "pos": 2,
           "team": "Gd Trancoso",
           "points": 9,
           "played": 3,
@@ -6835,6 +6823,18 @@
           "gf": 6,
           "ga": 2,
           "gd": 4
+        },
+        {
+          "pos": 2,
+          "team": "Sc Sabugal",
+          "points": 7,
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "gf": 9,
+          "ga": 2,
+          "gd": 7
         },
         {
           "pos": 3,
@@ -6862,15 +6862,15 @@
         },
         {
           "pos": 5,
-          "team": "Sc Sabugal",
+          "team": "C.D Gouveia - Futebol Sad",
           "points": 7,
-          "played": 3,
+          "played": 4,
           "wins": 2,
           "draws": 1,
-          "losses": 0,
-          "gf": 9,
+          "losses": 1,
+          "gf": 13,
           "ga": 2,
-          "gd": 7
+          "gd": 11
         },
         {
           "pos": 6,
@@ -6898,18 +6898,30 @@
         },
         {
           "pos": 8,
-          "team": "Ad S. Romão",
-          "points": 4,
+          "team": "Sc Vilar Formoso",
+          "points": 5,
           "played": 4,
           "wins": 1,
-          "draws": 1,
-          "losses": 2,
-          "gf": 4,
-          "ga": 34,
-          "gd": -30
+          "draws": 2,
+          "losses": 1,
+          "gf": 7,
+          "ga": 5,
+          "gd": 2
         },
         {
           "pos": 9,
+          "team": "Ad S. Romão",
+          "points": 5,
+          "played": 4,
+          "wins": 1,
+          "draws": 2,
+          "losses": 1,
+          "gf": 4,
+          "ga": 4,
+          "gd": 0
+        },
+        {
+          "pos": 10,
           "team": "Gc Figueirense",
           "points": 3,
           "played": 3,
@@ -6919,18 +6931,6 @@
           "gf": 6,
           "ga": 5,
           "gd": 1
-        },
-        {
-          "pos": 10,
-          "team": "Sc Vilar Formoso",
-          "points": 2,
-          "played": 3,
-          "wins": 0,
-          "draws": 2,
-          "losses": 1,
-          "gf": 2,
-          "ga": 5,
-          "gd": -3
         },
         {
           "pos": 11,
@@ -6972,13 +6972,13 @@
           "pos": 14,
           "team": "V. Cortez Mondego-Guarda",
           "points": 0,
-          "played": 3,
+          "played": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "gf": 1,
-          "ga": 16,
-          "gd": -15
+          "ga": 21,
+          "gd": -20
         }
       ]
     },
@@ -6991,102 +6991,126 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Sc Gonçalense",
+          "points": 9,
+          "played": 4,
+          "wins": 3,
+          "draws": 0,
+          "losses": 1,
+          "gf": 21,
+          "ga": 3,
+          "gd": 18
+        },
+        {
+          "pos": 2,
           "team": "Gd Vila Nova Foz Coa",
+          "points": 9,
+          "played": 4,
+          "wins": 3,
+          "draws": 0,
+          "losses": 1,
+          "gf": 13,
+          "ga": 5,
+          "gd": 8
+        },
+        {
+          "pos": 3,
+          "team": "Acd Vila Franca Naves",
           "points": 9,
           "played": 3,
           "wins": 3,
           "draws": 0,
           "losses": 0,
-          "gf": 12,
-          "ga": 3,
-          "gd": 9
-        },
-        {
-          "pos": 2,
-          "team": "Acdr Freixo Numão",
-          "points": 6,
-          "played": 3,
-          "wins": 2,
-          "draws": 0,
-          "losses": 1,
           "gf": 6,
-          "ga": 4,
-          "gd": 2
-        },
-        {
-          "pos": 3,
-          "team": "Sc Gonçalense",
-          "points": 6,
-          "played": 3,
-          "wins": 2,
-          "draws": 0,
-          "losses": 1,
-          "gf": 16,
           "ga": 3,
-          "gd": 13
+          "gd": 3
         },
         {
           "pos": 4,
-          "team": "Acd Vila Franca Naves",
+          "team": "Acdr Freixo Numão",
           "points": 6,
-          "played": 2,
+          "played": 4,
           "wins": 2,
           "draws": 0,
-          "losses": 0,
-          "gf": 4,
-          "ga": 2,
-          "gd": 2
+          "losses": 2,
+          "gf": 7,
+          "ga": 6,
+          "gd": 1
         },
         {
           "pos": 5,
           "team": "Palmares F.C",
           "points": 6,
-          "played": 2,
+          "played": 3,
           "wins": 2,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "gf": 4,
-          "ga": 1,
-          "gd": 3
+          "ga": 6,
+          "gd": -2
         },
         {
           "pos": 6,
           "team": "Seia Fc",
           "points": 3,
-          "played": 1,
+          "played": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
-          "gf": 2,
-          "ga": 0,
-          "gd": 2
+          "losses": 1,
+          "gf": 4,
+          "ga": 3,
+          "gd": 1
         },
         {
           "pos": 7,
+          "team": "Scsir Paços Serra",
+          "points": 3,
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "gf": 6,
+          "ga": 7,
+          "gd": -1
+        },
+        {
+          "pos": 8,
+          "team": "União Fc Arcozelo",
+          "points": 3,
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "gf": 1,
+          "ga": 3,
+          "gd": -2
+        },
+        {
+          "pos": 9,
           "team": "Gds Povoa Do Mileu",
+          "points": 3,
+          "played": 4,
+          "wins": 1,
+          "draws": 0,
+          "losses": 3,
+          "gf": 3,
+          "ga": 7,
+          "gd": -4
+        },
+        {
+          "pos": 10,
+          "team": "Ccr Vila Verde",
           "points": 3,
           "played": 3,
           "wins": 1,
           "draws": 0,
           "losses": 2,
           "gf": 3,
-          "ga": 6,
-          "gd": -3
+          "ga": 8,
+          "gd": -5
         },
         {
-          "pos": 8,
-          "team": "Scsir Paços Serra",
-          "points": 0,
-          "played": 2,
-          "wins": 0,
-          "draws": 0,
-          "losses": 2,
-          "gf": 3,
-          "ga": 5,
-          "gd": -2
-        },
-        {
-          "pos": 9,
+          "pos": 11,
           "team": "Gcr Casal Cinza",
           "points": 0,
           "played": 3,
@@ -7096,30 +7120,6 @@
           "gf": 1,
           "ga": 18,
           "gd": -17
-        },
-        {
-          "pos": 10,
-          "team": "União Fc Arcozelo",
-          "points": 0,
-          "played": 2,
-          "wins": 0,
-          "draws": 0,
-          "losses": 2,
-          "gf": 0,
-          "ga": 3,
-          "gd": -3
-        },
-        {
-          "pos": 11,
-          "team": "Ccr Vila Verde",
-          "points": 0,
-          "played": 2,
-          "wins": 0,
-          "draws": 0,
-          "losses": 2,
-          "gf": 1,
-          "ga": 7,
-          "gd": -6
         },
         {
           "pos": 12,
@@ -7342,6 +7342,18 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Ac Avelarense",
+          "points": 9,
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "gf": 6,
+          "ga": 2,
+          "gd": 4
+        },
+        {
+          "pos": 2,
           "team": "Gd Alvaiázere",
           "points": 6,
           "played": 2,
@@ -7351,18 +7363,6 @@
           "gf": 5,
           "ga": 0,
           "gd": 5
-        },
-        {
-          "pos": 2,
-          "team": "Ac Avelarense",
-          "points": 6,
-          "played": 2,
-          "wins": 2,
-          "draws": 0,
-          "losses": 0,
-          "gf": 4,
-          "ga": 1,
-          "gd": 3
         },
         {
           "pos": 3,
@@ -7440,13 +7440,13 @@
           "pos": 9,
           "team": "Adrc Moita Boi",
           "points": 0,
-          "played": 2,
+          "played": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
-          "gf": 1,
-          "ga": 6,
-          "gd": -5
+          "losses": 3,
+          "gf": 2,
+          "ga": 8,
+          "gd": -6
         },
         {
           "pos": 10,
@@ -7483,6 +7483,42 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Motor Clube",
+          "points": 7,
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "gf": 7,
+          "ga": 3,
+          "gd": 4
+        },
+        {
+          "pos": 2,
+          "team": "Cd Caranguejeira",
+          "points": 7,
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "gf": 4,
+          "ga": 1,
+          "gd": 3
+        },
+        {
+          "pos": 3,
+          "team": "Gdr Bidoeirense",
+          "points": 4,
+          "played": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "gf": 1,
+          "ga": 1,
+          "gd": 0
+        },
+        {
+          "pos": 3,
           "team": "Grap/Pousos",
           "points": 4,
           "played": 2,
@@ -7494,55 +7530,31 @@
           "gd": 3
         },
         {
-          "pos": 2,
+          "pos": 5,
           "team": "Gd Atouguiense",
           "points": 4,
-          "played": 2,
+          "played": 3,
           "wins": 1,
           "draws": 1,
-          "losses": 0,
-          "gf": 2,
-          "ga": 0,
-          "gd": 2
-        },
-        {
-          "pos": 3,
-          "team": "Crc 22 Junho",
-          "points": 4,
-          "played": 2,
-          "wins": 1,
-          "draws": 1,
-          "losses": 0,
-          "gf": 5,
-          "ga": 1,
-          "gd": 4
-        },
-        {
-          "pos": 3,
-          "team": "Motor Clube",
-          "points": 4,
-          "played": 2,
-          "wins": 1,
-          "draws": 1,
-          "losses": 0,
-          "gf": 4,
-          "ga": 3,
-          "gd": 1
-        },
-        {
-          "pos": 5,
-          "team": "Cd Caranguejeira",
-          "points": 4,
-          "played": 2,
-          "wins": 1,
-          "draws": 1,
-          "losses": 0,
+          "losses": 1,
           "gf": 2,
           "ga": 1,
           "gd": 1
         },
         {
           "pos": 6,
+          "team": "Crc 22 Junho",
+          "points": 4,
+          "played": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "gf": 5,
+          "ga": 3,
+          "gd": 2
+        },
+        {
+          "pos": 7,
           "team": "Ac Carnide",
           "points": 3,
           "played": 2,
@@ -7554,7 +7566,7 @@
           "gd": 0
         },
         {
-          "pos": 7,
+          "pos": 8,
           "team": "Ud Turquel",
           "points": 3,
           "played": 2,
@@ -7566,7 +7578,7 @@
           "gd": -2
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "G Alegre Unido",
           "points": 2,
           "played": 2,
@@ -7578,7 +7590,7 @@
           "gd": 0
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "Ud Batalha",
           "points": 1,
           "played": 2,
@@ -7590,28 +7602,16 @@
           "gd": -1
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Gdrc Unidos",
           "points": 1,
-          "played": 2,
+          "played": 3,
           "wins": 0,
           "draws": 1,
-          "losses": 1,
+          "losses": 2,
           "gf": 1,
-          "ga": 3,
-          "gd": -2
-        },
-        {
-          "pos": 11,
-          "team": "Gdr Bidoeirense",
-          "points": 1,
-          "played": 2,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "gf": 0,
-          "ga": 1,
-          "gd": -1
+          "ga": 6,
+          "gd": -5
         },
         {
           "pos": 12,
@@ -7838,14 +7838,14 @@
         {
           "pos": 1,
           "team": "Bobadelense",
-          "points": 13,
-          "played": 5,
-          "wins": 4,
+          "points": 16,
+          "played": 6,
+          "wins": 5,
           "draws": 1,
           "losses": 0,
-          "gf": 18,
+          "gf": 22,
           "ga": 6,
-          "gd": 12
+          "gd": 16
         },
         {
           "pos": 2,
@@ -7923,13 +7923,13 @@
           "pos": 8,
           "team": "Santa Iria",
           "points": 7,
-          "played": 5,
+          "played": 6,
           "wins": 2,
           "draws": 1,
-          "losses": 2,
+          "losses": 3,
           "gf": 7,
-          "ga": 8,
-          "gd": -1
+          "ga": 12,
+          "gd": -5
         },
         {
           "pos": 9,
@@ -7947,13 +7947,13 @@
           "pos": 10,
           "team": "Catujalense",
           "points": 7,
-          "played": 5,
+          "played": 6,
           "wins": 2,
           "draws": 1,
-          "losses": 2,
-          "gf": 4,
-          "ga": 4,
-          "gd": 0
+          "losses": 3,
+          "gf": 5,
+          "ga": 6,
+          "gd": -1
         },
         {
           "pos": 11,
@@ -7969,6 +7969,18 @@
         },
         {
           "pos": 12,
+          "team": "Coutada",
+          "points": 6,
+          "played": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "gf": 5,
+          "ga": 14,
+          "gd": -9
+        },
+        {
+          "pos": 13,
           "team": "Mtba",
           "points": 5,
           "played": 5,
@@ -7978,18 +7990,6 @@
           "gf": 6,
           "ga": 10,
           "gd": -4
-        },
-        {
-          "pos": 13,
-          "team": "Coutada",
-          "points": 3,
-          "played": 5,
-          "wins": 1,
-          "draws": 0,
-          "losses": 4,
-          "gf": 3,
-          "ga": 13,
-          "gd": -10
         },
         {
           "pos": 14,
@@ -8098,6 +8098,18 @@
         },
         {
           "pos": 6,
+          "team": "Santo António Lisboa",
+          "points": 7,
+          "played": 6,
+          "wins": 2,
+          "draws": 1,
+          "losses": 3,
+          "gf": 11,
+          "ga": 11,
+          "gd": 0
+        },
+        {
+          "pos": 7,
           "team": "Musgueira",
           "points": 7,
           "played": 5,
@@ -8109,19 +8121,19 @@
           "gd": 2
         },
         {
-          "pos": 7,
+          "pos": 8,
           "team": "Linda A Velha",
           "points": 7,
-          "played": 4,
+          "played": 5,
           "wins": 2,
           "draws": 1,
-          "losses": 1,
-          "gf": 9,
-          "ga": 8,
-          "gd": 1
+          "losses": 2,
+          "gf": 10,
+          "ga": 12,
+          "gd": -2
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "Leões Porto Salvo",
           "points": 7,
           "played": 5,
@@ -8133,7 +8145,7 @@
           "gd": 3
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "Cacém",
           "points": 7,
           "played": 5,
@@ -8145,7 +8157,7 @@
           "gd": -2
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Carcavelos",
           "points": 6,
           "played": 5,
@@ -8157,7 +8169,7 @@
           "gd": -3
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Fontaínhas",
           "points": 6,
           "played": 5,
@@ -8169,7 +8181,7 @@
           "gd": -3
         },
         {
-          "pos": 12,
+          "pos": 13,
           "team": "Operário",
           "points": 6,
           "played": 5,
@@ -8181,7 +8193,7 @@
           "gd": -4
         },
         {
-          "pos": 13,
+          "pos": 14,
           "team": "Abóboda",
           "points": 5,
           "played": 5,
@@ -8191,18 +8203,6 @@
           "gf": 9,
           "ga": 10,
           "gd": -1
-        },
-        {
-          "pos": 14,
-          "team": "Santo António Lisboa",
-          "points": 4,
-          "played": 5,
-          "wins": 1,
-          "draws": 1,
-          "losses": 3,
-          "gf": 7,
-          "ga": 10,
-          "gd": -3
         },
         {
           "pos": 15,
@@ -8948,17 +8948,29 @@
         {
           "pos": 1,
           "team": "Desp. O. Moscavide",
-          "points": 15,
-          "played": 5,
+          "points": 16,
+          "played": 6,
           "wins": 5,
-          "draws": 0,
+          "draws": 1,
           "losses": 0,
-          "gf": 12,
-          "ga": 3,
+          "gf": 15,
+          "ga": 6,
           "gd": 9
         },
         {
           "pos": 2,
+          "team": "Futebol Benfica",
+          "points": 13,
+          "played": 5,
+          "wins": 4,
+          "draws": 1,
+          "losses": 0,
+          "gf": 12,
+          "ga": 5,
+          "gd": 7
+        },
+        {
+          "pos": 3,
           "team": "Oriental, Sduq",
           "points": 12,
           "played": 5,
@@ -8970,19 +8982,31 @@
           "gd": 13
         },
         {
-          "pos": 3,
-          "team": "Futebol Benfica",
-          "points": 10,
-          "played": 4,
+          "pos": 4,
+          "team": "Povoense",
+          "points": 11,
+          "played": 6,
           "wins": 3,
-          "draws": 1,
-          "losses": 0,
-          "gf": 10,
-          "ga": 4,
-          "gd": 6
+          "draws": 2,
+          "losses": 1,
+          "gf": 9,
+          "ga": 6,
+          "gd": 3
         },
         {
-          "pos": 4,
+          "pos": 5,
+          "team": "Ad Oeiras",
+          "points": 8,
+          "played": 6,
+          "wins": 2,
+          "draws": 2,
+          "losses": 2,
+          "gf": 10,
+          "ga": 10,
+          "gd": 0
+        },
+        {
+          "pos": 6,
           "team": "Cascais, Sad \"A\"",
           "points": 8,
           "played": 5,
@@ -8994,19 +9018,7 @@
           "gd": 5
         },
         {
-          "pos": 5,
-          "team": "Lourinhanense",
-          "points": 8,
-          "played": 5,
-          "wins": 2,
-          "draws": 2,
-          "losses": 1,
-          "gf": 7,
-          "ga": 4,
-          "gd": 3
-        },
-        {
-          "pos": 6,
+          "pos": 7,
           "team": "Sacavenense \"A\"",
           "points": 8,
           "played": 4,
@@ -9018,19 +9030,31 @@
           "gd": 4
         },
         {
-          "pos": 7,
-          "team": "Povoense",
+          "pos": 8,
+          "team": "Lourinhanense",
           "points": 8,
           "played": 5,
           "wins": 2,
           "draws": 2,
           "losses": 1,
           "gf": 7,
-          "ga": 5,
-          "gd": 2
+          "ga": 4,
+          "gd": 3
         },
         {
-          "pos": 8,
+          "pos": 9,
+          "team": "Loures \"A\"",
+          "points": 8,
+          "played": 6,
+          "wins": 2,
+          "draws": 2,
+          "losses": 2,
+          "gf": 8,
+          "ga": 8,
+          "gd": 0
+        },
+        {
+          "pos": 10,
           "team": "Ass Murteirense",
           "points": 7,
           "played": 4,
@@ -9042,51 +9066,27 @@
           "gd": 1
         },
         {
-          "pos": 9,
-          "team": "Loures \"A\"",
-          "points": 7,
-          "played": 5,
-          "wins": 2,
-          "draws": 1,
-          "losses": 2,
-          "gf": 6,
-          "ga": 6,
-          "gd": 0
-        },
-        {
-          "pos": 10,
-          "team": "Ad Oeiras",
+          "pos": 11,
+          "team": "Mucifalense",
           "points": 5,
-          "played": 5,
+          "played": 6,
           "wins": 1,
           "draws": 2,
-          "losses": 2,
-          "gf": 8,
-          "ga": 9,
-          "gd": -1
-        },
-        {
-          "pos": 11,
-          "team": "Ericeirense",
-          "points": 4,
-          "played": 5,
-          "wins": 1,
-          "draws": 1,
           "losses": 3,
-          "gf": 5,
-          "ga": 8,
-          "gd": -3
+          "gf": 12,
+          "ga": 16,
+          "gd": -4
         },
         {
           "pos": 12,
-          "team": "Mucifalense",
+          "team": "Ericeirense",
           "points": 4,
-          "played": 5,
+          "played": 6,
           "wins": 1,
           "draws": 1,
-          "losses": 3,
-          "gf": 9,
-          "ga": 13,
+          "losses": 4,
+          "gf": 6,
+          "ga": 10,
           "gd": -4
         },
         {
@@ -9105,36 +9105,36 @@
           "pos": 14,
           "team": "1º Dezembro \"B\"",
           "points": 3,
-          "played": 5,
+          "played": 6,
           "wins": 1,
           "draws": 0,
-          "losses": 4,
-          "gf": 3,
-          "ga": 6,
-          "gd": -3
+          "losses": 5,
+          "gf": 4,
+          "ga": 8,
+          "gd": -4
         },
         {
           "pos": 15,
           "team": "Vialonga",
           "points": 3,
-          "played": 4,
+          "played": 5,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
-          "gf": 4,
-          "ga": 9,
-          "gd": -5
+          "losses": 4,
+          "gf": 5,
+          "ga": 11,
+          "gd": -6
         },
         {
           "pos": 16,
           "team": "Palmense",
-          "points": 0,
-          "played": 5,
+          "points": 1,
+          "played": 6,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 5,
-          "gf": 0,
-          "ga": 22,
+          "gf": 2,
+          "ga": 24,
           "gd": -22
         }
       ]
@@ -10480,30 +10480,42 @@
       "standings": [
         {
           "pos": 1,
+          "team": "U.D. Valonguense",
+          "points": 12,
+          "played": 5,
+          "wins": 4,
+          "draws": 0,
+          "losses": 1,
+          "gf": 10,
+          "ga": 6,
+          "gd": 4
+        },
+        {
+          "pos": 2,
           "team": "F.C. Cête",
-          "points": 10,
-          "played": 4,
+          "points": 11,
+          "played": 5,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 0,
           "gf": 10,
           "ga": 1,
           "gd": 9
         },
         {
-          "pos": 2,
+          "pos": 3,
           "team": "A.D.C. Várzea Douro",
-          "points": 10,
-          "played": 4,
+          "points": 11,
+          "played": 5,
           "wins": 3,
-          "draws": 1,
+          "draws": 2,
           "losses": 0,
           "gf": 8,
           "ga": 3,
           "gd": 5
         },
         {
-          "pos": 3,
+          "pos": 4,
           "team": "F.C. Lixa",
           "points": 9,
           "played": 4,
@@ -10515,19 +10527,19 @@
           "gd": 3
         },
         {
-          "pos": 4,
-          "team": "U.D. Valonguense",
+          "pos": 5,
+          "team": "F.C. Termas S. Vicente 2020",
           "points": 9,
-          "played": 4,
+          "played": 5,
           "wins": 3,
           "draws": 0,
-          "losses": 1,
-          "gf": 7,
-          "ga": 5,
+          "losses": 2,
+          "gf": 9,
+          "ga": 7,
           "gd": 2
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "Gens S.C.",
           "points": 7,
           "played": 4,
@@ -10539,7 +10551,7 @@
           "gd": 2
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "S.C. Rio De Moinhos",
           "points": 6,
           "played": 4,
@@ -10551,31 +10563,7 @@
           "gd": 1
         },
         {
-          "pos": 7,
-          "team": "C.F. Vandoma",
-          "points": 6,
-          "played": 4,
-          "wins": 2,
-          "draws": 0,
-          "losses": 2,
-          "gf": 5,
-          "ga": 5,
-          "gd": 0
-        },
-        {
-          "pos": 7,
-          "team": "F.C. Termas S. Vicente 2020",
-          "points": 6,
-          "played": 4,
-          "wins": 2,
-          "draws": 0,
-          "losses": 2,
-          "gf": 7,
-          "ga": 7,
-          "gd": 0
-        },
-        {
-          "pos": 9,
+          "pos": 8,
           "team": "Citânia Sanfins F.C.",
           "points": 6,
           "played": 4,
@@ -10587,7 +10575,7 @@
           "gd": -1
         },
         {
-          "pos": 10,
+          "pos": 9,
           "team": "U.D.S. Roriz",
           "points": 6,
           "played": 4,
@@ -10597,6 +10585,18 @@
           "gf": 6,
           "ga": 3,
           "gd": 3
+        },
+        {
+          "pos": 10,
+          "team": "C.F. Vandoma",
+          "points": 6,
+          "played": 4,
+          "wins": 2,
+          "draws": 0,
+          "losses": 2,
+          "gf": 5,
+          "ga": 5,
+          "gd": 0
         },
         {
           "pos": 11,
@@ -10613,25 +10613,25 @@
         {
           "pos": 12,
           "team": "F.C. Vilarinho",
-          "points": 4,
-          "played": 4,
+          "points": 5,
+          "played": 5,
           "wins": 1,
-          "draws": 1,
+          "draws": 2,
           "losses": 2,
-          "gf": 3,
-          "ga": 4,
+          "gf": 4,
+          "ga": 5,
           "gd": -1
         },
         {
           "pos": 13,
           "team": "A.D. Várzea F.C.",
-          "points": 3,
-          "played": 4,
+          "points": 4,
+          "played": 5,
           "wins": 0,
-          "draws": 3,
+          "draws": 4,
           "losses": 1,
-          "gf": 5,
-          "ga": 6,
+          "gf": 6,
+          "ga": 7,
           "gd": -1
         },
         {
@@ -10650,25 +10650,25 @@
           "pos": 15,
           "team": "A. R. C. S. Lourenço Do Douro",
           "points": 1,
-          "played": 4,
+          "played": 5,
           "wins": 0,
           "draws": 1,
-          "losses": 3,
-          "gf": 3,
-          "ga": 7,
-          "gd": -4
+          "losses": 4,
+          "gf": 4,
+          "ga": 10,
+          "gd": -6
         },
         {
           "pos": 16,
           "team": "Caíde Rei S.C.",
           "points": 0,
-          "played": 4,
+          "played": 5,
           "wins": 0,
           "draws": 0,
-          "losses": 4,
+          "losses": 5,
           "gf": 1,
-          "ga": 16,
-          "gd": -15
+          "ga": 18,
+          "gd": -17
         }
       ]
     },
@@ -10682,14 +10682,14 @@
         {
           "pos": 1,
           "team": "Valadares Gaia F.C. - Sad",
-          "points": 12,
-          "played": 4,
-          "wins": 4,
+          "points": 15,
+          "played": 5,
+          "wins": 5,
           "draws": 0,
           "losses": 0,
-          "gf": 7,
+          "gf": 9,
           "ga": 0,
-          "gd": 7
+          "gd": 9
         },
         {
           "pos": 2,
@@ -10779,13 +10779,13 @@
           "pos": 9,
           "team": "F.C. Avintes",
           "points": 5,
-          "played": 4,
+          "played": 5,
           "wins": 1,
           "draws": 2,
-          "losses": 1,
-          "gf": 6,
-          "ga": 5,
-          "gd": 1
+          "losses": 2,
+          "gf": 7,
+          "ga": 7,
+          "gd": 0
         },
         {
           "pos": 10,
@@ -10803,13 +10803,13 @@
           "pos": 11,
           "team": "Varzim S.C. \"B\" - Sduq",
           "points": 4,
-          "played": 4,
+          "played": 5,
           "wins": 1,
           "draws": 1,
-          "losses": 2,
+          "losses": 3,
           "gf": 2,
-          "ga": 5,
-          "gd": -3
+          "ga": 7,
+          "gd": -5
         },
         {
           "pos": 12,
@@ -10825,18 +10825,6 @@
         },
         {
           "pos": 13,
-          "team": "S.C. Salgueiros \"B\" - Sad",
-          "points": 3,
-          "played": 4,
-          "wins": 1,
-          "draws": 0,
-          "losses": 3,
-          "gf": 5,
-          "ga": 9,
-          "gd": -4
-        },
-        {
-          "pos": 14,
           "team": "F.C. Pedroso",
           "points": 3,
           "played": 4,
@@ -10848,7 +10836,31 @@
           "gd": -6
         },
         {
+          "pos": 14,
+          "team": "S.C. Salgueiros \"B\" - Sad",
+          "points": 3,
+          "played": 4,
+          "wins": 1,
+          "draws": 0,
+          "losses": 3,
+          "gf": 5,
+          "ga": 9,
+          "gd": -4
+        },
+        {
           "pos": 15,
+          "team": "F.C. Infesta",
+          "points": 3,
+          "played": 5,
+          "wins": 1,
+          "draws": 0,
+          "losses": 4,
+          "gf": 6,
+          "ga": 11,
+          "gd": -5
+        },
+        {
+          "pos": 16,
           "team": "Atl. C. Bougadense",
           "points": 1,
           "played": 4,
@@ -10858,18 +10870,6 @@
           "gf": 1,
           "ga": 9,
           "gd": -8
-        },
-        {
-          "pos": 16,
-          "team": "F.C. Infesta",
-          "points": 0,
-          "played": 4,
-          "wins": 0,
-          "draws": 0,
-          "losses": 4,
-          "gf": 4,
-          "ga": 10,
-          "gd": -6
         }
       ]
     },
@@ -11180,13 +11180,13 @@
         {
           "pos": 11,
           "team": "A.D.C.R. Gestaçô",
-          "points": 1,
-          "played": 3,
+          "points": 2,
+          "played": 4,
           "wins": 0,
-          "draws": 1,
+          "draws": 2,
           "losses": 2,
-          "gf": 2,
-          "ga": 5,
+          "gf": 4,
+          "ga": 7,
           "gd": -3
         },
         {
@@ -11204,13 +11204,13 @@
         {
           "pos": 13,
           "team": "F.C. Vila Boa Quires",
-          "points": 0,
-          "played": 3,
+          "points": 1,
+          "played": 4,
           "wins": 0,
-          "draws": 0,
+          "draws": 1,
           "losses": 3,
-          "gf": 1,
-          "ga": 7,
+          "gf": 3,
+          "ga": 9,
           "gd": -6
         },
         {
@@ -11437,18 +11437,30 @@
         },
         {
           "pos": 3,
-          "team": "Leões Valboenses F.C.",
+          "team": "U. Nogueirense Fc \"B\"",
           "points": 6,
-          "played": 3,
+          "played": 4,
           "wins": 2,
           "draws": 0,
-          "losses": 1,
-          "gf": 11,
-          "ga": 6,
-          "gd": 5
+          "losses": 2,
+          "gf": 6,
+          "ga": 11,
+          "gd": -5
         },
         {
           "pos": 4,
+          "team": "Leões Valboenses F.C.",
+          "points": 6,
+          "played": 4,
+          "wins": 2,
+          "draws": 0,
+          "losses": 2,
+          "gf": 13,
+          "ga": 9,
+          "gd": 4
+        },
+        {
+          "pos": 5,
           "team": "C.D. Flamengo",
           "points": 6,
           "played": 2,
@@ -11460,7 +11472,7 @@
           "gd": 3
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "Juventus Triana F.C.",
           "points": 5,
           "played": 3,
@@ -11472,7 +11484,7 @@
           "gd": 3
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "F.C. Infesta \"B\"",
           "points": 4,
           "played": 3,
@@ -11484,7 +11496,7 @@
           "gd": -1
         },
         {
-          "pos": 7,
+          "pos": 8,
           "team": "A.D.R. S. Pedro Fins",
           "points": 3,
           "played": 2,
@@ -11494,18 +11506,6 @@
           "gf": 6,
           "ga": 3,
           "gd": 3
-        },
-        {
-          "pos": 8,
-          "team": "U. Nogueirense Fc \"B\"",
-          "points": 3,
-          "played": 3,
-          "wins": 1,
-          "draws": 0,
-          "losses": 2,
-          "gf": 3,
-          "ga": 9,
-          "gd": -6
         },
         {
           "pos": 9,
@@ -12559,6 +12559,18 @@
         },
         {
           "pos": 6,
+          "team": "Gd Alfarim",
+          "points": 4,
+          "played": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "gf": 4,
+          "ga": 5,
+          "gd": -1
+        },
+        {
+          "pos": 7,
           "team": "Uf Comércio Indústria",
           "points": 3,
           "played": 2,
@@ -12571,18 +12583,6 @@
         },
         {
           "pos": 7,
-          "team": "Gd Alfarim",
-          "points": 3,
-          "played": 2,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "gf": 3,
-          "ga": 4,
-          "gd": -1
-        },
-        {
-          "pos": 8,
           "team": "Ufc Moitense",
           "points": 3,
           "played": 2,
@@ -12608,13 +12608,13 @@
         {
           "pos": 10,
           "team": "Seixal 1925",
-          "points": 2,
-          "played": 2,
+          "points": 3,
+          "played": 3,
           "wins": 0,
-          "draws": 2,
+          "draws": 3,
           "losses": 0,
-          "gf": 4,
-          "ga": 4,
+          "gf": 5,
+          "ga": 5,
           "gd": 0
         },
         {
@@ -12842,10 +12842,10 @@
         {
           "pos": 1,
           "team": "Udc Banheirense",
-          "points": 6,
-          "played": 2,
+          "points": 7,
+          "played": 3,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 0,
           "gf": 4,
           "ga": 1,
@@ -12853,6 +12853,18 @@
         },
         {
           "pos": 2,
+          "team": "Ad Quinta Conde",
+          "points": 6,
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "gf": 7,
+          "ga": 3,
+          "gd": 4
+        },
+        {
+          "pos": 3,
           "team": "Beira Mar Ac Almada",
           "points": 6,
           "played": 2,
@@ -12864,19 +12876,19 @@
           "gd": 2
         },
         {
-          "pos": 3,
+          "pos": 4,
           "team": "Acru Trab. Zambujalense",
-          "points": 4,
-          "played": 2,
+          "points": 5,
+          "played": 3,
           "wins": 1,
-          "draws": 1,
+          "draws": 2,
           "losses": 0,
           "gf": 4,
           "ga": 2,
           "gd": 2
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Ac Arrentela",
           "points": 4,
           "played": 2,
@@ -12888,7 +12900,7 @@
           "gd": 1
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Cl. Recreio Instrução",
           "points": 4,
           "played": 2,
@@ -12898,18 +12910,6 @@
           "gf": 2,
           "ga": 1,
           "gd": 1
-        },
-        {
-          "pos": 6,
-          "team": "Ad Quinta Conde",
-          "points": 3,
-          "played": 2,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "gf": 5,
-          "ga": 2,
-          "gd": 3
         },
         {
           "pos": 7,
@@ -12925,18 +12925,6 @@
         },
         {
           "pos": 8,
-          "team": "Gd Fabril Barreiro",
-          "points": 1,
-          "played": 2,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "gf": 1,
-          "ga": 2,
-          "gd": -1
-        },
-        {
-          "pos": 8,
           "team": "Gd Sport Club Moitense",
           "points": 1,
           "played": 2,
@@ -12948,16 +12936,28 @@
           "gd": -1
         },
         {
-          "pos": 10,
+          "pos": 9,
           "team": "Almada Ac",
+          "points": 1,
+          "played": 3,
+          "wins": 0,
+          "draws": 1,
+          "losses": 2,
+          "gf": 2,
+          "ga": 5,
+          "gd": -3
+        },
+        {
+          "pos": 10,
+          "team": "Gd Fabril Barreiro",
           "points": 1,
           "played": 2,
           "wins": 0,
           "draws": 1,
           "losses": 1,
           "gf": 1,
-          "ga": 3,
-          "gd": -2
+          "ga": 2,
+          "gd": -1
         },
         {
           "pos": 11,
@@ -13005,7 +13005,19 @@
           "gd": 15
         },
         {
-          "pos": 1,
+          "pos": 2,
+          "team": "Ad Campos",
+          "points": 15,
+          "played": 6,
+          "wins": 5,
+          "draws": 0,
+          "losses": 1,
+          "gf": 19,
+          "ga": 6,
+          "gd": 13
+        },
+        {
+          "pos": 2,
           "team": "Sc Vianense Sad \"B\"",
           "points": 15,
           "played": 5,
@@ -13017,40 +13029,28 @@
           "gd": 16
         },
         {
-          "pos": 3,
-          "team": "Ad Campos",
-          "points": 12,
-          "played": 5,
-          "wins": 4,
-          "draws": 0,
-          "losses": 1,
-          "gf": 16,
-          "ga": 5,
-          "gd": 11
-        },
-        {
           "pos": 4,
           "team": "Neves Fc",
-          "points": 10,
-          "played": 5,
-          "wins": 3,
+          "points": 13,
+          "played": 6,
+          "wins": 4,
           "draws": 1,
           "losses": 1,
-          "gf": 10,
+          "gf": 12,
           "ga": 2,
-          "gd": 8
+          "gd": 10
         },
         {
           "pos": 5,
           "team": "Cc \"Os Torreenses\"",
           "points": 10,
-          "played": 5,
+          "played": 6,
           "wins": 3,
           "draws": 1,
-          "losses": 1,
-          "gf": 13,
-          "ga": 8,
-          "gd": 5
+          "losses": 2,
+          "gf": 14,
+          "ga": 11,
+          "gd": 3
         },
         {
           "pos": 6,
@@ -13104,13 +13104,13 @@
           "pos": 10,
           "team": "Vila Fria 1980",
           "points": 6,
-          "played": 4,
+          "played": 5,
           "wins": 2,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "gf": 8,
-          "ga": 5,
-          "gd": 3
+          "ga": 7,
+          "gd": 1
         },
         {
           "pos": 11,
@@ -13408,6 +13408,18 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Juv. Pedras Salgadas Adrc",
+          "points": 18,
+          "played": 7,
+          "wins": 6,
+          "draws": 0,
+          "losses": 1,
+          "gf": 26,
+          "ga": 3,
+          "gd": 23
+        },
+        {
+          "pos": 2,
           "team": "Sport Clube De Vila Real - Sduq, Lda",
           "points": 16,
           "played": 6,
@@ -13419,7 +13431,7 @@
           "gd": 37
         },
         {
-          "pos": 2,
+          "pos": 3,
           "team": "Sc Régua",
           "points": 16,
           "played": 6,
@@ -13429,18 +13441,6 @@
           "gf": 20,
           "ga": 2,
           "gd": 18
-        },
-        {
-          "pos": 3,
-          "team": "Juv. Pedras Salgadas Adrc",
-          "points": 15,
-          "played": 6,
-          "wins": 5,
-          "draws": 0,
-          "losses": 1,
-          "gf": 21,
-          "ga": 2,
-          "gd": 19
         },
         {
           "pos": 4,
@@ -13602,13 +13602,13 @@
           "pos": 17,
           "team": "Vidago Fc",
           "points": 1,
-          "played": 6,
+          "played": 7,
           "wins": 0,
           "draws": 1,
-          "losses": 5,
-          "gf": 6,
-          "ga": 20,
-          "gd": -14
+          "losses": 6,
+          "gf": 7,
+          "ga": 25,
+          "gd": -18
         },
         {
           "pos": 18,
@@ -13633,6 +13633,18 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Cr Ferreira Aves",
+          "points": 13,
+          "played": 5,
+          "wins": 4,
+          "draws": 1,
+          "losses": 0,
+          "gf": 10,
+          "ga": 2,
+          "gd": 8
+        },
+        {
+          "pos": 2,
           "team": "Lusitano Fc Vildemoinhos",
           "points": 10,
           "played": 4,
@@ -13644,28 +13656,16 @@
           "gd": 11
         },
         {
-          "pos": 2,
-          "team": "Cr Ferreira Aves",
-          "points": 10,
-          "played": 4,
-          "wins": 3,
-          "draws": 1,
-          "losses": 0,
-          "gf": 6,
-          "ga": 2,
-          "gd": 4
-        },
-        {
           "pos": 3,
           "team": "Adr Tarouquense",
           "points": 9,
-          "played": 4,
+          "played": 5,
           "wins": 3,
           "draws": 0,
-          "losses": 1,
-          "gf": 11,
-          "ga": 8,
-          "gd": 3
+          "losses": 2,
+          "gf": 12,
+          "ga": 10,
+          "gd": 2
         },
         {
           "pos": 4,
@@ -13705,38 +13705,38 @@
         },
         {
           "pos": 7,
-          "team": "Gd Santacombadense",
-          "points": 4,
-          "played": 4,
-          "wins": 1,
+          "team": "Sc Paivense",
+          "points": 7,
+          "played": 5,
+          "wins": 2,
           "draws": 1,
           "losses": 2,
-          "gf": 4,
-          "ga": 5,
-          "gd": -1
+          "gf": 11,
+          "ga": 9,
+          "gd": 2
         },
         {
           "pos": 8,
-          "team": "Sc Paivense",
-          "points": 4,
-          "played": 4,
-          "wins": 1,
+          "team": "Assrd Vila Chã Sá",
+          "points": 7,
+          "played": 5,
+          "wins": 2,
           "draws": 1,
           "losses": 2,
-          "gf": 9,
-          "ga": 8,
-          "gd": 1
+          "gf": 8,
+          "ga": 9,
+          "gd": -1
         },
         {
           "pos": 9,
-          "team": "Assrd Vila Chã Sá",
+          "team": "Gd Santacombadense",
           "points": 4,
-          "played": 4,
+          "played": 5,
           "wins": 1,
           "draws": 1,
-          "losses": 2,
-          "gf": 7,
-          "ga": 9,
+          "losses": 3,
+          "gf": 4,
+          "ga": 6,
           "gd": -2
         },
         {
@@ -13753,18 +13753,6 @@
         },
         {
           "pos": 11,
-          "team": "Ac Travanca",
-          "points": 1,
-          "played": 4,
-          "wins": 0,
-          "draws": 1,
-          "losses": 3,
-          "gf": 3,
-          "ga": 10,
-          "gd": -7
-        },
-        {
-          "pos": 11,
           "team": "Sc Santar",
           "points": 1,
           "played": 4,
@@ -13774,6 +13762,18 @@
           "gf": 1,
           "ga": 8,
           "gd": -7
+        },
+        {
+          "pos": 12,
+          "team": "Ac Travanca",
+          "points": 1,
+          "played": 5,
+          "wins": 0,
+          "draws": 1,
+          "losses": 4,
+          "gf": 3,
+          "ga": 14,
+          "gd": -11
         }
       ]
     },
@@ -13787,26 +13787,26 @@
         {
           "pos": 1,
           "team": "Sport Viseu Benfica",
-          "points": 9,
-          "played": 3,
-          "wins": 3,
+          "points": 12,
+          "played": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
-          "gf": 8,
-          "ga": 0,
-          "gd": 8
+          "gf": 10,
+          "ga": 1,
+          "gd": 9
         },
         {
           "pos": 2,
           "team": "Gdc Roriz",
           "points": 7,
-          "played": 3,
+          "played": 4,
           "wins": 2,
           "draws": 1,
-          "losses": 0,
-          "gf": 5,
-          "ga": 3,
-          "gd": 2
+          "losses": 1,
+          "gf": 6,
+          "ga": 5,
+          "gd": 1
         },
         {
           "pos": 3,
@@ -13834,18 +13834,6 @@
         },
         {
           "pos": 5,
-          "team": "Souselo Fc",
-          "points": 3,
-          "played": 3,
-          "wins": 1,
-          "draws": 0,
-          "losses": 2,
-          "gf": 2,
-          "ga": 2,
-          "gd": 0
-        },
-        {
-          "pos": 6,
           "team": "Ud Vilamaiorense",
           "points": 3,
           "played": 3,
@@ -13857,28 +13845,40 @@
           "gd": -2
         },
         {
+          "pos": 6,
+          "team": "Souselo Fc",
+          "points": 3,
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0
+        },
+        {
           "pos": 7,
           "team": "Cd Santacruzense",
-          "points": 0,
-          "played": 3,
-          "wins": 0,
+          "points": 3,
+          "played": 4,
+          "wins": 1,
           "draws": 0,
           "losses": 3,
-          "gf": 3,
+          "gf": 5,
           "ga": 6,
-          "gd": -3
+          "gd": -1
         },
         {
           "pos": 8,
           "team": "Arcd Boassas",
           "points": 0,
-          "played": 2,
+          "played": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "gf": 0,
-          "ga": 7,
-          "gd": -7
+          "ga": 9,
+          "gd": -9
         }
       ]
     },
@@ -13996,6 +13996,18 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Carvalhais Fc",
+          "points": 16,
+          "played": 6,
+          "wins": 5,
+          "draws": 1,
+          "losses": 0,
+          "gf": 15,
+          "ga": 7,
+          "gd": 8
+        },
+        {
+          "pos": 2,
           "team": "Sc Penalva Castelo",
           "points": 15,
           "played": 5,
@@ -14007,28 +14019,16 @@
           "gd": 9
         },
         {
-          "pos": 2,
-          "team": "Carvalhais Fc",
-          "points": 13,
-          "played": 5,
-          "wins": 4,
-          "draws": 1,
-          "losses": 0,
-          "gf": 13,
-          "ga": 6,
-          "gd": 7
-        },
-        {
           "pos": 3,
           "team": "Gd Oliveira Frades",
           "points": 10,
-          "played": 5,
+          "played": 6,
           "wins": 3,
           "draws": 1,
-          "losses": 1,
+          "losses": 2,
           "gf": 7,
-          "ga": 3,
-          "gd": 4
+          "ga": 4,
+          "gd": 3
         },
         {
           "pos": 4,
@@ -14104,6 +14104,30 @@
         },
         {
           "pos": 10,
+          "team": "Gd Mangualde",
+          "points": 6,
+          "played": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "gf": 5,
+          "ga": 8,
+          "gd": -3
+        },
+        {
+          "pos": 11,
+          "team": "Sc Vale Açores",
+          "points": 6,
+          "played": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "gf": 9,
+          "ga": 18,
+          "gd": -9
+        },
+        {
+          "pos": 12,
           "team": "Ad Sátão",
           "points": 5,
           "played": 4,
@@ -14115,7 +14139,7 @@
           "gd": 0
         },
         {
-          "pos": 11,
+          "pos": 13,
           "team": "Sc Lamego",
           "points": 4,
           "played": 5,
@@ -14127,52 +14151,28 @@
           "gd": -3
         },
         {
-          "pos": 11,
+          "pos": 14,
           "team": "Ud Sampedrense",
           "points": 4,
-          "played": 5,
+          "played": 6,
           "wins": 1,
           "draws": 1,
-          "losses": 3,
+          "losses": 4,
           "gf": 5,
-          "ga": 8,
-          "gd": -3
-        },
-        {
-          "pos": 13,
-          "team": "Sc Vale Açores",
-          "points": 3,
-          "played": 5,
-          "wins": 1,
-          "draws": 0,
-          "losses": 4,
-          "gf": 7,
-          "ga": 18,
-          "gd": -11
-        },
-        {
-          "pos": 14,
-          "team": "Nespereira Fc",
-          "points": 3,
-          "played": 5,
-          "wins": 1,
-          "draws": 0,
-          "losses": 4,
-          "gf": 10,
-          "ga": 12,
-          "gd": -2
+          "ga": 10,
+          "gd": -5
         },
         {
           "pos": 15,
-          "team": "Gd Mangualde",
+          "team": "Nespereira Fc",
           "points": 3,
-          "played": 5,
+          "played": 6,
           "wins": 1,
           "draws": 0,
-          "losses": 4,
-          "gf": 4,
-          "ga": 8,
-          "gd": -4
+          "losses": 5,
+          "gf": 11,
+          "ga": 14,
+          "gd": -3
         },
         {
           "pos": 16,
