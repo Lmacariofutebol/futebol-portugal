@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T03:25:45.998Z",
+  "updatedAt": "2026-10-19T06:32:17.301Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -3441,13 +3441,13 @@
           "pos": 3,
           "team": "Jc Boavista",
           "points": 6,
-          "played": 3,
+          "played": 4,
           "wins": 2,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "gf": 7,
-          "ga": 5,
-          "gd": 2
+          "ga": 6,
+          "gd": 1
         },
         {
           "pos": 4,
@@ -3522,7 +3522,19 @@
           "gd": -6
         },
         {
-          "pos": 10,
+          "pos": 9,
+          "team": "Gd Santa Luzia",
+          "points": 3,
+          "played": 4,
+          "wins": 1,
+          "draws": 0,
+          "losses": 3,
+          "gf": 3,
+          "ga": 11,
+          "gd": -8
+        },
+        {
+          "pos": 11,
           "team": "Cdc Panóias",
           "points": 0,
           "played": 3,
@@ -3534,19 +3546,7 @@
           "gd": -7
         },
         {
-          "pos": 11,
-          "team": "Gd Santa Luzia",
-          "points": 0,
-          "played": 3,
-          "wins": 0,
-          "draws": 0,
-          "losses": 3,
-          "gf": 2,
-          "ga": 11,
-          "gd": -9
-        },
-        {
-          "pos": 11,
+          "pos": 12,
           "team": "Sc Cuba (DS)",
           "points": 0,
           "played": 0,
