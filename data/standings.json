@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T09:28:32.974Z",
+  "updatedAt": "2026-10-21T12:29:26.945Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -8606,14 +8606,14 @@
         {
           "pos": 2,
           "team": "Negrais",
-          "points": 9,
-          "played": 4,
-          "wins": 3,
+          "points": 12,
+          "played": 5,
+          "wins": 4,
           "draws": 0,
           "losses": 1,
-          "gf": 8,
-          "ga": 5,
-          "gd": 3
+          "gf": 12,
+          "ga": 7,
+          "gd": 5
         },
         {
           "pos": 3,
@@ -8713,18 +8713,6 @@
         },
         {
           "pos": 11,
-          "team": "Arsenal 72, Sad",
-          "points": 2,
-          "played": 3,
-          "wins": 0,
-          "draws": 2,
-          "losses": 1,
-          "gf": 5,
-          "ga": 10,
-          "gd": -5
-        },
-        {
-          "pos": 12,
           "team": "Belas",
           "points": 2,
           "played": 5,
@@ -8734,6 +8722,18 @@
           "gf": 5,
           "ga": 11,
           "gd": -6
+        },
+        {
+          "pos": 12,
+          "team": "Arsenal 72, Sad",
+          "points": 2,
+          "played": 4,
+          "wins": 0,
+          "draws": 2,
+          "losses": 2,
+          "gf": 7,
+          "ga": 14,
+          "gd": -7
         },
         {
           "pos": 13,
