@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T06:31:38.071Z",
+  "updatedAt": "2026-10-27T15:40:34.846Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 84,
@@ -7910,29 +7910,17 @@
         {
           "pos": 7,
           "team": "Pêro Pinheiro",
-          "points": 11,
-          "played": 6,
+          "points": 12,
+          "played": 7,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 1,
-          "gf": 13,
-          "ga": 6,
+          "gf": 14,
+          "ga": 7,
           "gd": 7
         },
         {
           "pos": 8,
-          "team": "Mtba",
-          "points": 11,
-          "played": 7,
-          "wins": 3,
-          "draws": 2,
-          "losses": 2,
-          "gf": 11,
-          "ga": 12,
-          "gd": -1
-        },
-        {
-          "pos": 9,
           "team": "Carregado",
           "points": 11,
           "played": 7,
@@ -7944,7 +7932,31 @@
           "gd": 9
         },
         {
+          "pos": 9,
+          "team": "Mtba",
+          "points": 11,
+          "played": 7,
+          "wins": 3,
+          "draws": 2,
+          "losses": 2,
+          "gf": 11,
+          "ga": 12,
+          "gd": -1
+        },
+        {
           "pos": 10,
+          "team": "Jeromelo",
+          "points": 7,
+          "played": 7,
+          "wins": 2,
+          "draws": 1,
+          "losses": 4,
+          "gf": 7,
+          "ga": 14,
+          "gd": -7
+        },
+        {
+          "pos": 11,
           "team": "Coutada",
           "points": 7,
           "played": 7,
@@ -7956,7 +7968,7 @@
           "gd": -9
         },
         {
-          "pos": 11,
+          "pos": 12,
           "team": "Catujalense",
           "points": 7,
           "played": 6,
@@ -7968,7 +7980,7 @@
           "gd": -1
         },
         {
-          "pos": 12,
+          "pos": 13,
           "team": "Santa Iria",
           "points": 7,
           "played": 6,
@@ -7978,18 +7990,6 @@
           "gf": 7,
           "ga": 12,
           "gd": -5
-        },
-        {
-          "pos": 13,
-          "team": "Jeromelo",
-          "points": 6,
-          "played": 6,
-          "wins": 2,
-          "draws": 0,
-          "losses": 4,
-          "gf": 6,
-          "ga": 13,
-          "gd": -7
         },
         {
           "pos": 14,
@@ -8429,14 +8429,14 @@
         {
           "pos": 2,
           "team": "Técnico Fc",
-          "points": 15,
-          "played": 5,
-          "wins": 5,
+          "points": 18,
+          "played": 6,
+          "wins": 6,
           "draws": 0,
           "losses": 0,
-          "gf": 15,
+          "gf": 18,
           "ga": 1,
-          "gd": 14
+          "gd": 17
         },
         {
           "pos": 3,
@@ -8514,13 +8514,13 @@
           "pos": 9,
           "team": "Frielas",
           "points": 6,
-          "played": 5,
+          "played": 6,
           "wins": 2,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "gf": 6,
-          "ga": 8,
-          "gd": -2
+          "ga": 11,
+          "gd": -5
         },
         {
           "pos": 10,
@@ -10198,6 +10198,30 @@
         },
         {
           "pos": 11,
+          "team": "F.C. Parada",
+          "points": 5,
+          "played": 5,
+          "wins": 1,
+          "draws": 2,
+          "losses": 2,
+          "gf": 9,
+          "ga": 10,
+          "gd": -1
+        },
+        {
+          "pos": 12,
+          "team": "Spg. C. Campo",
+          "points": 4,
+          "played": 5,
+          "wins": 1,
+          "draws": 1,
+          "losses": 3,
+          "gf": 8,
+          "ga": 9,
+          "gd": -1
+        },
+        {
+          "pos": 13,
           "team": "C.C.R. Raimonda",
           "points": 4,
           "played": 5,
@@ -10209,19 +10233,7 @@
           "gd": -7
         },
         {
-          "pos": 12,
-          "team": "F.C. Parada",
-          "points": 4,
-          "played": 4,
-          "wins": 1,
-          "draws": 1,
-          "losses": 2,
-          "gf": 7,
-          "ga": 8,
-          "gd": -1
-        },
-        {
-          "pos": 13,
+          "pos": 14,
           "team": "C.R.C. 1º Maio Figueiró",
           "points": 3,
           "played": 5,
@@ -10231,18 +10243,6 @@
           "gf": 2,
           "ga": 13,
           "gd": -11
-        },
-        {
-          "pos": 14,
-          "team": "Spg. C. Campo",
-          "points": 3,
-          "played": 4,
-          "wins": 1,
-          "draws": 0,
-          "losses": 3,
-          "gf": 6,
-          "ga": 7,
-          "gd": -1
         },
         {
           "pos": 15,
@@ -10802,13 +10802,13 @@
         {
           "pos": 11,
           "team": "Varzim S.C. \"B\" - Sduq",
-          "points": 4,
-          "played": 5,
+          "points": 5,
+          "played": 6,
           "wins": 1,
-          "draws": 1,
+          "draws": 2,
           "losses": 3,
-          "gf": 2,
-          "ga": 7,
+          "gf": 4,
+          "ga": 9,
           "gd": -5
         },
         {
@@ -10826,13 +10826,13 @@
         {
           "pos": 13,
           "team": "F.C. Pedroso",
-          "points": 3,
-          "played": 5,
+          "points": 4,
+          "played": 6,
           "wins": 1,
-          "draws": 0,
+          "draws": 1,
           "losses": 4,
-          "gf": 7,
-          "ga": 14,
+          "gf": 9,
+          "ga": 16,
           "gd": -7
         },
         {
@@ -11755,6 +11755,18 @@
         },
         {
           "pos": 2,
+          "team": "U.D. Lavrense",
+          "points": 16,
+          "played": 7,
+          "wins": 5,
+          "draws": 1,
+          "losses": 1,
+          "gf": 12,
+          "ga": 4,
+          "gd": 8
+        },
+        {
+          "pos": 3,
           "team": "A.D. Baião - Sad",
           "points": 15,
           "played": 7,
@@ -11766,7 +11778,7 @@
           "gd": 8
         },
         {
-          "pos": 3,
+          "pos": 4,
           "team": "Ermesinde S.C. 1936",
           "points": 14,
           "played": 7,
@@ -11778,7 +11790,7 @@
           "gd": 7
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Aparecida F.C.",
           "points": 13,
           "played": 7,
@@ -11790,7 +11802,7 @@
           "gd": 2
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "G.C.D. Vila Caíz",
           "points": 13,
           "played": 7,
@@ -11800,18 +11812,6 @@
           "gf": 11,
           "ga": 9,
           "gd": 2
-        },
-        {
-          "pos": 6,
-          "team": "U.D. Lavrense",
-          "points": 13,
-          "played": 6,
-          "wins": 4,
-          "draws": 1,
-          "losses": 1,
-          "gf": 8,
-          "ga": 4,
-          "gd": 4
         },
         {
           "pos": 7,
@@ -11949,13 +11949,13 @@
           "pos": 18,
           "team": "A.D.L. - A.D. Lousada",
           "points": 3,
-          "played": 6,
+          "played": 7,
           "wins": 0,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "gf": 6,
-          "ga": 11,
-          "gd": -5
+          "ga": 15,
+          "gd": -9
         }
       ]
     },
