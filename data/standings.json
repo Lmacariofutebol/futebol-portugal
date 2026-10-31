@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-30T21:29:20.489Z",
+  "updatedAt": "2026-10-31T00:42:05.522Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
-  "competitionCount": 84,
-  "associationCount": 21,
+  "competitionCount": 85,
+  "associationCount": 22,
   "competitions": [
     {
       "group": "Nacional",
@@ -39,6 +39,18 @@
         },
         {
           "pos": 3,
+          "team": "Sporting Cp, Sad",
+          "points": 21,
+          "played": 10,
+          "wins": 6,
+          "draws": 3,
+          "losses": 1,
+          "gf": 23,
+          "ga": 11,
+          "gd": 12
+        },
+        {
+          "pos": 4,
           "team": "Santa Clara Açores Sad",
           "points": 18,
           "played": 9,
@@ -48,18 +60,6 @@
           "gf": 13,
           "ga": 6,
           "gd": 7
-        },
-        {
-          "pos": 3,
-          "team": "Sporting Cp, Sad",
-          "points": 18,
-          "played": 9,
-          "wins": 5,
-          "draws": 3,
-          "losses": 1,
-          "gf": 21,
-          "ga": 11,
-          "gd": 10
         },
         {
           "pos": 5,
@@ -185,13 +185,13 @@
           "pos": 15,
           "team": "Casa Pia Atlético Clube, Futebol Sduq, Lda",
           "points": 7,
-          "played": 9,
+          "played": 10,
           "wins": 2,
           "draws": 1,
-          "losses": 6,
+          "losses": 7,
           "gf": 5,
-          "ga": 17,
-          "gd": -12
+          "ga": 19,
+          "gd": -14
         },
         {
           "pos": 15,
@@ -9752,6 +9752,99 @@
         {
           "pos": 1,
           "team": "União Da Bola Fc",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        }
+      ]
+    },
+    {
+      "group": "Distrital",
+      "association": "AF Ponta Delgada",
+      "name": "Campeonato de São Miguel - Seniores",
+      "url": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=30757&seasonId=106",
+      "source": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=30757&seasonId=106",
+      "standings": [
+        {
+          "pos": 1,
+          "team": "Benfica Águia Sport",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "C. D. Os Oliveirenses",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "C. Operário D.",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "G, D. Bota Fogo",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "S. C. Ideal",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "Santiago F. C.",
+          "points": 0,
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0
+        },
+        {
+          "pos": 1,
+          "team": "V. C. Pico Da Pedra",
           "points": 0,
           "played": 0,
           "wins": 0,
