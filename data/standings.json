@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T12:35:32.048Z",
+  "updatedAt": "2026-10-31T15:26:52.086Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -14290,6 +14290,18 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Assrd Vila Chã Sá",
+          "points": 18,
+          "played": 7,
+          "wins": 6,
+          "draws": 0,
+          "losses": 1,
+          "gf": 25,
+          "ga": 5,
+          "gd": 20
+        },
+        {
+          "pos": 2,
           "team": "Gd Oliveira Frades",
           "points": 16,
           "played": 6,
@@ -14299,18 +14311,6 @@
           "gf": 19,
           "ga": 8,
           "gd": 11
-        },
-        {
-          "pos": 2,
-          "team": "Assrd Vila Chã Sá",
-          "points": 15,
-          "played": 6,
-          "wins": 5,
-          "draws": 0,
-          "losses": 1,
-          "gf": 17,
-          "ga": 5,
-          "gd": 12
         },
         {
           "pos": 3,
@@ -14400,13 +14400,13 @@
           "pos": 10,
           "team": "Adr Tarouquense",
           "points": 3,
-          "played": 6,
+          "played": 7,
           "wins": 1,
           "draws": 0,
-          "losses": 5,
+          "losses": 6,
           "gf": 8,
-          "ga": 23,
-          "gd": -15
+          "ga": 31,
+          "gd": -23
         },
         {
           "pos": 11,
