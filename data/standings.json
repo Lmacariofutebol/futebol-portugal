@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T03:42:46.103Z",
+  "updatedAt": "2026-11-01T06:44:35.654Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -6250,6 +6250,18 @@
         },
         {
           "pos": 8,
+          "team": "Cl. Condeixa",
+          "points": 4,
+          "played": 4,
+          "wins": 1,
+          "draws": 1,
+          "losses": 2,
+          "gf": 10,
+          "ga": 7,
+          "gd": 3
+        },
+        {
+          "pos": 9,
           "team": "Cd Carapinheirense",
           "points": 4,
           "played": 3,
@@ -6261,7 +6273,7 @@
           "gd": 1
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "União 1919",
           "points": 4,
           "played": 4,
@@ -6273,7 +6285,7 @@
           "gd": -4
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Febres Sc",
           "points": 3,
           "played": 3,
@@ -6285,28 +6297,16 @@
           "gd": -1
         },
         {
-          "pos": 11,
+          "pos": 12,
           "team": "Ca Gândaras",
           "points": 3,
-          "played": 3,
+          "played": 4,
           "wins": 1,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "gf": 1,
-          "ga": 19,
-          "gd": -18
-        },
-        {
-          "pos": 12,
-          "team": "Cl. Condeixa",
-          "points": 1,
-          "played": 3,
-          "wins": 0,
-          "draws": 1,
-          "losses": 2,
-          "gf": 5,
-          "ga": 7,
-          "gd": -2
+          "ga": 24,
+          "gd": -23
         },
         {
           "pos": 13,
