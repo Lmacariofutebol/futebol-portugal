@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T13:42:52.724Z",
+  "updatedAt": "2026-11-03T20:48:23.020Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -8440,6 +8440,18 @@
         },
         {
           "pos": 3,
+          "team": "Mirantense",
+          "points": 16,
+          "played": 7,
+          "wins": 5,
+          "draws": 1,
+          "losses": 1,
+          "gf": 23,
+          "ga": 10,
+          "gd": 13
+        },
+        {
+          "pos": 4,
           "team": "Sanjoanense",
           "points": 16,
           "played": 7,
@@ -8451,7 +8463,7 @@
           "gd": 12
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Camarate",
           "points": 15,
           "played": 7,
@@ -8463,7 +8475,7 @@
           "gd": 5
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "Vilafranquense",
           "points": 14,
           "played": 7,
@@ -8473,18 +8485,6 @@
           "gf": 17,
           "ga": 9,
           "gd": 8
-        },
-        {
-          "pos": 6,
-          "team": "Mirantense",
-          "points": 13,
-          "played": 6,
-          "wins": 4,
-          "draws": 1,
-          "losses": 1,
-          "gf": 19,
-          "ga": 8,
-          "gd": 11
         },
         {
           "pos": 7,
@@ -8538,13 +8538,13 @@
           "pos": 11,
           "team": "Olivais Sul",
           "points": 3,
-          "played": 6,
+          "played": 7,
           "wins": 1,
           "draws": 0,
-          "losses": 5,
-          "gf": 11,
-          "ga": 15,
-          "gd": -4
+          "losses": 6,
+          "gf": 13,
+          "ga": 19,
+          "gd": -6
         },
         {
           "pos": 12,
