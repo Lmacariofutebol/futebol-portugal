@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T01:04:27.695Z",
+  "updatedAt": "2026-11-04T10:31:26.001Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -8629,6 +8629,18 @@
         },
         {
           "pos": 4,
+          "team": "Mem Martins",
+          "points": 13,
+          "played": 6,
+          "wins": 4,
+          "draws": 1,
+          "losses": 1,
+          "gf": 22,
+          "ga": 9,
+          "gd": 13
+        },
+        {
+          "pos": 5,
           "team": "União Santos",
           "points": 11,
           "played": 6,
@@ -8640,28 +8652,16 @@
           "gd": 0
         },
         {
-          "pos": 5,
-          "team": "Mem Martins",
-          "points": 10,
-          "played": 5,
-          "wins": 3,
-          "draws": 1,
-          "losses": 1,
-          "gf": 16,
-          "ga": 6,
-          "gd": 10
-        },
-        {
           "pos": 6,
           "team": "Sintrense, Sad \"B\"",
           "points": 10,
-          "played": 6,
+          "played": 7,
           "wins": 2,
           "draws": 4,
-          "losses": 0,
-          "gf": 12,
-          "ga": 7,
-          "gd": 5
+          "losses": 1,
+          "gf": 15,
+          "ga": 13,
+          "gd": 2
         },
         {
           "pos": 7,
@@ -9184,6 +9184,30 @@
         },
         {
           "pos": 4,
+          "team": "Cs Juventude Gaula",
+          "points": 6,
+          "played": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "gf": 3,
+          "ga": 1,
+          "gd": 2
+        },
+        {
+          "pos": 5,
+          "team": "Cd Nacional \"A\"",
+          "points": 3,
+          "played": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0
+        },
+        {
+          "pos": 6,
           "team": "Adrc \"Os Xavelhas\" \"A\"",
           "points": 3,
           "played": 2,
@@ -9192,30 +9216,6 @@
           "losses": 1,
           "gf": 3,
           "ga": 2,
-          "gd": 1
-        },
-        {
-          "pos": 4,
-          "team": "Cd Nacional \"A\"",
-          "points": 3,
-          "played": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 1,
-          "ga": 0,
-          "gd": 1
-        },
-        {
-          "pos": 6,
-          "team": "Cs Juventude Gaula",
-          "points": 3,
-          "played": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 1,
-          "ga": 0,
           "gd": 1
         },
         {
