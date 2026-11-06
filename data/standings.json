@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T01:23:16.639Z",
+  "updatedAt": "2026-11-06T10:26:50.974Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -2625,19 +2625,7 @@
           "gd": 1
         },
         {
-          "pos": 6,
-          "team": "Crc Rocas Vouga \"Sub/23\"",
-          "points": 4,
-          "played": 3,
-          "wins": 1,
-          "draws": 1,
-          "losses": 1,
-          "gf": 3,
-          "ga": 5,
-          "gd": -2
-        },
-        {
-          "pos": 7,
+          "pos": 5,
           "team": "Recreio Desp. Águeda \"B\"",
           "points": 4,
           "played": 3,
@@ -2647,6 +2635,18 @@
           "gf": 3,
           "ga": 3,
           "gd": 0
+        },
+        {
+          "pos": 7,
+          "team": "Crc Rocas Vouga \"Sub/23\"",
+          "points": 4,
+          "played": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "gf": 3,
+          "ga": 5,
+          "gd": -2
         },
         {
           "pos": 8,
@@ -4043,10 +4043,10 @@
         {
           "pos": 10,
           "team": "Cd Ponte \"B\"",
-          "points": 1,
-          "played": 2,
+          "points": 2,
+          "played": 3,
           "wins": 0,
-          "draws": 1,
+          "draws": 2,
           "losses": 1,
           "gf": 2,
           "ga": 3,
@@ -4054,6 +4054,18 @@
         },
         {
           "pos": 11,
+          "team": "Gd Louro",
+          "points": 1,
+          "played": 3,
+          "wins": 0,
+          "draws": 1,
+          "losses": 2,
+          "gf": 0,
+          "ga": 6,
+          "gd": -6
+        },
+        {
+          "pos": 12,
           "team": "Adj Mouquim",
           "points": 0,
           "played": 2,
@@ -4063,18 +4075,6 @@
           "gf": 2,
           "ga": 6,
           "gd": -4
-        },
-        {
-          "pos": 12,
-          "team": "Gd Louro",
-          "points": 0,
-          "played": 2,
-          "wins": 0,
-          "draws": 0,
-          "losses": 2,
-          "gf": 0,
-          "ga": 6,
-          "gd": -6
         },
         {
           "pos": 13,
