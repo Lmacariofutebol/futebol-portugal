@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T09:40:45.666Z",
+  "updatedAt": "2026-11-07T17:29:15.344Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -515,6 +515,18 @@
         },
         {
           "pos": 5,
+          "team": "Vitória Sc Sad \"B\"",
+          "points": 12,
+          "played": 9,
+          "wins": 3,
+          "draws": 3,
+          "losses": 3,
+          "gf": 12,
+          "ga": 10,
+          "gd": 2
+        },
+        {
+          "pos": 6,
           "team": "Sc Vianense Sad",
           "points": 10,
           "played": 8,
@@ -526,28 +538,16 @@
           "gd": -1
         },
         {
-          "pos": 6,
-          "team": "Vitória Sc Sad \"B\"",
-          "points": 9,
-          "played": 8,
-          "wins": 2,
-          "draws": 3,
-          "losses": 3,
-          "gf": 10,
-          "ga": 10,
-          "gd": 0
-        },
-        {
           "pos": 7,
           "team": "Sc São João De Vêr Sad",
           "points": 9,
-          "played": 8,
+          "played": 9,
           "wins": 2,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "gf": 9,
-          "ga": 10,
-          "gd": -1
+          "ga": 12,
+          "gd": -3
         },
         {
           "pos": 8,
@@ -621,6 +621,18 @@
         },
         {
           "pos": 3,
+          "team": "Ud Oliveirense Sad",
+          "points": 13,
+          "played": 9,
+          "wins": 3,
+          "draws": 4,
+          "losses": 2,
+          "gf": 11,
+          "ga": 11,
+          "gd": 0
+        },
+        {
+          "pos": 4,
           "team": "Ud Santarém Sad",
           "points": 13,
           "played": 9,
@@ -632,7 +644,7 @@
           "gd": -4
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Cd Mafra Sad",
           "points": 12,
           "played": 9,
@@ -644,28 +656,16 @@
           "gd": 4
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "Caldas Sc",
           "points": 11,
-          "played": 8,
+          "played": 9,
           "wins": 3,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "gf": 10,
-          "ga": 12,
-          "gd": -2
-        },
-        {
-          "pos": 6,
-          "team": "Ud Oliveirense Sad",
-          "points": 10,
-          "played": 8,
-          "wins": 2,
-          "draws": 4,
-          "losses": 2,
-          "gf": 10,
-          "ga": 11,
-          "gd": -1
+          "ga": 13,
+          "gd": -3
         },
         {
           "pos": 7,
