@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T18:57:01.533Z",
+  "updatedAt": "2026-11-07T00:39:15.528Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -313,6 +313,18 @@
         },
         {
           "pos": 5,
+          "team": "Fc Vizela, Sad",
+          "points": 15,
+          "played": 10,
+          "wins": 4,
+          "draws": 3,
+          "losses": 3,
+          "gf": 12,
+          "ga": 11,
+          "gd": 1
+        },
+        {
+          "pos": 5,
           "team": "Sc Farense Sad",
           "points": 15,
           "played": 9,
@@ -324,19 +336,7 @@
           "gd": 4
         },
         {
-          "pos": 8,
-          "team": "Fc Vizela, Sad",
-          "points": 14,
-          "played": 9,
-          "wins": 4,
-          "draws": 2,
-          "losses": 3,
-          "gf": 10,
-          "ga": 9,
-          "gd": 1
-        },
-        {
-          "pos": 8,
+          "pos": 9,
           "team": "Ud Leiria, Sad",
           "points": 14,
           "played": 9,
@@ -350,13 +350,13 @@
         {
           "pos": 10,
           "team": "Avs - Futebol Sad",
-          "points": 12,
-          "played": 9,
+          "points": 13,
+          "played": 10,
           "wins": 3,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
-          "gf": 11,
-          "ga": 10,
+          "gf": 13,
+          "ga": 12,
           "gd": 1
         },
         {
@@ -621,18 +621,30 @@
         },
         {
           "pos": 3,
-          "team": "Cd Mafra Sad",
-          "points": 12,
-          "played": 8,
-          "wins": 3,
-          "draws": 3,
-          "losses": 2,
-          "gf": 16,
-          "ga": 11,
-          "gd": 5
+          "team": "Ud Santarém Sad",
+          "points": 13,
+          "played": 9,
+          "wins": 4,
+          "draws": 1,
+          "losses": 4,
+          "gf": 11,
+          "ga": 15,
+          "gd": -4
         },
         {
           "pos": 4,
+          "team": "Cd Mafra Sad",
+          "points": 12,
+          "played": 9,
+          "wins": 3,
+          "draws": 3,
+          "losses": 3,
+          "gf": 17,
+          "ga": 13,
+          "gd": 4
+        },
+        {
+          "pos": 5,
           "team": "Caldas Sc",
           "points": 11,
           "played": 8,
@@ -644,7 +656,7 @@
           "gd": -2
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "Ud Oliveirense Sad",
           "points": 10,
           "played": 8,
@@ -654,18 +666,6 @@
           "gf": 10,
           "ga": 11,
           "gd": -1
-        },
-        {
-          "pos": 6,
-          "team": "Ud Santarém Sad",
-          "points": 10,
-          "played": 8,
-          "wins": 3,
-          "draws": 1,
-          "losses": 4,
-          "gf": 9,
-          "ga": 14,
-          "gd": -5
         },
         {
           "pos": 7,
