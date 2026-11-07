@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T00:39:15.528Z",
+  "updatedAt": "2026-11-07T09:40:45.666Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -77,13 +77,13 @@
           "pos": 5,
           "team": "Fc Arouca, Sduq",
           "points": 20,
-          "played": 10,
+          "played": 11,
           "wins": 6,
           "draws": 2,
-          "losses": 2,
+          "losses": 3,
           "gf": 13,
-          "ga": 7,
-          "gd": 6
+          "ga": 8,
+          "gd": 5
         },
         {
           "pos": 7,
@@ -123,6 +123,18 @@
         },
         {
           "pos": 10,
+          "team": "Fc Famalicão Sad",
+          "points": 13,
+          "played": 11,
+          "wins": 3,
+          "draws": 4,
+          "losses": 4,
+          "gf": 15,
+          "ga": 14,
+          "gd": 1
+        },
+        {
+          "pos": 11,
           "team": "Alverca Sad",
           "points": 11,
           "played": 10,
@@ -134,7 +146,7 @@
           "gd": -1
         },
         {
-          "pos": 11,
+          "pos": 12,
           "team": "Cfea – Club Football Estrela, Sad",
           "points": 10,
           "played": 10,
@@ -144,18 +156,6 @@
           "gf": 15,
           "ga": 19,
           "gd": -4
-        },
-        {
-          "pos": 11,
-          "team": "Fc Famalicão Sad",
-          "points": 10,
-          "played": 10,
-          "wins": 2,
-          "draws": 4,
-          "losses": 4,
-          "gf": 14,
-          "ga": 14,
-          "gd": 0
         },
         {
           "pos": 13,
@@ -598,10 +598,10 @@
         {
           "pos": 1,
           "team": "Belenenses Sduq",
-          "points": 20,
-          "played": 8,
+          "points": 21,
+          "played": 9,
           "wins": 6,
-          "draws": 2,
+          "draws": 3,
           "losses": 0,
           "gf": 18,
           "ga": 6,
@@ -681,18 +681,6 @@
         },
         {
           "pos": 8,
-          "team": "Sc Covilhã Sduq",
-          "points": 7,
-          "played": 8,
-          "wins": 1,
-          "draws": 4,
-          "losses": 3,
-          "gf": 5,
-          "ga": 8,
-          "gd": -3
-        },
-        {
-          "pos": 9,
           "team": "Gd Vitória Sernache",
           "points": 7,
           "played": 8,
@@ -704,12 +692,24 @@
           "gd": -9
         },
         {
-          "pos": 10,
-          "team": "Lgc Sad",
-          "points": 6,
+          "pos": 9,
+          "team": "Sc Covilhã Sduq",
+          "points": 7,
           "played": 8,
           "wins": 1,
-          "draws": 3,
+          "draws": 4,
+          "losses": 3,
+          "gf": 5,
+          "ga": 8,
+          "gd": -3
+        },
+        {
+          "pos": 10,
+          "team": "Lgc Sad",
+          "points": 7,
+          "played": 9,
+          "wins": 1,
+          "draws": 4,
           "losses": 4,
           "gf": 6,
           "ga": 11,
@@ -3568,6 +3568,18 @@
       "standings": [
         {
           "pos": 1,
+          "team": "Fc Tadim",
+          "points": 6,
+          "played": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "gf": 7,
+          "ga": 1,
+          "gd": 6
+        },
+        {
+          "pos": 2,
           "team": "Gfc Pousa",
           "points": 6,
           "played": 2,
@@ -3579,7 +3591,7 @@
           "gd": 6
         },
         {
-          "pos": 2,
+          "pos": 3,
           "team": "Realense Fc",
           "points": 6,
           "played": 2,
@@ -3591,7 +3603,7 @@
           "gd": 5
         },
         {
-          "pos": 3,
+          "pos": 4,
           "team": "Ad Águias Graça Fc",
           "points": 6,
           "played": 2,
@@ -3603,7 +3615,7 @@
           "gd": 2
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Antas Fc",
           "points": 4,
           "played": 2,
@@ -3615,7 +3627,7 @@
           "gd": 1
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Sequeirense Fc",
           "points": 4,
           "played": 2,
@@ -3627,7 +3639,7 @@
           "gd": 1
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Cf Fão",
           "points": 3,
           "played": 1,
@@ -3637,18 +3649,6 @@
           "gf": 3,
           "ga": 0,
           "gd": 3
-        },
-        {
-          "pos": 7,
-          "team": "Fc Tadim",
-          "points": 3,
-          "played": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 6,
-          "ga": 1,
-          "gd": 5
         },
         {
           "pos": 8,
@@ -3688,18 +3688,6 @@
         },
         {
           "pos": 11,
-          "team": "Dumiense Cjp Futebol Sad \"B\"",
-          "points": 0,
-          "played": 2,
-          "wins": 0,
-          "draws": 0,
-          "losses": 2,
-          "gf": 1,
-          "ga": 3,
-          "gd": -2
-        },
-        {
-          "pos": 12,
           "team": "Ass. Merelim S. Paio",
           "points": 0,
           "played": 2,
@@ -3708,6 +3696,18 @@
           "losses": 2,
           "gf": 2,
           "ga": 5,
+          "gd": -3
+        },
+        {
+          "pos": 12,
+          "team": "Dumiense Cjp Futebol Sad \"B\"",
+          "points": 0,
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "gf": 1,
+          "ga": 4,
           "gd": -3
         },
         {
