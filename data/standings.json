@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T22:54:01.242Z",
+  "updatedAt": "2026-11-11T04:53:32.586Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -10268,17 +10268,29 @@
         {
           "pos": 9,
           "team": "C.D. Trofense \"B\" - Sad",
-          "points": 7,
-          "played": 5,
+          "points": 8,
+          "played": 6,
           "wins": 2,
-          "draws": 1,
+          "draws": 2,
           "losses": 2,
-          "gf": 11,
-          "ga": 10,
+          "gf": 13,
+          "ga": 12,
           "gd": 1
         },
         {
           "pos": 10,
+          "team": "U.S.C. Baltar",
+          "points": 8,
+          "played": 6,
+          "wins": 2,
+          "draws": 2,
+          "losses": 2,
+          "gf": 11,
+          "ga": 13,
+          "gd": -2
+        },
+        {
+          "pos": 11,
           "team": "Spg. C. Campo",
           "points": 7,
           "played": 6,
@@ -10288,18 +10300,6 @@
           "gf": 9,
           "ga": 9,
           "gd": 0
-        },
-        {
-          "pos": 11,
-          "team": "U.S.C. Baltar",
-          "points": 7,
-          "played": 5,
-          "wins": 2,
-          "draws": 1,
-          "losses": 2,
-          "gf": 9,
-          "ga": 11,
-          "gd": -2
         },
         {
           "pos": 12,
