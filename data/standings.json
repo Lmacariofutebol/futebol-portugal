@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-13T13:59:35.459Z",
+  "updatedAt": "2026-11-13T21:13:12.646Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
-  "competitionCount": 84,
+  "competitionCount": 85,
   "associationCount": 22,
   "competitions": [
     {
@@ -4306,9 +4306,9 @@
           "wins": 3,
           "draws": 0,
           "losses": 0,
-          "gf": 13,
-          "ga": 2,
-          "gd": 11
+          "gf": 14,
+          "ga": 1,
+          "gd": 13
         },
         {
           "pos": 2,
@@ -4372,18 +4372,6 @@
         },
         {
           "pos": 7,
-          "team": "Ad Fafe \"B\"",
-          "points": 4,
-          "played": 3,
-          "wins": 1,
-          "draws": 1,
-          "losses": 1,
-          "gf": 4,
-          "ga": 4,
-          "gd": 0
-        },
-        {
-          "pos": 8,
           "team": "Gdc Serafão",
           "points": 4,
           "played": 3,
@@ -4393,6 +4381,18 @@
           "gf": 3,
           "ga": 4,
           "gd": -1
+        },
+        {
+          "pos": 8,
+          "team": "Ad Fafe \"B\"",
+          "points": 4,
+          "played": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "gf": 3,
+          "ga": 5,
+          "gd": -2
         },
         {
           "pos": 9,
@@ -4939,6 +4939,18 @@
         },
         {
           "pos": 7,
+          "team": "Gd S. Cristóvão",
+          "points": 9,
+          "played": 6,
+          "wins": 2,
+          "draws": 3,
+          "losses": 1,
+          "gf": 10,
+          "ga": 6,
+          "gd": 4
+        },
+        {
+          "pos": 8,
           "team": "C.D. Abação",
           "points": 9,
           "played": 6,
@@ -4950,7 +4962,7 @@
           "gd": 1
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "Operário Fc Antime",
           "points": 8,
           "played": 6,
@@ -4962,7 +4974,7 @@
           "gd": -2
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "Udc S. Adrião",
           "points": 7,
           "played": 6,
@@ -4974,31 +4986,7 @@
           "gd": 0
         },
         {
-          "pos": 10,
-          "team": "Bairro Fc",
-          "points": 7,
-          "played": 5,
-          "wins": 2,
-          "draws": 1,
-          "losses": 2,
-          "gf": 8,
-          "ga": 11,
-          "gd": -3
-        },
-        {
           "pos": 11,
-          "team": "Gd S. Cristóvão",
-          "points": 6,
-          "played": 6,
-          "wins": 1,
-          "draws": 3,
-          "losses": 2,
-          "gf": 9,
-          "ga": 9,
-          "gd": 0
-        },
-        {
-          "pos": 12,
           "team": "Desp. S. Cosme",
           "points": 6,
           "played": 6,
@@ -5010,7 +4998,7 @@
           "gd": -2
         },
         {
-          "pos": 13,
+          "pos": 12,
           "team": "Acr Guilhofrei",
           "points": 5,
           "played": 6,
@@ -5020,6 +5008,18 @@
           "gf": 9,
           "ga": 15,
           "gd": -6
+        },
+        {
+          "pos": 13,
+          "team": "Bairro Fc",
+          "points": 4,
+          "played": 5,
+          "wins": 1,
+          "draws": 1,
+          "losses": 3,
+          "gf": 5,
+          "ga": 12,
+          "gd": -7
         },
         {
           "pos": 14,
@@ -14278,6 +14278,159 @@
           "gf": 8,
           "ga": 15,
           "gd": -7
+        }
+      ]
+    },
+    {
+      "group": "Distrital",
+      "association": "AF Viseu",
+      "name": "Campeonato Distrital Sub 23 - ESTANEL",
+      "url": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=30095&seasonId=106",
+      "source": "https://centroderesultados-as-prd.azurewebsites.net/Competition/Details?competitionId=30095&seasonId=106",
+      "standings": [
+        {
+          "pos": 1,
+          "team": "Gd Oliveira Frades",
+          "points": 22,
+          "played": 8,
+          "wins": 7,
+          "draws": 1,
+          "losses": 0,
+          "gf": 30,
+          "ga": 9,
+          "gd": 21
+        },
+        {
+          "pos": 2,
+          "team": "Assrd Vila Chã Sá",
+          "points": 21,
+          "played": 8,
+          "wins": 7,
+          "draws": 0,
+          "losses": 1,
+          "gf": 23,
+          "ga": 6,
+          "gd": 17
+        },
+        {
+          "pos": 3,
+          "team": "Sc Penalva Castelo",
+          "points": 19,
+          "played": 8,
+          "wins": 6,
+          "draws": 1,
+          "losses": 1,
+          "gf": 29,
+          "ga": 12,
+          "gd": 17
+        },
+        {
+          "pos": 4,
+          "team": "O Crasto",
+          "points": 14,
+          "played": 8,
+          "wins": 4,
+          "draws": 2,
+          "losses": 2,
+          "gf": 23,
+          "ga": 18,
+          "gd": 5
+        },
+        {
+          "pos": 5,
+          "team": "Cf Carregal Sal",
+          "points": 13,
+          "played": 8,
+          "wins": 4,
+          "draws": 1,
+          "losses": 3,
+          "gf": 21,
+          "ga": 19,
+          "gd": 2
+        },
+        {
+          "pos": 6,
+          "team": "Cdr Moimenta Beira",
+          "points": 11,
+          "played": 8,
+          "wins": 3,
+          "draws": 2,
+          "losses": 3,
+          "gf": 15,
+          "ga": 15,
+          "gd": 0
+        },
+        {
+          "pos": 7,
+          "team": "Asdreq Orgens",
+          "points": 9,
+          "played": 8,
+          "wins": 3,
+          "draws": 0,
+          "losses": 5,
+          "gf": 15,
+          "ga": 24,
+          "gd": -9
+        },
+        {
+          "pos": 8,
+          "team": "Ud Sampedrense",
+          "points": 9,
+          "played": 8,
+          "wins": 3,
+          "draws": 0,
+          "losses": 5,
+          "gf": 13,
+          "ga": 16,
+          "gd": -3
+        },
+        {
+          "pos": 9,
+          "team": "Gd Mangualde",
+          "points": 7,
+          "played": 8,
+          "wins": 2,
+          "draws": 1,
+          "losses": 5,
+          "gf": 14,
+          "ga": 29,
+          "gd": -15
+        },
+        {
+          "pos": 10,
+          "team": "Sc Vale Açores",
+          "points": 6,
+          "played": 8,
+          "wins": 2,
+          "draws": 0,
+          "losses": 6,
+          "gf": 11,
+          "ga": 20,
+          "gd": -9
+        },
+        {
+          "pos": 11,
+          "team": "Cf Os Repesenses",
+          "points": 5,
+          "played": 8,
+          "wins": 1,
+          "draws": 2,
+          "losses": 5,
+          "gf": 16,
+          "ga": 25,
+          "gd": -9
+        },
+        {
+          "pos": 12,
+          "team": "Adr Tarouquense",
+          "points": 3,
+          "played": 8,
+          "wins": 1,
+          "draws": 0,
+          "losses": 7,
+          "gf": 9,
+          "ga": 26,
+          "gd": -17
         }
       ]
     }
