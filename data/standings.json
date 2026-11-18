@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T11:13:15.266Z",
+  "updatedAt": "2026-11-18T20:02:28.601Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -8594,14 +8594,14 @@
         {
           "pos": 1,
           "team": "Negrais",
-          "points": 19,
-          "played": 8,
-          "wins": 6,
+          "points": 22,
+          "played": 9,
+          "wins": 7,
           "draws": 1,
           "losses": 1,
-          "gf": 16,
-          "ga": 8,
-          "gd": 8
+          "gf": 20,
+          "ga": 10,
+          "gd": 10
         },
         {
           "pos": 2,
@@ -8739,13 +8739,13 @@
           "pos": 13,
           "team": "Vila Verde",
           "points": 4,
-          "played": 7,
+          "played": 8,
           "wins": 1,
           "draws": 1,
-          "losses": 5,
-          "gf": 11,
-          "ga": 20,
-          "gd": -9
+          "losses": 6,
+          "gf": 13,
+          "ga": 24,
+          "gd": -11
         },
         {
           "pos": 14,
@@ -9490,6 +9490,30 @@
         },
         {
           "pos": 2,
+          "team": "Grc Canicense",
+          "points": 3,
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 3,
+          "ga": 1,
+          "gd": 2
+        },
+        {
+          "pos": 3,
+          "team": "União Da Bola Fc",
+          "points": 3,
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 1,
+          "ga": 0,
+          "gd": 1
+        },
+        {
+          "pos": 4,
           "team": "Cd Carvalheiro",
           "points": 1,
           "played": 1,
@@ -9501,7 +9525,7 @@
           "gd": 0
         },
         {
-          "pos": 2,
+          "pos": 4,
           "team": "Cf Caniçal",
           "points": 1,
           "played": 1,
@@ -9513,19 +9537,7 @@
           "gd": 0
         },
         {
-          "pos": 4,
-          "team": "Ad Machico",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 4,
+          "pos": 6,
           "team": "Ad Pontassolense",
           "points": 0,
           "played": 0,
@@ -9537,7 +9549,7 @@
           "gd": 0
         },
         {
-          "pos": 4,
+          "pos": 6,
           "team": "Associação Aura",
           "points": 0,
           "played": 0,
@@ -9549,19 +9561,7 @@
           "gd": 0
         },
         {
-          "pos": 4,
-          "team": "Cd Nacional",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 4,
+          "pos": 6,
           "team": "Cd Ribeira Brava",
           "points": 0,
           "played": 0,
@@ -9573,7 +9573,7 @@
           "gd": 0
         },
         {
-          "pos": 4,
+          "pos": 6,
           "team": "Choupana Fc",
           "points": 0,
           "played": 0,
@@ -9585,7 +9585,7 @@
           "gd": 0
         },
         {
-          "pos": 4,
+          "pos": 6,
           "team": "Cs Juventude Gaula",
           "points": 0,
           "played": 0,
@@ -9597,19 +9597,7 @@
           "gd": 0
         },
         {
-          "pos": 4,
-          "team": "Grc Canicense",
-          "points": 0,
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0
-        },
-        {
-          "pos": 4,
+          "pos": 6,
           "team": "Sc Santacruzense",
           "points": 0,
           "played": 0,
@@ -9621,16 +9609,28 @@
           "gd": 0
         },
         {
-          "pos": 4,
-          "team": "União Da Bola Fc",
+          "pos": 12,
+          "team": "Ad Machico",
           "points": 0,
-          "played": 0,
+          "played": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "gf": 0,
-          "ga": 0,
-          "gd": 0
+          "ga": 1,
+          "gd": -1
+        },
+        {
+          "pos": 13,
+          "team": "Cd Nacional",
+          "points": 0,
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 1,
+          "ga": 3,
+          "gd": -2
         },
         {
           "pos": 14,
