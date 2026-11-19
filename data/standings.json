@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T02:18:17.759Z",
+  "updatedAt": "2026-11-19T11:11:28.817Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -1536,13 +1536,13 @@
           "pos": 9,
           "team": "Louletano Dc",
           "points": 7,
-          "played": 7,
+          "played": 8,
           "wins": 2,
           "draws": 1,
-          "losses": 4,
-          "gf": 14,
-          "ga": 16,
-          "gd": -2
+          "losses": 5,
+          "gf": 15,
+          "ga": 19,
+          "gd": -4
         },
         {
           "pos": 10,
@@ -1558,6 +1558,18 @@
         },
         {
           "pos": 11,
+          "team": "Carvoeiro United Fccu",
+          "points": 4,
+          "played": 8,
+          "wins": 1,
+          "draws": 1,
+          "losses": 6,
+          "gf": 8,
+          "ga": 23,
+          "gd": -15
+        },
+        {
+          "pos": 12,
           "team": "Quarteirense Sad",
           "points": 3,
           "played": 8,
@@ -1567,18 +1579,6 @@
           "gf": 7,
           "ga": 32,
           "gd": -25
-        },
-        {
-          "pos": 12,
-          "team": "Carvoeiro United Fccu",
-          "points": 1,
-          "played": 7,
-          "wins": 0,
-          "draws": 1,
-          "losses": 6,
-          "gf": 5,
-          "ga": 22,
-          "gd": -17
         }
       ]
     },
@@ -11201,13 +11201,13 @@
         {
           "pos": 5,
           "team": "F.C. Paços Gaiolo",
-          "points": 12,
-          "played": 6,
+          "points": 13,
+          "played": 7,
           "wins": 4,
-          "draws": 0,
+          "draws": 1,
           "losses": 2,
-          "gf": 17,
-          "ga": 7,
+          "gf": 18,
+          "ga": 8,
           "gd": 10
         },
         {
@@ -11249,13 +11249,13 @@
         {
           "pos": 9,
           "team": "A.D. Âncede",
-          "points": 7,
-          "played": 6,
+          "points": 8,
+          "played": 7,
           "wins": 2,
-          "draws": 1,
+          "draws": 2,
           "losses": 3,
-          "gf": 12,
-          "ga": 15,
+          "gf": 13,
+          "ga": 16,
           "gd": -3
         },
         {
