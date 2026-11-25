@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T19:58:16.880Z",
+  "updatedAt": "2026-11-25T03:58:17.932Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -3805,6 +3805,18 @@
         },
         {
           "pos": 5,
+          "team": "Gd Gerês",
+          "points": 9,
+          "played": 5,
+          "wins": 3,
+          "draws": 0,
+          "losses": 2,
+          "gf": 10,
+          "ga": 9,
+          "gd": 1
+        },
+        {
+          "pos": 6,
           "team": "Fc Amares",
           "points": 8,
           "played": 5,
@@ -3816,7 +3828,7 @@
           "gd": 6
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Ad Lage 2022",
           "points": 8,
           "played": 4,
@@ -3828,7 +3840,7 @@
           "gd": 4
         },
         {
-          "pos": 7,
+          "pos": 8,
           "team": "Adcr Turiz",
           "points": 7,
           "played": 4,
@@ -3840,7 +3852,7 @@
           "gd": 4
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "Mj Póvoa",
           "points": 7,
           "played": 5,
@@ -3852,7 +3864,7 @@
           "gd": 0
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "Acdr Oleiros",
           "points": 6,
           "played": 4,
@@ -3862,18 +3874,6 @@
           "gf": 8,
           "ga": 7,
           "gd": 1
-        },
-        {
-          "pos": 10,
-          "team": "Gd Gerês",
-          "points": 6,
-          "played": 4,
-          "wins": 2,
-          "draws": 0,
-          "losses": 2,
-          "gf": 8,
-          "ga": 8,
-          "gd": 0
         },
         {
           "pos": 11,
@@ -3915,13 +3915,13 @@
           "pos": 14,
           "team": "Acrd Arsenal Crespos",
           "points": 0,
-          "played": 4,
+          "played": 5,
           "wins": 0,
           "draws": 0,
-          "losses": 4,
-          "gf": 2,
-          "ga": 14,
-          "gd": -12
+          "losses": 5,
+          "gf": 3,
+          "ga": 16,
+          "gd": -13
         }
       ]
     },
