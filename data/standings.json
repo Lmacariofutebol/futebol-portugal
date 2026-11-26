@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T16:51:44.452Z",
+  "updatedAt": "2026-11-26T01:37:58.353Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -6463,6 +6463,18 @@
         },
         {
           "pos": 8,
+          "team": "Cc Corval",
+          "points": 3,
+          "played": 6,
+          "wins": 1,
+          "draws": 0,
+          "losses": 5,
+          "gf": 7,
+          "ga": 22,
+          "gd": -15
+        },
+        {
+          "pos": 9,
           "team": "Sc Arcoense \"B\"",
           "points": 3,
           "played": 7,
@@ -6474,31 +6486,19 @@
           "gd": -21
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "Ad Vera Cruz",
           "points": 1,
-          "played": 6,
+          "played": 7,
           "wins": 0,
           "draws": 1,
-          "losses": 5,
+          "losses": 6,
           "gf": 5,
-          "ga": 46,
-          "gd": -41
+          "ga": 47,
+          "gd": -42
         },
         {
-          "pos": 10,
-          "team": "Cc Corval",
-          "points": 0,
-          "played": 5,
-          "wins": 0,
-          "draws": 0,
-          "losses": 5,
-          "gf": 6,
-          "ga": 22,
-          "gd": -16
-        },
-        {
-          "pos": 10,
+          "pos": 11,
           "team": "Gdc Oriolenses",
           "points": 0,
           "played": 6,
