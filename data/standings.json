@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T03:06:39.397Z",
+  "updatedAt": "2026-11-28T15:07:45.732Z",
   "timezone": "Europe/Lisbon",
   "source": "Centro de Resultados FPF",
   "competitionCount": 85,
@@ -123,6 +123,18 @@
         },
         {
           "pos": 10,
+          "team": "Cd Nacional, Sad",
+          "points": 13,
+          "played": 12,
+          "wins": 4,
+          "draws": 1,
+          "losses": 7,
+          "gf": 13,
+          "ga": 20,
+          "gd": -7
+        },
+        {
+          "pos": 10,
           "team": "Fc Famalicão Sad",
           "points": 13,
           "played": 11,
@@ -134,7 +146,7 @@
           "gd": 1
         },
         {
-          "pos": 11,
+          "pos": 12,
           "team": "Alverca Sad",
           "points": 12,
           "played": 11,
@@ -146,19 +158,7 @@
           "gd": -1
         },
         {
-          "pos": 12,
-          "team": "Cd Nacional, Sad",
-          "points": 10,
-          "played": 11,
-          "wins": 3,
-          "draws": 1,
-          "losses": 7,
-          "gf": 11,
-          "ga": 19,
-          "gd": -8
-        },
-        {
-          "pos": 12,
+          "pos": 13,
           "team": "Cfea – Club Football Estrela, Sad",
           "points": 10,
           "played": 11,
@@ -197,13 +197,13 @@
           "pos": 15,
           "team": "Marítimo Da Madeira, Futebol Sad",
           "points": 8,
-          "played": 10,
+          "played": 11,
           "wins": 2,
           "draws": 2,
-          "losses": 6,
-          "gf": 9,
-          "ga": 21,
-          "gd": -12
+          "losses": 7,
+          "gf": 10,
+          "ga": 23,
+          "gd": -13
         },
         {
           "pos": 17,
@@ -5011,18 +5011,30 @@
         },
         {
           "pos": 13,
-          "team": "Bairro Fc",
+          "team": "Gdrc Briteiros S. Estêvão",
           "points": 7,
-          "played": 7,
+          "played": 9,
           "wins": 2,
           "draws": 1,
-          "losses": 4,
-          "gf": 8,
-          "ga": 18,
-          "gd": -10
+          "losses": 6,
+          "gf": 9,
+          "ga": 17,
+          "gd": -8
         },
         {
           "pos": 14,
+          "team": "Bairro Fc",
+          "points": 7,
+          "played": 8,
+          "wins": 2,
+          "draws": 1,
+          "losses": 5,
+          "gf": 8,
+          "ga": 19,
+          "gd": -11
+        },
+        {
+          "pos": 15,
           "team": "Acd Ases Sta. Eufémia",
           "points": 7,
           "played": 8,
@@ -5031,18 +5043,6 @@
           "losses": 5,
           "gf": 9,
           "ga": 18,
-          "gd": -9
-        },
-        {
-          "pos": 15,
-          "team": "Gdrc Briteiros S. Estêvão",
-          "points": 4,
-          "played": 8,
-          "wins": 1,
-          "draws": 1,
-          "losses": 6,
-          "gf": 8,
-          "ga": 17,
           "gd": -9
         },
         {
@@ -5068,18 +5068,30 @@
       "standings": [
         {
           "pos": 1,
-          "team": "Os Sandinenses Gdrc",
+          "team": "Ad Oliveirense 1952",
           "points": 28,
-          "played": 10,
+          "played": 11,
           "wins": 9,
           "draws": 1,
-          "losses": 0,
-          "gf": 20,
-          "ga": 4,
-          "gd": 16
+          "losses": 1,
+          "gf": 23,
+          "ga": 10,
+          "gd": 13
         },
         {
           "pos": 2,
+          "team": "Os Sandinenses Gdrc",
+          "points": 28,
+          "played": 11,
+          "wins": 9,
+          "draws": 1,
+          "losses": 1,
+          "gf": 20,
+          "ga": 5,
+          "gd": 15
+        },
+        {
+          "pos": 3,
           "team": "Santa Maria Fc",
           "points": 26,
           "played": 10,
@@ -5089,18 +5101,6 @@
           "gf": 26,
           "ga": 7,
           "gd": 19
-        },
-        {
-          "pos": 3,
-          "team": "Ad Oliveirense 1952",
-          "points": 25,
-          "played": 10,
-          "wins": 8,
-          "draws": 1,
-          "losses": 1,
-          "gf": 22,
-          "ga": 10,
-          "gd": 12
         },
         {
           "pos": 4,
